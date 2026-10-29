@@ -20,6 +20,7 @@
 ---
 
 ## 📌 Daftar Isi
+- [🗺️ Navigasi Cepat: Mau Cari Apa?](#-navigasi-cepat-mau-cari-apa)
 - [Ringkasan Eksekutif](#-ringkasan-eksekutif)
 - [Arsitektur & Pipeline Evaluasi](#-arsitektur--pipeline-evaluasi)
 - [Pertanyaan Penelitian (Research Questions)](#-pertanyaan-penelitian-research-questions)
@@ -28,6 +29,24 @@
 - [Panduan Instalasi & Reproduksi](#-panduan-instalasi--reproduksi)
 - [Batasan Epistemik & Integritas Ilmiah](#-batasan-epistemik--integritas-ilmiah)
 - [Sitasi & Referensi Utama](#-sitasi--referensi-utama)
+
+---
+
+## 🗺️ Navigasi Cepat: Mau Cari Apa?
+
+Gunakan tabel kompas ini untuk langsung menuju file atau folder yang Anda butuhkan tanpa perlu membongkar seluruh direktori:
+
+| Kebutuhan Anda | File / Folder Sasaran | Deskripsi Singkat |
+| :--- | :--- | :--- |
+| 📖 **Membaca Teori & Latar Belakang Skripsi** | [`docs/RESEARCH_MASTER.md`](docs/RESEARCH_MASTER.md) | **Single Source of Truth (Versi 10.0)** lengkap berisi rumusan matematika, latar belakang klinis, dan batasan klaim. |
+| 📽️ **Melihat Slide Ujian Proposal / Bimbingan** | [`presentations/Medical_VLM_Proposal.pptx`](presentations/Medical_VLM_Proposal.pptx) | Naskah slide resmi seminar proposal skripsi. |
+| 🚀 **Menjalankan Eksperimen Utama di Kaggle** | [`main/notebooks/decisive_validation_primary_rev05.ipynb`](main/notebooks/decisive_validation_primary_rev05.ipynb) | Notebook utama siap eksekusi di GPU Dual Tesla T4 (Internet ON). |
+| 📊 **Melihat Angka Hasil & Metrik Final** | [`main/results/decisive_validation/rev05/`](main/results/decisive_validation/rev05/) | Tabel metrik resmi RQ1 (Akurasi/Flip), RQ2 (Visual), RQ3 (AURC), dan kurva PNG. |
+| ⚙️ **Melihat Kode Inferensi Inti** | [`main/scripts/decisive_validation_experiment_v5.py`](main/scripts/decisive_validation_experiment_v5.py) | Engine kalkulasi sequence log-likelihood & intervensi kanvas hitam. |
+| 🧪 **Menjalankan Unit Test (9/9 Pass)** | [`main/scripts/test_decisive_validation_v5.py`](main/scripts/test_decisive_validation_v5.py) | Suite pengujian lokal deterministik verifikasi logit kausal dan metrik. |
+| 🔍 **Audit Data Bebas Kebocoran (Zero Leakage)** | [`main/notebooks/01_indorad_vqa_dataset_audit_eda.ipynb`](main/notebooks/01_indorad_vqa_dataset_audit_eda.ipynb) | Notebook pembuktian 314 citra fisik unik via hashing SHA-256. |
+| 📑 **Membaca Paper Literatur Acuan** | [`paper/`](paper/) | PDF artikel rujukan: Yudhistira et al. (2026) & Sadanandan (2026). |
+| 📦 **Melihat Arsip Iterasi Lama (v1–v4)** | [`archive/`](archive/) & [`main/reports/`](main/reports/) | Riwayat proses eksplorasi sebelum mencapai protokol rev05. |
 
 ---
 
