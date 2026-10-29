@@ -1,0 +1,41 @@
+qid,image_id,language,prompt,ground_truth,raw_output,parsed_prediction,is_correct
+1968,216499bc573ff0f8,en,"Answer only YES or NO.
+is there a pneumothorax present?",NO,No.,NO,True
+1968,216499bc573ff0f8,id,"Jawab hanya dengan YES atau NO.
+Apakah ada pneumothorax?",NO,"Tidak, tidak ada pneumothorax dalam","Tidak, tidak ada pneumothorax dalam",False
+1700,ebab42ecbd92c183,en,"Answer only YES or NO.
+are the hemidiaphragms flattened?",NO,Yes.,YES,False
+1700,ebab42ecbd92c183,id,"Jawab hanya dengan YES atau NO.
+Apakah diafragma bagian atas rata?",NO,"Tidak, diafragma bagian atas tidak","Tidak, diafragma bagian atas tidak",False
+206,9786c5daf749ffa4,en,"Answer only YES or NO.
+is there bilateral hilar enlargement?",YES,Yes.,YES,True
+206,9786c5daf749ffa4,id,"Jawab hanya dengan YES atau NO.
+Apakah terdapat pembesaran hilus bilateral?",YES,Tidak ada pembesaran hilus bilateral dalam,Tidak ada pembesaran hilus bilateral dalam,False
+1488,d932b1e1088ae5b8,en,"Answer only YES or NO.
+are the findings normal?",NO,No.,NO,True
+1488,d932b1e1088ae5b8,id,"Jawab hanya dengan YES atau NO.
+Apakah temuan ini normal?",NO,"Tidak, temuan ini tidak normal.",NO,True
+2118,fec3d1c2c7ca7420,en,"Answer only YES or NO.
+is there cortical atrophy?",NO,Yes.,YES,False
+2118,fec3d1c2c7ca7420,id,"Jawab hanya dengan YES atau NO.
+Apakah ada atrofi kortikal?",NO,"Tidak, tidak ada atrofi kortikal","Tidak, tidak ada atrofi kortikal",False
+1701,ebab42ecbd92c183,en,"Answer only YES or NO.
+is the diaphragm flattened on either side",NO,Yes.,YES,False
+1701,ebab42ecbd92c183,id,"Jawab hanya dengan YES atau NO.
+Apakah diafragma rata di kedua sisi?",NO,"Tidak, diafragma tidak rata di","Tidak, diafragma tidak rata di",False
+879,be6bc466225b947f,en,"Answer only YES or NO.
+is this a lateral film?",NO,No.,NO,True
+879,be6bc466225b947f,id,"Jawab hanya dengan YES atau NO.
+Apakah ini film lateral?",NO,"Tidak, ini bukan film lateral.","Tidak, ini bukan film lateral.",False
+2176,5d2123e3352d7473,en,"Answer only YES or NO.
+is the trachea deviated in this image?",NO,Yes.,YES,False
+2176,5d2123e3352d7473,id,"Jawab hanya dengan YES atau NO.
+Apakah trakea terlihat miring pada gambar ini?",NO,"Tidak, trakea tidak terlihat","Tidak, trakea tidak terlihat",False
+299,83a233637ae80dfd,en,"Answer only YES or NO.
+is there free air under the diaphragm?",NO,No.,NO,True
+299,83a233637ae80dfd,id,"Jawab hanya dengan YES atau NO.
+Apakah ada udara bebas di bawah diafragma?",NO,"Tidak, tidak ada udara bebas di","Tidak, tidak ada udara bebas di",False
+1314,35b87488ba222c67,en,"Answer only YES or NO.
+is the caudate nucleus involved?",YES,Yes.,YES,True
+1314,35b87488ba222c67,id,"Jawab hanya dengan YES atau NO.
+Apakah nukleus kaudatus terlibat?",YES,"Tidak, nukleus kaudatus","Tidak, nukleus kaudatus",False

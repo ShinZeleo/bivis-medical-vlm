@@ -1,0 +1,2 @@
+total_pairs,valid,valid_pct,partial,partial_pct,invalid,invalid_pct,answer_match_breakdown_semantic_likely_equivalent,answer_match_breakdown_different,answer_match_breakdown_exact_match
+2244,2244,100.0,0,0.0,0,0.0,1191,998,55

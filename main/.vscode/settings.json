@@ -1,0 +1,8 @@
+{
+  "python.defaultInterpreterPath": "C:/Users/Zeleo/miniconda3/envs/zell/python.exe",
+  "python.terminal.activateEnvironment": true,
+  "python.analysis.extraPaths": [
+    "${workspaceFolder}",
+    "${workspaceFolder}/src"
+  ]
+}

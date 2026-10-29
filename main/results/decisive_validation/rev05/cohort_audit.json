@@ -1,0 +1,44 @@
+{
+  "manifest_sha256": "fb55fd75378b1c03abcbeb9772fa27d6ab81dd9abdfca4735c03438507c19ee9",
+  "total_manifest_rows": 2244,
+  "total_unique_qids": 2244,
+  "total_unique_physical_images": 314,
+  "global_split_cluster_leakage": 0,
+  "cohorts": {
+    "primary_cohort": {
+      "definition": "is_eligible_primary == True (Clean Yes/No only)",
+      "total_samples": 1122,
+      "test_samples": 799,
+      "dev_samples": 323,
+      "test_clusters": 204,
+      "dev_clusters": 88,
+      "cluster_leakage": 0,
+      "ref_answer_distribution": {
+        "NO": 568,
+        "YES": 554
+      }
+    },
+    "historical_benchmark_cohort": {
+      "definition": "in_rev03_benchmark == True (Authoritative rev03 150-sample set)",
+      "total_samples": 150,
+      "test_samples": 92,
+      "dev_samples": 58,
+      "test_clusters": 35,
+      "dev_clusters": 23,
+      "cluster_leakage": 0,
+      "ref_answer_distribution": {
+        "NO": 79,
+        "YES": 71
+      }
+    },
+    "active_evaluation_cohort": {
+      "definition": "in_eval_cohort == True (Exact Union of Primary and Historical Cohorts)",
+      "total_evaluated_samples": 1133,
+      "test_samples": 806,
+      "dev_samples": 327,
+      "test_clusters": 204,
+      "dev_clusters": 88,
+      "cluster_leakage": 0
+    }
+  }
+}

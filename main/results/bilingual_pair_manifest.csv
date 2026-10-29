@@ -1,0 +1,151 @@
+qa_id,image_id,pixel_sha256,split,question_en,question_id,reference_answer,translation_status,is_yes_no
+47,img_47,6185dbde43bcbc0c24f4e08d75601bb4511eabe05bfa5de6dd7af3f3ec8b4ac3,dev,are structures associated with the midbrain located in this image?,Apakah ada struktur yang terkait dengan midbrain yang terletak di gambar ini?,YES,CLEAN,True
+58,img_58,6185dbde43bcbc0c24f4e08d75601bb4511eabe05bfa5de6dd7af3f3ec8b4ac3,dev,is the midbrain identified in this section?,Apakah bagian tengah otak (midbrain) teridentifikasi dalam bagian ini?,YES,CLEAN,True
+72,img_72,376a2117295e209a0701286ace3e339fdde5aaa1dd99693564e3b23769547794,dev,are the margins of the cardiac silhouette normal?,Apakah batas-batas siluet jantung normal?,NO,CLEAN,True
+73,img_73,376a2117295e209a0701286ace3e339fdde5aaa1dd99693564e3b23769547794,dev,is the heart border normal?,Apakah batas jantung normal?,NO,CLEAN,True
+74,img_74,b973d542fc5ecfd3af9cd1f504ef0b49c5a14b904d2317ffb7bf2f3744052b50,test,is this an axial plane,Apakah ini adalah bidang aksial?,YES,CLEAN,True
+190,img_190,2a3411316757eabd89abcdd82f79d372151eb6387666a73acca483ca62cba868,test,is there a rib fracture?,Apakah ada patah tulang rusuk?,NO,CLEAN,True
+193,img_193,d42e381f40647f8b453882d16c6da816f6e6b7cecb55b6baf79bca3ace70be15,dev,is there an brain bleed?,Apakah ada perdarahan di otak?,NO,CLEAN,True
+201,img_201,5a2a23e80fea9c698524c2c6bf2fa9e5271bc1f6b73fc0d84cb2f96ebe6e0ad3,test,is there grey-white matter differentiation?,Apakah ada perbedaan antara materi abu-abu dan materi putih?,YES,CLEAN,True
+209,img_209,8131f15dcd5fcc1af4ff39c6978f504576eef6c44984cc045bb5ec258ccaade6,test,is there ectatic or aneurysmal enlargement of the abdominal aorta?,Apakah terdapat pelebaran ekstasi atau aneurisma pada aorta abdominal?,NO,CLEAN,True
+222,img_222,74d9dd480e24a4f9f8227b3c6a5fa71e3ea3697a171dbd00cc8934ccc784e1dd,test,is the heart enlarged?,Apakah jantung membesar?,YES,CLEAN,True
+238,img_238,cf08178fa875bcde0d750794714bd2500535335a6c74dff7f85659bdfbd8864f,dev,is the cerebellum seen on this axial section?,Apakah cerebellum terlihat pada potongan aksial ini?,NO,CLEAN,True
+240,img_240,cda2d6fcf610e1b304e816de3d8e23f61850c297296067cc295a786fd880c053,test,is there bone in the top of the image?,Apakah ada tulang di bagian atas gambar?,NO,CLEAN,True
+272,img_272,4312b741c63c4ae59cddbcf865ed033e37be146b973fc2956550271169db50a1,dev,is there consolidation in the lungs?,Apakah ada konsolidasi pada paru-paru?,NO,CLEAN,True
+289,img_289,0593d2ae97d9560f08ab6ffb480641b3e16a8f6372abc4e5a5e0b4bbab74188e,test,is there adequate inspiration?,Apakah ada cukup rangsangan?,YES,CLEAN,True
+295,img_295,e0062eb9000ce88064269e74ceb16db2ed272c081a3e93e4a2065dd883ee7804,test,is there a blood clot?,Apakah ada gumpalan darah?,YES,CLEAN,True
+301,img_301,62d0581e84a18ff8b9916b1ee428caa5b8c2b0bf0c78392a61a785de0a927fdd,test,is the cardiac contour normal in shape?,Apakah kontur jantung normal dalam bentuknya?,YES,CLEAN,True
+303,img_303,0a0c8bc50b777f0827e3a089524e1c7fc2bbeac87546bfe1592dd4dcf413bb22,test,is the pancreas edematous?,Apakah pankreas mengalami pembengkakan?,YES,CLEAN,True
+324,img_324,6185dbde43bcbc0c24f4e08d75601bb4511eabe05bfa5de6dd7af3f3ec8b4ac3,dev,is this an image of the right and left temporal lobes?,Apakah ini gambar lobus temporal kanan dan kiri?,YES,CLEAN,True
+332,img_332,22b255ea1e3082b8a1774f0aacd8dbe47f55f311131d6b0a84f200c9bb685cee,test,is the mass enhancing?,Apakah massa tersebut menunjukkan peningkatan?,NO,CLEAN,True
+349,img_349,173c2d5e7bc14105d7ce3d22c72ff219899a1b00e0a1b4baa8412370e31186b2,test,is there contrast used in the above image?,Apakah ada kontras yang digunakan dalam gambar di atas?,YES,CLEAN,True
+355,img_355,a23e575c0767232d716206cdae7fb7255edbfadd037035f5368c5f3f16fc088e,test,is there contrast used?,Apakah digunakan kontras?,NO,CLEAN,True
+391,img_391,62d0581e84a18ff8b9916b1ee428caa5b8c2b0bf0c78392a61a785de0a927fdd,test,are the costophrenic angles sharp?,Apakah sudut costophrenic tajam?,YES,CLEAN,True
+402,img_402,62d0581e84a18ff8b9916b1ee428caa5b8c2b0bf0c78392a61a785de0a927fdd,test,is there no evidence of blunting of the costophrenic angles?,Apakah tidak ada bukti adanya pembengkakan sudut costofrenik?,YES,CLEAN,True
+421,img_421,cf08178fa875bcde0d750794714bd2500535335a6c74dff7f85659bdfbd8864f,dev,does the left temporal lobe appear normal?,Apakah lobus temporal kiri tampak normal?,NO,CLEAN,True
+422,img_422,cf08178fa875bcde0d750794714bd2500535335a6c74dff7f85659bdfbd8864f,dev,is there a lesion in the left temporal lobe?,Apakah ada lesi di lobus temporal kiri?,YES,CLEAN,True
+426,img_426,df1ad5b92a4d0ffd0d30957e3451dd7df8fe5f0721f7f181470c2616dc39da26,dev,is this a saggital brain section?,Apakah ini adalah potongan otak secara sagittal?,NO,CLEAN,True
+427,img_427,df1ad5b92a4d0ffd0d30957e3451dd7df8fe5f0721f7f181470c2616dc39da26,dev,is this a saggital view of the brain?,Apakah ini adalah tampilan sagital dari otak?,NO,CLEAN,True
+495,img_495,5a2a23e80fea9c698524c2c6bf2fa9e5271bc1f6b73fc0d84cb2f96ebe6e0ad3,test,does this ct use iv contrast material?,Apakah CT scan ini menggunakan kontras intravena?,NO,CLEAN,True
+498,img_498,bb938b295669e4f89496cd8bc039d2693ffc11c9d0e71c925c67a96867d78200,test,is there any costophrenic angle blunting present?,Apakah ada pembungkusan sudut costophrenic?,NO,CLEAN,True
+499,img_499,bb938b295669e4f89496cd8bc039d2693ffc11c9d0e71c925c67a96867d78200,test,is there presence of any costophrenic angle blunting?,Apakah ada pembentukan sudut costophrenic yang tumpul?,NO,CLEAN,True
+517,img_517,a23e575c0767232d716206cdae7fb7255edbfadd037035f5368c5f3f16fc088e,test,is this a noncontrast ct?,Apakah ini CT tanpa kontras?,YES,HIGH_RISK,True
+555,img_555,a23e575c0767232d716206cdae7fb7255edbfadd037035f5368c5f3f16fc088e,test,is a noncontrast ct the first imaging test for a suspected brain bleed?,Apakah CT tanpa kontras adalah tes pencitraan pertama untuk perdarahan otak yang dicurigai?,YES,HIGH_RISK,True
+564,img_564,173c2d5e7bc14105d7ce3d22c72ff219899a1b00e0a1b4baa8412370e31186b2,test,are there any abnormalities seen in the spleen?,Apakah ada kelainan yang terlihat pada limpa?,NO,CLEAN,True
+580,img_580,d42e381f40647f8b453882d16c6da816f6e6b7cecb55b6baf79bca3ace70be15,dev,are there abnormal findings on this image?,Apakah ada temuan abnormal pada gambar ini?,YES,CLEAN,True
+591,img_591,d42e381f40647f8b453882d16c6da816f6e6b7cecb55b6baf79bca3ace70be15,dev,is this brain scan normal?,Apakah pemindaian otak ini normal?,NO,CLEAN,True
+596,img_596,bb938b295669e4f89496cd8bc039d2693ffc11c9d0e71c925c67a96867d78200,test,any tracheal deviation present?,Apakah ada penyimpangan trakea yang terlihat?,NO,CLEAN,True
+597,img_597,bb938b295669e4f89496cd8bc039d2693ffc11c9d0e71c925c67a96867d78200,test,is there any presence of tracheal deviation?,Apakah ada penyimpangan pada trakea?,NO,CLEAN,True
+617,img_617,6185dbde43bcbc0c24f4e08d75601bb4511eabe05bfa5de6dd7af3f3ec8b4ac3,dev,is the grey/white matter border well differentiated?,Apakah batas antara materi abu-abu dan materi putih terlihat jelas?,YES,CLEAN,True
+623,img_623,0593d2ae97d9560f08ab6ffb480641b3e16a8f6372abc4e5a5e0b4bbab74188e,test,is there evidence of hilar enlargement?,Apakah ada bukti pembesaran hil?,NO,CLEAN,True
+625,img_625,0593d2ae97d9560f08ab6ffb480641b3e16a8f6372abc4e5a5e0b4bbab74188e,test,is there increased lung markings near the hilum?,Apakah ada peningkatan peradangan pada paru-paru di dekat hilum?,NO,HIGH_RISK,True
+628,img_628,e3cc005d6c19e23b262998f0908f7a0ea4576cb3801b95861d23c3328d02a281,dev,are the kidneys normal?,Apakah ginjal dalam kondisi normal?,YES,CLEAN,True
+629,img_629,e3cc005d6c19e23b262998f0908f7a0ea4576cb3801b95861d23c3328d02a281,dev,are these normal looking kidneys?,Apakah ginjal-ginjal ini terlihat normal?,YES,CLEAN,True
+668,img_668,118e62a88fa61563356f1254369ce4c73893bb164592d8cd4acce1433c77175d,test,is there swelling of the grey matter?,Apakah ada pembesaran pada jaringan grey matter?,YES,CLEAN,True
+691,img_691,117904b339c8f6d841f2de3077949323b6a02a0fff2ffce2e58ef51ddf3fa671,dev,is this a normal image?,Apakah ini gambar yang normal?,NO,CLEAN,True
+702,img_702,117904b339c8f6d841f2de3077949323b6a02a0fff2ffce2e58ef51ddf3fa671,dev,is the brain scan normal?,Apakah hasil pemindaian otak normal?,NO,CLEAN,True
+734,img_734,37042939fc6d2c42fd154dc85ae598ebde5fdfbeec02d3592acdbec7a3373afb,dev,is there a pancreatic pseudocsyst?,Apakah ada pseudokista pankreas?,NO,CLEAN,True
+736,img_736,37042939fc6d2c42fd154dc85ae598ebde5fdfbeec02d3592acdbec7a3373afb,dev,is there a pseudocyst in the pancreas?,Apakah ada pseudokista di pankreas?,NO,CLEAN,True
+841,img_841,74d9dd480e24a4f9f8227b3c6a5fa71e3ea3697a171dbd00cc8934ccc784e1dd,test,are the lungs clear?,Apakah paru-paru terlihat jelas?,NO,CLEAN,True
+842,img_842,74d9dd480e24a4f9f8227b3c6a5fa71e3ea3697a171dbd00cc8934ccc784e1dd,test,are there lungs free of consolidation?,Apakah ada paru-paru yang tidak menunjukkan tanda konsolidasi?,YES,HIGH_RISK,True
+843,img_843,b973d542fc5ecfd3af9cd1f504ef0b49c5a14b904d2317ffb7bf2f3744052b50,test,is there fat stranding?,Apakah ada penumpukan lemak?,NO,CLEAN,True
+844,img_844,b973d542fc5ecfd3af9cd1f504ef0b49c5a14b904d2317ffb7bf2f3744052b50,test,is fat stranding present?,Apakah ada tanda-tanda pemisahan lemak?,NO,CLEAN,True
+856,img_856,b973d542fc5ecfd3af9cd1f504ef0b49c5a14b904d2317ffb7bf2f3744052b50,test,is the bowel distended?,Apakah usus terlihat membengkak?,NO,CLEAN,True
+858,img_858,b973d542fc5ecfd3af9cd1f504ef0b49c5a14b904d2317ffb7bf2f3744052b50,test,is bowel distension present?,Apakah ada pembesaran usus?,NO,CLEAN,True
+883,img_883,118e62a88fa61563356f1254369ce4c73893bb164592d8cd4acce1433c77175d,test,is this the brain?,Apakah ini otak?,YES,CLEAN,True
+916,img_916,e3cc005d6c19e23b262998f0908f7a0ea4576cb3801b95861d23c3328d02a281,dev,is this a study of the brain?,Apakah ini adalah penelitian tentang otak?,NO,CLEAN,True
+917,img_917,118e62a88fa61563356f1254369ce4c73893bb164592d8cd4acce1433c77175d,test,is this a ct image?,Apakah ini gambar CT?,NO,CLEAN,True
+924,img_924,e5d839dc899857eba92c220ae851c196145fdfee75986a029d9dd11d9b8f9429,test,is there evidence of enhancement?,Apakah ada bukti peningkatan?,YES,CLEAN,True
+925,img_925,e5d839dc899857eba92c220ae851c196145fdfee75986a029d9dd11d9b8f9429,test,is the lesion enhancing?,Apakah lesi tersebut menunjukkan peningkatan?,YES,CLEAN,True
+926,img_926,c0909bf983e2006fdc84fd9f1be9965820c63e9be590355740d77a18a45d5d2f,dev,is there contrast given?,Apakah diberikan kontras?,YES,CLEAN,True
+927,img_927,e3cc005d6c19e23b262998f0908f7a0ea4576cb3801b95861d23c3328d02a281,dev,is this a ct scan?,Apakah ini adalah hasil CT scan?,YES,CLEAN,True
+930,img_930,c0909bf983e2006fdc84fd9f1be9965820c63e9be590355740d77a18a45d5d2f,dev,are there 2 kidneys?,Apakah ada 2 ginjal?,YES,CLEAN,True
+931,img_931,c0909bf983e2006fdc84fd9f1be9965820c63e9be590355740d77a18a45d5d2f,dev,are there normal number of kidneys?,Apakah jumlah ginjalnya normal?,YES,CLEAN,True
+937,img_937,b04cfe70c6e92d641fcc642ed74d2cb64e195fa4e18e06e332a259e3d1084a45,test,is the mass homogeneous?,Apakah massa tersebut homogen?,NO,CLEAN,True
+950,img_950,118e62a88fa61563356f1254369ce4c73893bb164592d8cd4acce1433c77175d,test,is there a skull fracture pictured?,Apakah ada patah tulang tengkorak yang terlihat pada gambar?,NO,CLEAN,True
+963,img_963,193b3f13df9569c5e4419e538bda520f4679f6d6fd63112a461b2b7732f5c130,test,does the width of the heart exceed more than half of the thorax?,Apakah lebar jantung melebihi setengah dari lebar dada?,NO,CLEAN,True
+1056,img_1056,193b3f13df9569c5e4419e538bda520f4679f6d6fd63112a461b2b7732f5c130,test,is there a mass in the right hilum?,Apakah ada massa di hilum kanan?,NO,HIGH_RISK,True
+1057,img_1057,193b3f13df9569c5e4419e538bda520f4679f6d6fd63112a461b2b7732f5c130,test,is there evidence of a mass lesion at the right hilum?,Apakah ada bukti adanya lesi massal di hilum kanan?,NO,HIGH_RISK,True
+1087,img_1087,a41e50707238f077674b9980211ec701b12f530f35f64e54855f78434cd0aec7,test,is the patient's kidney this large mass to the right?,Apakah ginjal pasien sebesar massa besar ini di sebelah kanan?,YES,CLEAN,True
+1094,img_1094,6185dbde43bcbc0c24f4e08d75601bb4511eabe05bfa5de6dd7af3f3ec8b4ac3,dev,are brain structures shifted across the midline?,Apakah struktur otak telah bergeser melintasi garis tengah?,NO,CLEAN,True
+1101,img_1101,79f0f61566fcc9d03f55dda3be8581f06fecc7ab1b22fe3da3360a6860ce41c7,dev,is the lesion infiltrating?,Apakah lesi tersebut bersifat infiltratif?,NO,CLEAN,True
+1105,img_1105,6185dbde43bcbc0c24f4e08d75601bb4511eabe05bfa5de6dd7af3f3ec8b4ac3,dev,is there a midline shift of the cerebral parenchyma?,Apakah ada pergeseran midline pada parenkim serebral?,NO,CLEAN,True
+1113,img_1113,79f0f61566fcc9d03f55dda3be8581f06fecc7ab1b22fe3da3360a6860ce41c7,dev,are the brain ventricles visible?,Apakah ventrikel otak terlihat?,NO,CLEAN,True
+1142,img_1142,a41e50707238f077674b9980211ec701b12f530f35f64e54855f78434cd0aec7,test,is the left kidney affected?,Apakah ginjal kiri terpengaruh?,NO,CLEAN,True
+1172,img_1172,6185dbde43bcbc0c24f4e08d75601bb4511eabe05bfa5de6dd7af3f3ec8b4ac3,dev,is this a transverse section?,Apakah ini adalah potongan melintang?,YES,CLEAN,True
+1246,img_1246,37042939fc6d2c42fd154dc85ae598ebde5fdfbeec02d3592acdbec7a3373afb,dev,is the stomach wall thickened?,Apakah dinding perut menebal?,YES,HIGH_RISK,True
+1247,img_1247,37042939fc6d2c42fd154dc85ae598ebde5fdfbeec02d3592acdbec7a3373afb,dev,is there thickening of the gastric wall?,Apakah ada penebalan pada dinding lambung?,YES,CLEAN,True
+1251,img_1251,8ae34cd40ea684e023d982e81462c4701c6a370985571cba882cc306d6fbfad2,test,is this an axial plane image,Apakah ini adalah gambar pada bidang aksial?,YES,CLEAN,True
+1280,img_1280,2a3411316757eabd89abcdd82f79d372151eb6387666a73acca483ca62cba868,test,is this a standing cxr,Apakah ini adalah rontgen dada dalam posisi berdiri?,NO,CLEAN,True
+1288,img_1288,2a3411316757eabd89abcdd82f79d372151eb6387666a73acca483ca62cba868,test,is the pulmonary system shown?,Apakah sistem pernapasan terlihat?,YES,CLEAN,True
+1305,img_1305,62d0581e84a18ff8b9916b1ee428caa5b8c2b0bf0c78392a61a785de0a927fdd,test,are the hilar soft tissue densities symmetric?,Apakah densitas jaringan lunak di hilus simetris?,NO,CLEAN,True
+1316,img_1316,62d0581e84a18ff8b9916b1ee428caa5b8c2b0bf0c78392a61a785de0a927fdd,test,are the soft tissue densities in the left hilum equivalent in size to the soft tissue densities in the right hilum?,Apakah densitas jaringan lunak di hilum kiri sama dengan densitas jaringan lunak di hilum kanan dalam ukuran?,NO,HIGH_RISK,True
+1332,img_1332,2a3411316757eabd89abcdd82f79d372151eb6387666a73acca483ca62cba868,test,is the chest xray underexposed?,Apakah foto rontgen dada kurang terpapar?,YES,CLEAN,True
+1333,img_1333,2a3411316757eabd89abcdd82f79d372151eb6387666a73acca483ca62cba868,test,is this image underexposed?,Apakah gambar ini kurang terpapar cahaya?,YES,CLEAN,True
+1345,img_1345,fc51213655cd77764df4d1e45d9f664947884c47a2dfe3fd1aa234d9a16ed329,dev,is there intraperitoneal hemorrhage present in this image?,Apakah terdapat perdarahan intraperitoneal pada gambar ini?,YES,CLEAN,True
+1366,img_1366,d07a33ad418727cbaf03fe66e4ecbedfa8ac086f93601cff66d5220b66ca20ae,test,does this xray show an intubated patient?,Apakah radiografi ini menunjukkan pasien yang telah dipasang selang?,NO,CLEAN,True
+1382,img_1382,d07a33ad418727cbaf03fe66e4ecbedfa8ac086f93601cff66d5220b66ca20ae,test,is this xray suggestive of aortic dissection?,Apakah hasil radiografi ini menunjukkan adanya diseksi aorta?,NO,CLEAN,True
+1409,img_1409,6c274b01b297538feee2413ddb03ab21c5f737ae841302a834e7715a7d3dad51,test,is the appendix seen in this image ruptured?,Apakah appendix terlihat pecah pada gambar ini?,NO,CLEAN,True
+1415,img_1415,6c274b01b297538feee2413ddb03ab21c5f737ae841302a834e7715a7d3dad51,test,is the appendix seen in this image inflamed?,Apakah appendix terlihat membengkak pada gambar ini?,YES,CLEAN,True
+1417,img_1417,fc51213655cd77764df4d1e45d9f664947884c47a2dfe3fd1aa234d9a16ed329,dev,does this image display the contents of the abdomen?,Apakah gambar ini menunjukkan isi perut?,YES,HIGH_RISK,True
+1428,img_1428,4661ca5c93547b394e790c08ac62e9acfd78381b352407a1e1940bebf60b9392,test,is the saggital plane?,Apakah ini adalah bidang sagital?,NO,CLEAN,True
+1430,img_1430,dd3bee5772c329664e44e3e1ae0dbab411738dcc2af1a5739ad0d05008b1582a,dev,is there evidence of pneumothorax?,Apakah ada bukti pneumothoraks?,NO,CLEAN,True
+1431,img_1431,dd3bee5772c329664e44e3e1ae0dbab411738dcc2af1a5739ad0d05008b1582a,dev,is there a pneumothorax?,Apakah ada pneumothoraks?,NO,CLEAN,True
+1443,img_1443,dd3bee5772c329664e44e3e1ae0dbab411738dcc2af1a5739ad0d05008b1582a,dev,are the findings normal?,Apakah temuan ini normal?,NO,CLEAN,True
+1444,img_1444,dd3bee5772c329664e44e3e1ae0dbab411738dcc2af1a5739ad0d05008b1582a,dev,is this a normal image?,Apakah ini gambar yang normal?,NO,CLEAN,True
+1451,img_1451,22b255ea1e3082b8a1774f0aacd8dbe47f55f311131d6b0a84f200c9bb685cee,test,is there evidence of calcification?,Apakah ada bukti adanya kalsifikasi?,NO,CLEAN,True
+1452,img_1452,22b255ea1e3082b8a1774f0aacd8dbe47f55f311131d6b0a84f200c9bb685cee,test,is the mass calcified?,Apakah massa tersebut mengalami kalsifikasi?,NO,CLEAN,True
+1462,img_1462,e0062eb9000ce88064269e74ceb16db2ed272c081a3e93e4a2065dd883ee7804,test,do you see dependent layering in the occipital horns of the lateral ventricles?,Apakah Anda melihat lapisan yang saling bergantung pada girus oksipital dari ventrikel lateral?,YES,CLEAN,True
+1463,img_1463,e0062eb9000ce88064269e74ceb16db2ed272c081a3e93e4a2065dd883ee7804,test,is there dependent layering in the occipital horns of the lateral ventricles?,Apakah terdapat lapisan yang bergantung pada satu sama lain di korus oksipital dari ventrikel lateral?,YES,CLEAN,True
+1491,img_1491,dd3bee5772c329664e44e3e1ae0dbab411738dcc2af1a5739ad0d05008b1582a,dev,is this image best taken on expiration?,Apakah gambar ini paling baik diambil saat masa kedaluwarsa?,NO,CLEAN,True
+1501,img_1501,dc2770cd71db5e636ae29faa855a822c2728f183ff8b3e303c2ba220a3ffbd50,test,do you see fluid in the left lung?,Apakah Anda melihat adanya cairan di paru-paru kiri?,YES,CLEAN,True
+1502,img_1502,dc2770cd71db5e636ae29faa855a822c2728f183ff8b3e303c2ba220a3ffbd50,test,is there fluid in the left lung?,Apakah ada cairan di paru-paru kiri?,YES,CLEAN,True
+1512,img_1512,e0062eb9000ce88064269e74ceb16db2ed272c081a3e93e4a2065dd883ee7804,test,any evidence of epidural or subdural hematoma?,Apakah ada bukti adanya hematoma epidural atau subdural?,NO,CLEAN,True
+1513,img_1513,e0062eb9000ce88064269e74ceb16db2ed272c081a3e93e4a2065dd883ee7804,test,are there epidural or subdural bleeds as well?,Apakah ada perdarahan epidural atau subdural juga?,NO,CLEAN,True
+1514,img_1514,22b255ea1e3082b8a1774f0aacd8dbe47f55f311131d6b0a84f200c9bb685cee,test,is there evidence of hemorrhage?,Apakah ada bukti perdarahan?,NO,CLEAN,True
+1515,img_1515,22b255ea1e3082b8a1774f0aacd8dbe47f55f311131d6b0a84f200c9bb685cee,test,is the mass hemorrhagic?,Apakah ada perdarahan yang signifikan?,NO,CLEAN,True
+1541,img_1541,45706dd79a6850dab344cd775ea1ad85c6d97a5136e2bb8bc157dfe13c2f30fa,test,does this image show edema?,Apakah gambar ini menunjukkan adanya edema?,YES,CLEAN,True
+1542,img_1542,45706dd79a6850dab344cd775ea1ad85c6d97a5136e2bb8bc157dfe13c2f30fa,test,is there edema?,Apakah ada edema?,YES,CLEAN,True
+1578,img_1578,45706dd79a6850dab344cd775ea1ad85c6d97a5136e2bb8bc157dfe13c2f30fa,test,does the image show midline shift?,Apakah gambar menunjukkan pergeseran garis tengah?,YES,CLEAN,True
+1579,img_1579,45706dd79a6850dab344cd775ea1ad85c6d97a5136e2bb8bc157dfe13c2f30fa,test,is there midline shift?,Apakah ada pergeseran garis tengah?,YES,CLEAN,True
+1602,img_1602,afa786fd709360b91e9c1ca1a913b21d5123fc1669be86a6b747871e1e7e87eb,dev,is this a pa film?,Apakah ini adalah film PA?,YES,CLEAN,True
+1626,img_1626,688c88304e262e8395ae7007592c7d2dcb9ec49d0d9d21e0a3868a3bc69389fb,dev,are these masses encompassing the aorta?,Apakah massa-massa ini meliputi aorta?,NO,CLEAN,True
+1628,img_1628,688c88304e262e8395ae7007592c7d2dcb9ec49d0d9d21e0a3868a3bc69389fb,dev,are the liver masses growing around the aorta?,Apakah massa di hati tumbuh di sekitar aorta?,NO,CLEAN,True
+1644,img_1644,cda2d6fcf610e1b304e816de3d8e23f61850c297296067cc295a786fd880c053,test,is the vertebrae fractured?,Apakah tulang belakang patah?,NO,CLEAN,True
+1645,img_1645,cda2d6fcf610e1b304e816de3d8e23f61850c297296067cc295a786fd880c053,test,is there a vertebral fracture?,Apakah ada patah tulang belakang?,NO,CLEAN,True
+1654,img_1654,c1739ef249efe2392e60a3e8457490b22296837b6c350fc658186d635e94b4e5,dev,is the pelvis of the left kidney dilated?,Apakah pelvis ginjal kiri membesar?,NO,HIGH_RISK,True
+1655,img_1655,c1739ef249efe2392e60a3e8457490b22296837b6c350fc658186d635e94b4e5,dev,is the left renal pelvis dilated?,Apakah pelvis ginjal kiri membesar?,NO,HIGH_RISK,True
+1660,img_1660,62d0581e84a18ff8b9916b1ee428caa5b8c2b0bf0c78392a61a785de0a927fdd,test,are there any fractures in any of the ribs?,Apakah ada patah tulang pada salah satu tulang rusuk?,NO,CLEAN,True
+1671,img_1671,62d0581e84a18ff8b9916b1ee428caa5b8c2b0bf0c78392a61a785de0a927fdd,test,are any of the patient's ribs fractured?,Apakah salah satu tulang rusuk pasien mengalami patah?,NO,CLEAN,True
+1679,img_1679,cda2d6fcf610e1b304e816de3d8e23f61850c297296067cc295a786fd880c053,test,is the mass surrounding the aorta?,Apakah massa tersebut berada di sekitar aorta?,NO,CLEAN,True
+1680,img_1680,cda2d6fcf610e1b304e816de3d8e23f61850c297296067cc295a786fd880c053,test,is the aorta encompassed by the mass?,Apakah aorta terpengaruh oleh massa tersebut?,NO,CLEAN,True
+1702,img_1702,cda2d6fcf610e1b304e816de3d8e23f61850c297296067cc295a786fd880c053,test,is the bowel perforated?,Apakah usus telah mengalami perforasi?,NO,CLEAN,True
+1703,img_1703,cda2d6fcf610e1b304e816de3d8e23f61850c297296067cc295a786fd880c053,test,is there sign of perforated bowel?,Apakah ada tanda-tanda usus yang pecah?,NO,CLEAN,True
+1777,img_1777,4312b741c63c4ae59cddbcf865ed033e37be146b973fc2956550271169db50a1,dev,are the airway walls thickened in the bases?,Apakah dinding saluran napas menebal di bagian dasar?,YES,CLEAN,True
+1778,img_1778,4312b741c63c4ae59cddbcf865ed033e37be146b973fc2956550271169db50a1,dev,is there increased airway wall thickening of the bilateral bases?,Apakah terdapat penebalan dinding saluran pernapasan yang meningkat di dasar bilateral?,YES,CLEAN,True
+1782,img_1782,6185dbde43bcbc0c24f4e08d75601bb4511eabe05bfa5de6dd7af3f3ec8b4ac3,dev,is this a t2 weighted image?,Apakah ini adalah gambar dengan bobot T2?,YES,CLEAN,True
+1787,img_1787,4312b741c63c4ae59cddbcf865ed033e37be146b973fc2956550271169db50a1,dev,are there abnormalities?,Apakah ada kelainan?,YES,CLEAN,True
+1788,img_1788,4312b741c63c4ae59cddbcf865ed033e37be146b973fc2956550271169db50a1,dev,is anything wrong in this image?,Apakah ada yang salah pada gambar ini?,YES,CLEAN,True
+1789,img_1789,3ab0d408e3b97f078b873eee3eb9d3f316252728ed4233f6545d6c27a3b2a551,dev,is anything wrong in the image?,Apakah ada yang salah pada gambar ini?,YES,CLEAN,True
+1790,img_1790,3ab0d408e3b97f078b873eee3eb9d3f316252728ed4233f6545d6c27a3b2a551,dev,is there an abnormality?,Apakah ada kelainan?,YES,CLEAN,True
+1,img_1,fe5e29695443646266ccb417ac3909943934d550e5fafacd6700120b6b2b01da,dev,are the lungs normal appearing?,Apakah paru-paru tampak normal?,NO,CLEAN,True
+9,img_9,5e4529cf63780347a74edd83c82dfc3ba76456404e8d457d329d777a7fe19a07,test,is this image in the transverse plane?,Apakah gambar ini berada dalam bidang transversal?,YES,CLEAN,True
+27,img_27,061c20fde1826f38c31322c8ea1a62a472096eda51c7c3ba2459ac0a58f37e63,test,is this an mri?,Apakah ini adalah MRI?,NO,CLEAN,True
+28,img_28,36a57b72fb71e155838b96f9092b5571f89839c9fdbac6ffd9ccb734caad9c5f,test,is the mass heterogenous?,Apakah massa tersebut bersifat heterogen?,YES,CLEAN,True
+29,img_29,36a57b72fb71e155838b96f9092b5571f89839c9fdbac6ffd9ccb734caad9c5f,test,is the mass heterogenous in consistency?,Apakah massa tersebut memiliki konsistensi yang bervariasi?,YES,CLEAN,True
+44,img_44,f5d8016cff64a995396b94f760d4adce120d42fa021e243c0a575e0740a2aa7a,test,is air visible in the bowels?,Apakah udara terlihat di dalam usus?,YES,CLEAN,True
+45,img_45,f5d8016cff64a995396b94f760d4adce120d42fa021e243c0a575e0740a2aa7a,test,is there air in the bowel?,Apakah ada udara di dalam usus?,YES,CLEAN,True
+65,img_65,c04e33f8d4d9d149a46ef535a7b96cd41a2f00131e888b87f1d92446d9b0f0fe,test,is the trachea deviated?,Apakah trakea mengalami deviasi?,YES,CLEAN,True
+66,img_66,c04e33f8d4d9d149a46ef535a7b96cd41a2f00131e888b87f1d92446d9b0f0fe,test,is tracheal deviation present?,Apakah ada penyimpangan trakea?,YES,CLEAN,True
+124,img_124,c04e33f8d4d9d149a46ef535a7b96cd41a2f00131e888b87f1d92446d9b0f0fe,test,is this a pa film?,Apakah ini adalah film PA?,YES,CLEAN,True
+163,img_163,cee723c403e2eddf6497451ea3e2c08c40c8ff2e64e559cb2506ee302a098ca4,dev,is the trachea midline?,Apakah trakea berada di tengah?,YES,CLEAN,True
+170,img_170,f75fa2c19fecc1db941e236fc9136286191225dba1f080771c8ac753d53cc4f6,dev,is this process bilateral?,Apakah proses ini bersifat bilateral?,YES,CLEAN,True
+174,img_174,adfc7662bd7f90d54c2369665b24ecb8305fcaa142b5708be4016e9fea13d3c1,test,is there ring-enhancement?,Apakah ada peningkatan cincin?,YES,CLEAN,True
+185,img_185,fd3aebb2147d537c8ac802f1ed81cca977df4d108b559cf004e5ec78a53bc79a,test,is the spleen present?,Apakah limpa ada?,YES,CLEAN,True
+192,img_192,8811d450645c86612564e78e2c2d04faaadf25cf346f0ff08eb71648ad5995cc,dev,are there decreased lung markings in the right upper lung field?,Apakah terdapat pengurangan perataan paru-paru di bagian atas paru-paru kanan?,YES,CLEAN,True
+197,img_197,b85d24575c6f4850f5dc0285577482750b8297d2666374b0c4b7ac89eeea2937,test,is the corpus callosum involved?,Apakah corpus callosum terlibat?,YES,CLEAN,True
+199,img_199,01cab8417235629a9d81489dde2d563364cc7a9c717913d2531ebd466575784a,test,is there pneumoperitoneum?,Apakah ada pneumoperitoneum?,NO,CLEAN,True
+211,img_211,ee9d1fc3a1fcf7b81b2646b37a9eace4eac899fb4f0f93f307af175de9f2c336,test,is there a fracture in the vertebrae seen?,Apakah ada patah tulang pada tulang belakang yang terlihat?,NO,CLEAN,True
+226,img_226,5e4529cf63780347a74edd83c82dfc3ba76456404e8d457d329d777a7fe19a07,test,is there bleeding in the brain?,Apakah ada perdarahan di otak?,NO,CLEAN,True
+254,img_254,80652d54386512c24738ea6be38601d0fb9d8fa2b804af14fbcee91c93299159,dev,are the clavicles broken?,Apakah tulang selangka patah?,NO,CLEAN,True
+262,img_262,79b3831e8502fa50c6e1025d0f0dbae8013e41c7f4e2301434da78050034f7d0,dev,is this image abnormal?,Apakah gambar ini abnormal?,YES,CLEAN,True

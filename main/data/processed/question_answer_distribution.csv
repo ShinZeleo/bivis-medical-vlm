@@ -1,0 +1,7 @@
+metric,value
+yes_no_yes_no_count,1191
+yes_no_yes_no_proportion,0.5307486631016043
+answer_distribution_top_answers_en,"{'no': 606, 'yes': 585, 'axial': 43, 'right': 26, 'left': 19, 'pa': 15, 'brain': 13, 'ct': 13, 'fat': 9, 'one': 8, 'right side': 8, 'x-ray': 8, 'mri': 8, 'bilateral': 7, 'right lung': 7, 'right upper lobe': 7, 'diffuse': 7, 'with contrast': 7, '5.6cm focal, predominantly hypodense': 6, 'left kidney': 6}"
+answer_distribution_unique_answers_en,517
+answer_distribution_top_answers_id,"{'tidak ada': 608, 'ya': 585, 'aksial': 43, 'kanan': 26, 'kiri': 19, 'PA': 15, 'otak': 14, 'CT scan': 13, 'lemak': 9, 'ginjal kiri': 8, 'lobus paru kanan atas': 8, 'sinar-X': 8, 'satu': 8, 'MRI (Magnetic Resonance Imaging)': 8, 'sisi kanan': 8, 'abses': 7, 'tersebar luas': 7, 'pankreas': 7, 'kalsifikasi': 7, 'dengan kontras': 7}"
+answer_distribution_unique_answers_id,487

@@ -1,0 +1,4 @@
+Model,Sample_Size,Sampling_Seed,Evaluation_Protocol,EN_Accuracy,ID_Accuracy,Language_Gap,Flip_Rate,Joint_Accuracy,Audit_Note
+Qwen/Qwen2.5-VL-7B-Instruct,50,42,Rapid Screening Subset (Balanced YES/NO),90.0,76.0,14.0,18.0,74.0,Kandidat Higher-Capability Terpilih (N=50 screening; N=150 full validation yield 82.00%/73.33%/20.67%)
+FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL,50,42,Rapid Screening Subset (Balanced YES/NO),72.0,58.0,14.0,26.0,52.0,Kandidat Medical 7B (Performa moderat pada prompt bilingual biner)
+Qwen/Qwen2.5-VL-3B-Instruct,50,42,Rapid Screening Subset (Balanced YES/NO),70.0,58.0,12.0,56.0,36.0,Kandidat Lower-Capability Terpilih (Flip rate tinggi 56% membuktikan kerentanan cross-lingual)

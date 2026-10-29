@@ -1,0 +1,21 @@
+{
+  "manifest_sha256": "bcb03bfafa0c329b73ab3b5ec2bb6f471daa1df9218582efa232e9dac74d3484",
+  "total_rows": 2244,
+  "primary_evaluation_track": {
+    "eligible_primary_rows": 1122,
+    "test_split_rows": 799,
+    "dev_split_rows": 323,
+    "test_unique_clusters": 204,
+    "dev_unique_clusters": 88,
+    "cluster_leakage_overlap": 0,
+    "cluster_leakage_status": "ZERO_LEAKAGE_CONFIRMED"
+  },
+  "historical_comparison_track": {
+    "rev03_benchmark_rows": 150,
+    "rev03_test_rows": 92,
+    "rev03_dev_rows": 58,
+    "rev03_test_clusters": 35,
+    "rev03_dev_clusters": 23,
+    "rev03_cluster_leakage": 0
+  }
+}

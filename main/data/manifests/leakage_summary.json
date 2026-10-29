@@ -1,0 +1,52 @@
+{
+  "image_leakage_count": 0,
+  "question_leakage": {
+    "question": {
+      "count": 62,
+      "examples": [
+        "are the lungs normal?",
+        "what pathology is seen in this image?",
+        "are the lungs hyperinflated?",
+        "what kind of image is this?",
+        "was this patient given iv contrast?"
+      ]
+    },
+    "question_indonesian": {
+      "count": 78,
+      "examples": [
+        "apakah jantungnya terlalu besar?",
+        "apakah pasien ini mengalami pneumotoksis?",
+        "apakah diafragma bagian atas rata?",
+        "apakah ventrikel membesar?",
+        "di mana lokasi lesi otak?"
+      ]
+    }
+  },
+  "answer_leakage": {
+    "question_answer": {
+      "count": 42,
+      "examples": [
+        [
+          "is the diaphragm obscured?",
+          "no"
+        ],
+        [
+          "what lobe of the brain is the lesion located in?",
+          "right frontal lobe"
+        ],
+        [
+          "is the liver normal?",
+          "yes"
+        ],
+        [
+          "is the liver normal?",
+          "no"
+        ],
+        [
+          "what is the plane of this image?",
+          "axial"
+        ]
+      ]
+    }
+  }
+}

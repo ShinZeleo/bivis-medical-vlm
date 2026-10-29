@@ -1,0 +1,16 @@
+metric,count,percentage
+total_qa_rows,2244,100.0
+unique_physical_images,314,
+verified_images_on_disk,314,100.0
+closed_yes_no_questions,1191,53.07486631016043
+open_ended_questions,1053,46.92513368983957
+translation_clean_cohort,1984,88.41354723707666
+translation_flagged_cohort,134,5.971479500891266
+translation_high_risk_cohort,126,5.614973262032086
+eligible_primary_cohort,1122,50.0
+primary_test_set_samples,799,71.21212121212122
+primary_dev_set_samples,323,28.78787878787879
+primary_test_image_clusters,204,
+primary_dev_image_clusters,88,
+historical_rev03_test_samples,92,
+historical_rev03_dev_samples,58,

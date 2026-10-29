@@ -1,0 +1,27 @@
+{
+  "primary_scoring_method": "exact_sequence_candidate_normalized_v5",
+  "sensitivity_scoring_method": "length_normalized_surprisal_v5",
+  "causal_logit_alignment": "logits[L_prompt - 1 : L_prompt - 1 + L_target]",
+  "prefix_assertion_enforced": true,
+  "candidates": {
+    "english": [
+      "YES<|im_end|>",
+      "NO<|im_end|>"
+    ],
+    "indonesian": [
+      "YA<|im_end|>",
+      "TIDAK<|im_end|>"
+    ]
+  },
+  "canonical_label_space": [
+    "YES",
+    "NO"
+  ],
+  "mapping_rules": {
+    "YES<|im_end|>": "YES",
+    "NO<|im_end|>": "NO",
+    "YA<|im_end|>": "YES",
+    "TIDAK<|im_end|>": "NO"
+  },
+  "terminology_designation": "candidate-normalized sequence score (NOT calibrated posterior probability)"
+}

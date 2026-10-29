@@ -1,0 +1,60 @@
+{
+  "manifest_file": "manifest_rev05.csv",
+  "sha256": "fb55fd75378b1c03abcbeb9772fa27d6ab81dd9abdfca4735c03438507c19ee9",
+  "row_count": 2244,
+  "column_count": 25,
+  "columns": [
+    "qid",
+    "qa_id",
+    "canonical_image_id",
+    "image_id",
+    "pixel_sha256",
+    "raw_sha256",
+    "image_name",
+    "image_width",
+    "image_height",
+    "image_mode",
+    "qa_per_image",
+    "split",
+    "question_en",
+    "question_id",
+    "answer_en",
+    "answer_id",
+    "reference_answer",
+    "answer_type",
+    "translation_status",
+    "translation_error_type",
+    "is_yes_no",
+    "is_eligible_primary",
+    "in_rev03_benchmark",
+    "in_eval_cohort",
+    "exclusion_reason"
+  ],
+  "unique_canonical_images": 314,
+  "split_counts": {
+    "test": 1600,
+    "dev": 644
+  },
+  "is_yes_no_counts": {
+    "true": 1191,
+    "false": 1053
+  },
+  "translation_status_counts": {
+    "CLEAN": 1984,
+    "FLAGGED": 134,
+    "HIGH_RISK": 126
+  },
+  "is_eligible_primary_counts": {
+    "true": 1122,
+    "false": 1122
+  },
+  "in_rev03_benchmark_counts": {
+    "false": 2094,
+    "true": 150
+  },
+  "in_eval_cohort_counts": {
+    "true": 1133,
+    "false": 1111
+  },
+  "zero_cluster_leakage_verified": true
+}

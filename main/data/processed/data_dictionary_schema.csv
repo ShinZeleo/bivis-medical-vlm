@@ -1,0 +1,18 @@
+column_name,dtype,example_value,inferred_meaning,verification_status
+qid,int32,[0],Unique identifier,inferred_from_data
+image,object,<image bytes>,Column containing image data,inferred_from_data
+image_name,object,['img_00000.png'],Column containing image_name data,inferred_from_data
+question,object,['are regions of the brain infarcted?'],Question text,inferred_from_data
+question_indonesian,object,['Apakah wilayah otak mengalami infark?'],Question text,inferred_from_data
+answer,object,['yes'],Answer text,inferred_from_data
+answer_indonesian,object,['ya'],Answer text,inferred_from_data
+answer_type,object,['CLOSED'],Answer text,inferred_from_data
+question_type,object,[],Question text,inferred_from_data
+image_organ,object,[],Column containing image_organ data,inferred_from_data
+phrase_type,object,[],Categorical type identifier,inferred_from_data
+_split,object,['train'],Column containing _split data,inferred_from_data
+_hf_index,int32,[0],Column containing _hf_index data,inferred_from_data
+meta_question_score,int32,[3],Question text,inferred_from_data
+meta_answer_score,int32,[2],Answer text,inferred_from_data
+meta_question_attempts,int32,[1],Question text,inferred_from_data
+meta_answer_attempts,int32,[1],Answer text,inferred_from_data

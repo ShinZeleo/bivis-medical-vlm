@@ -1,0 +1,12 @@
+Research Question,Qwen2.5-VL-7B,HuatuoGPT-Vision-7B,Interpretation
+RQ1: English Accuracy (Test-Only N=92),87.23%,78.72%,Performa pada radiograf asli dalam bahasa sumber (EN)
+RQ1: Indonesian Accuracy (Test-Only N=92),72.34%,72.34%,Performa pada radiograf asli di bawah translasi (ID)
+RQ1: Language Gap (EN - ID),+14.89%,+6.38%,Degradasi akurasi akibat language shift
+RQ1: Cross-Lingual Flip Rate,23.40%,10.64%,Ketidakkonsistenan jawaban antar-bahasa pada citra yang sama
+RQ1: Joint Correctness,68.09%,70.21%,Proporsi sampel yang benar pada kedua bahasa
+RQ2: Mean Directed Sensitivity (Delta P),+0.0488,+0.0293,Penurunan rata-rata keyakinan saat citra dihilangkan (P0 vs P1)
+RQ2: Negative Sensitivity Rate (Delta P <= 0),8.51%,6.38%,Halusinasi / Overconfidence tanpa bergantung pada citra
+RQ3: M1 (Confidence-Only) AURC,0.1139,0.1165,Baseline selective risk menggunakan confidence model murni
+RQ3: M_dir (Directed Multiplicative) AURC,0.2387,0.2918,Estimator usulan menggabungkan confidence dan sensitivitas terarah
+RQ3: M_dir p-value vs M1 (B=1000),0.1100,0.0320,"Signifikansi statistik (paired cluster bootstrap, B=1000)"
+RQ3: M3_old (Historical Unsigned) AURC,0.1084,0.1821,Baseline lama dengan cacat nilai mutlak |Delta P|

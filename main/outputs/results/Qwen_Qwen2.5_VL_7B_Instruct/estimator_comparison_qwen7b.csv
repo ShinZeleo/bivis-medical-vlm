@@ -1,0 +1,11 @@
+subset,estimator,aurc_discrete,risk_cov_100,risk_cov_90,risk_cov_80,risk_cov_70,risk_cov_50,boot_mean,ci_95,delta_vs_m1,p_value,significance
+Test-Only (N=92),score_m1,0.1139,0.2766,0.2143,0.1579,0.1818,0.125,0.1153,"[0.0394, 0.2152]",0.0,1.0,Baseline
+Test-Only (N=92),score_m2,0.2416,0.2766,0.2143,0.2105,0.2121,0.25,0.2446,"[0.0932, 0.4305]",0.1292,0.102,Not Significant
+Test-Only (N=92),score_m_dir,0.2387,0.2766,0.2143,0.2105,0.2121,0.25,0.2416,"[0.0902, 0.4289]",0.1263,0.11,Not Significant
+Test-Only (N=92),score_m_norm,0.1068,0.2766,0.1905,0.2105,0.1515,0.125,0.1088,"[0.0409, 0.2069]",-0.0066,0.802,Not Significant
+Test-Only (N=92),score_m3_old,0.1084,0.2766,0.2143,0.2105,0.1515,0.125,0.1102,"[0.0425, 0.2089]",-0.0051,0.858,Not Significant
+Full-Benchmark (N=150),score_m1,0.1267,0.2867,0.2296,0.2083,0.1714,0.1467,0.1263,"[0.0795, 0.1837]",0.0,1.0,Baseline
+Full-Benchmark (N=150),score_m2,0.194,0.2867,0.237,0.175,0.2,0.1867,0.1929,"[0.1120, 0.2855]",0.0666,0.042,Significant (p<0.05)
+Full-Benchmark (N=150),score_m_dir,0.1915,0.2867,0.237,0.175,0.2,0.1733,0.1904,"[0.1096, 0.2806]",0.0641,0.054,Not Significant
+Full-Benchmark (N=150),score_m_norm,0.1376,0.2867,0.2148,0.175,0.1714,0.12,0.1361,"[0.0727, 0.2127]",0.0098,0.728,Not Significant
+Full-Benchmark (N=150),score_m3_old,0.1431,0.2867,0.237,0.2167,0.1905,0.12,0.1416,"[0.0766, 0.2191]",0.0153,0.556,Not Significant

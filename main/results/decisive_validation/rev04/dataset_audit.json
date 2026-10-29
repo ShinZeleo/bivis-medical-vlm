@@ -1,0 +1,75 @@
+{
+  "dataset_name": "Lab-IS/IndoRad-VQA",
+  "total_qa_rows": 2244,
+  "unique_question_ids": 2244,
+  "duplicate_question_ids": 0,
+  "unique_physical_images": 314,
+  "unique_canonical_image_ids": 314,
+  "verified_images_on_disk": 314,
+  "missing_or_corrupt_disk_images": 0,
+  "answer_types": {
+    "CLOSED": 1191,
+    "OPEN": 1053
+  },
+  "is_yes_no_counts": {
+    "True": 1191,
+    "False": 1053
+  },
+  "translation_status_distribution": {
+    "CLEAN": 1984,
+    "FLAGGED": 134,
+    "HIGH_RISK": 126
+  },
+  "translation_error_taxonomy_distribution": {
+    "T0": 1984,
+    "T7": 93,
+    "T5": 66,
+    "T4": 54,
+    "T2": 41,
+    "T6": 6
+  },
+  "cross_tabulation": {
+    "yes_no_clean": 1122,
+    "yes_no_flagged": 5,
+    "yes_no_high_risk": 64,
+    "open_ended_clean": 862,
+    "open_ended_flagged": 129,
+    "open_ended_high_risk": 62
+  },
+  "exclusion_breakdown": {
+    "excluded_non_yes_no": 1053,
+    "excluded_translation_defect_yes_no": 69,
+    "total_excluded_samples": 1122,
+    "total_eligible_primary_samples": 1122
+  },
+  "full_cohort_split_properties": {
+    "total_test_rows": 1600,
+    "total_dev_rows": 644,
+    "test_unique_images": 220,
+    "dev_unique_images": 94,
+    "cross_split_image_leakage": 0
+  },
+  "primary_evaluation_cohort_properties": {
+    "total_primary_samples": 1122,
+    "primary_test_samples": 799,
+    "primary_dev_samples": 323,
+    "primary_test_image_clusters": 204,
+    "primary_dev_image_clusters": 88,
+    "primary_cross_split_image_leakage": 0,
+    "reference_answer_distribution": {
+      "NO": 568,
+      "YES": 554
+    },
+    "qa_per_cluster_mean": 3.8424657534246576,
+    "qa_per_cluster_min": 1,
+    "qa_per_cluster_max": 12
+  },
+  "historical_rev03_benchmark_properties": {
+    "total_benchmark_samples": 150,
+    "benchmark_test_samples": 92,
+    "benchmark_dev_samples": 58,
+    "benchmark_test_clusters": 35,
+    "benchmark_dev_clusters": 23,
+    "benchmark_cross_split_leakage": 0
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "revision_id": "rev05",
+  "manifest_sha256": "fb55fd75378b1c03abcbeb9772fa27d6ab81dd9abdfca4735c03438507c19ee9",
+  "completed_timestamp": "2026-10-25T02:40:00.811044+00:00",
+  "qwen_completed_samples": 1133,
+  "huatuo_completed_samples": 1133,
+  "primary_test_samples": 799,
+  "primary_dev_samples": 323,
+  "historical_test_samples": 92,
+  "historical_dev_samples": 58
+}

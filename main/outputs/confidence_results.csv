@@ -1,0 +1,21 @@
+qid,image_id,language,question,ground_truth,top_generated_token,pred,confidence,p_yes,p_no,norm_p_yes,norm_p_no,is_correct
+1968,216499bc573ff0f8,en,is there a pneumothorax present?,NO,No,NO,1.0,0.0,1.0,0.0,1.0,True
+1968,216499bc573ff0f8,id,Apakah ada pneumothorax?,NO,T,YES,0.5,0.0,0.0,0.5,0.5,False
+1700,ebab42ecbd92c183,en,are the hemidiaphragms flattened?,NO,Yes,YES,1.0,1.0,0.0,1.0,0.0,False
+1700,ebab42ecbd92c183,id,Apakah diafragma bagian atas rata?,NO,T,YES,0.5,0.0,0.0,0.5,0.5,False
+206,9786c5daf749ffa4,en,is there bilateral hilar enlargement?,YES,Yes,YES,1.0,1.0,0.0,1.0,0.0,True
+206,9786c5daf749ffa4,id,Apakah terdapat pembesaran hilus bilateral?,YES,T,YES,0.5,0.0,0.0,0.5,0.5,True
+1488,d932b1e1088ae5b8,en,are the findings normal?,NO,No,NO,1.0,0.0,1.0,0.0,1.0,True
+1488,d932b1e1088ae5b8,id,Apakah temuan ini normal?,NO,T,YES,0.5,0.0,0.0,0.5,0.5,False
+2118,fec3d1c2c7ca7420,en,is there cortical atrophy?,NO,Yes,YES,1.0,1.0,0.0,1.0,0.0,False
+2118,fec3d1c2c7ca7420,id,Apakah ada atrofi kortikal?,NO,T,YES,0.5,0.0,0.0,0.5,0.5,False
+1701,ebab42ecbd92c183,en,is the diaphragm flattened on either side,NO,Yes,YES,1.0,1.0,0.0,1.0,0.0,False
+1701,ebab42ecbd92c183,id,Apakah diafragma rata di kedua sisi?,NO,T,YES,0.5,0.0,0.0,0.5,0.5,False
+879,be6bc466225b947f,en,is this a lateral film?,NO,No,NO,1.0,0.0,1.0,0.0,1.0,True
+879,be6bc466225b947f,id,Apakah ini film lateral?,NO,T,YES,0.5,0.0,0.0,0.5,0.5,False
+2176,5d2123e3352d7473,en,is the trachea deviated in this image?,NO,Yes,YES,1.0,1.0,0.0,1.0,0.0,False
+2176,5d2123e3352d7473,id,Apakah trakea terlihat miring pada gambar ini?,NO,T,YES,0.5,0.0,0.0,0.5,0.5,False
+299,83a233637ae80dfd,en,is there free air under the diaphragm?,NO,No,NO,1.0,0.0,1.0,0.0,1.0,True
+299,83a233637ae80dfd,id,Apakah ada udara bebas di bawah diafragma?,NO,T,YES,0.5,0.0,0.0,0.5,0.5,False
+1314,35b87488ba222c67,en,is the caudate nucleus involved?,YES,Yes,YES,1.0,1.0,0.0,1.0,0.0,True
+1314,35b87488ba222c67,id,Apakah nukleus kaudatus terlibat?,YES,T,YES,0.5,0.0,0.0,0.5,0.5,True

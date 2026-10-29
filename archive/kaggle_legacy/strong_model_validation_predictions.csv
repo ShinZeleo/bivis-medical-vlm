@@ -1,0 +1,151 @@
+qa_id,image_id,reference_answer,raw_answer_en,normalized_answer_en,confidence_en,correct_en,raw_answer_id,normalized_answer_id,confidence_id,correct_id,flip,joint_correct,model
+47,img_47,YES,Yes,YES,0.8669109206002614,True,"Ya, terd",YES,0.983648498857095,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+58,img_58,YES,Yes,YES,0.8669132866869816,True,"Ya, bagian",YES,0.9689256200273505,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+72,img_72,NO,Yes,YES,0.6788692666577373,False,Batas-batas,BATAS-BATA,0.8903684987292203,False,True,False,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+73,img_73,NO,No,NO,0.5928261901142153,True,"Ya, batas",YES,0.882171695900572,False,True,False,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+74,img_74,YES,Yes,YES,0.9889931401029859,True,"Ya, ini adalah",YES,0.9952635615561605,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+190,img_190,NO,No,NO,0.5622357141913431,True,"Tidak, tidak",NO,0.8644878604920276,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+193,img_193,NO,No,NO,0.7549744183402795,True,"Tidak, tidak",NO,0.8404860845369588,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+201,img_201,YES,Yes,YES,0.7057196188141001,True,"Ya, terd",YES,0.9559349395819051,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+209,img_209,NO,No,NO,0.7773096385532718,True,Tidak ada pe,NO,0.5194838610735887,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+222,img_222,YES,No,NO,0.7058250713298225,False,"Tidak, j",NO,0.854012597656811,False,False,False,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+238,img_238,NO,No,NO,0.6225969239154983,True,Tidak.,NO,0.8695909070320009,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+240,img_240,NO,No,NO,0.5001494520633595,True,"Tidak, tidak",NO,0.9074123342090352,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+272,img_272,NO,No,NO,0.7773364310214312,True,"Tidak, tidak",NO,0.8231300543230163,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+289,img_289,YES,Yes,YES,0.9045799727258079,True,"Ya, ada cuk",YES,0.9612355067633379,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+295,img_295,YES,No,NO,0.6225210282820447,False,"Tidak, tidak",NO,0.9478390333806471,False,False,False,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+301,img_301,YES,Yes,YES,0.7980837542173167,True,"Ya, kontur",YES,0.8945914863194188,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+303,img_303,YES,Yes,YES,0.8174677550731133,True,"Tidak, p",NO,0.9761039450437634,False,True,False,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+324,img_324,YES,Yes,YES,0.9578556497168441,True,"Ya, gambar",YES,0.9632893361233787,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+332,img_332,NO,Yes,YES,0.7772029830438497,False,"Ya, massa tersebut",YES,0.9762598984068309,False,False,False,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+349,img_349,YES,Yes,YES,0.9840823772527778,True,"Ya, kontras",YES,0.9851622672389443,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+355,img_355,NO,No,NO,0.679251613042369,True,Tidak,NO,0.7713900932722589,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+391,img_391,YES,Yes,YES,0.9465376515570941,True,"Ya, sudut",YES,0.8972784575252547,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+402,img_402,YES,Yes,YES,0.754756237027952,True,"Ya, tidak ada",YES,0.9673442381009955,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+421,img_421,NO,Yes,YES,0.5924981835956346,False,"Ya, lobus",YES,0.8646961024600823,False,False,False,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+422,img_422,YES,Yes,YES,0.7981307327971244,True,"Tidak, tidak",NO,0.9747425390836347,False,True,False,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+426,img_426,NO,No,NO,0.9968263056981458,True,Tidak.,NO,0.9556032888546027,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+427,img_427,NO,No,NO,0.9968265523085371,True,Tidak.,NO,0.9204079911292408,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+495,img_495,NO,No,NO,0.7311283705038563,True,"Ya, CT scan",YES,0.9335026520178502,False,True,False,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+498,img_498,NO,No,NO,0.6514120975133563,True,Tidak ada pemb,NO,0.9260698389565776,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+499,img_499,NO,No,NO,0.6514394971358428,True,"Ya, terli",YES,0.9655735538398099,False,True,False,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+517,img_517,YES,Yes,YES,0.9324074534042298,True,"Ya, ini adalah",YES,0.986999242115907,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+555,img_555,YES,Yes,YES,0.7771895042647584,True,"Ya, CT tan",YES,0.6274366178394005,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+564,img_564,NO,No,NO,0.8807973862923859,True,"Tidak, tidak",NO,0.9677657862078474,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+580,img_580,YES,Yes,YES,0.904600564828295,True,"Ya, terd",YES,0.9904492602616347,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+591,img_591,NO,No,NO,0.9902909702044564,True,"Tidak, pem",NO,0.9053267618160736,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+596,img_596,NO,No,NO,0.9465824363799816,True,"Ya, terd",YES,0.9613989918335549,False,True,False,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+597,img_597,NO,No,NO,0.8175784026217788,True,"Ya, terd",YES,0.9745393818435231,False,True,False,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+617,img_617,YES,Yes,YES,0.851759823014412,True,"Ya, batas",YES,0.9527260607574876,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+623,img_623,NO,No,NO,0.5000428449083842,True,Tidak ada bu,NO,0.8218708837126275,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+625,img_625,NO,Yes,YES,0.8807485466929161,False,"Tidak, tidak",NO,0.8045214665236755,True,True,False,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+628,img_628,YES,Yes,YES,0.7547661662628286,True,"Tidak, gin",NO,0.6713201367961961,False,True,False,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+629,img_629,YES,Yes,YES,0.6222974463147782,True,"Ya, ginjal",YES,0.8953074325913644,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+668,img_668,YES,Yes,YES,0.5311570780037222,True,"Tidak, tidak",NO,0.9016368923536852,False,True,False,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+691,img_691,NO,No,NO,0.9840937642376603,True,"Tidak, ini",NO,0.968952701109458,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+702,img_702,NO,No,NO,0.9875669731615567,True,Tidak normal,NO,0.8365066839454736,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+734,img_734,NO,No,NO,0.6513792492279357,True,"Tidak, tidak",NO,0.9732003539663531,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+736,img_736,NO,Yes,YES,0.531167369036431,False,"Tidak, gam",NO,0.9481926857236689,True,True,False,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+841,img_841,NO,Yes,YES,0.9398603463427535,False,"Ya, paru",YES,0.9926171520803571,False,False,False,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+842,img_842,YES,Yes,YES,0.9398362033176163,True,"Tidak, par",NO,0.9417317525828679,False,True,False,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+843,img_843,NO,Yes,YES,0.6512737337634174,False,Tidak ada pen,NO,0.9633835222636988,True,True,False,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+844,img_844,NO,Yes,YES,0.6223235687912494,False,"Tidak, tidak",NO,0.9657736719258561,True,True,False,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+856,img_856,NO,Yes,YES,0.6512318945085299,False,"Ya, usus",YES,0.9904924406283577,False,False,False,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+858,img_858,NO,Yes,YES,0.7056583526479302,False,"Ya, terli",YES,0.9852543265077398,False,False,False,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+883,img_883,YES,Yes,YES,0.9964035023447095,True,"Ya, ini adalah",YES,0.9954802458814089,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+916,img_916,NO,No,NO,0.9968268466394502,True,"Tidak, ini",NO,0.9689693130493545,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+917,img_917,NO,No,NO,0.9964061718223334,True,"Tidak, ini",NO,0.992440246869587,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+924,img_924,YES,Yes,YES,0.7309688487593711,True,"Tidak, tidak",NO,0.9669459223951911,False,True,False,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+925,img_925,YES,Yes,YES,0.5925430588500341,True,"Ya, lesi",YES,0.986318914551732,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+926,img_926,YES,Yes,YES,0.9770007304612183,True,"Ya, kontras",YES,0.9908951647989549,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+927,img_927,YES,Yes,YES,0.997815170331994,True,"Ya, ini adalah",YES,0.9986373464247474,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+930,img_930,YES,Yes,YES,0.9148139737555604,True,"Ya, terli",YES,0.9742792822608037,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+931,img_931,YES,Yes,YES,0.9465336439423211,True,"Ya, jumlah gin",YES,0.8382959535632935,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+937,img_937,NO,No,NO,0.8520023831536209,True,"Tidak, massa",NO,0.5341867672990557,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+950,img_950,NO,No,NO,0.924142742886916,True,"Tidak, tidak",NO,0.6477291160276684,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+963,img_963,NO,Yes,YES,0.5620216984806533,False,"Ya, lebar",YES,0.9565108184484667,False,False,False,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1056,img_1056,NO,Yes,YES,0.7057211219964015,False,"Tidak, tidak",NO,0.9419103137929111,True,True,False,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1057,img_1057,NO,Yes,YES,0.5926277573474616,False,"Tidak, tidak",NO,0.8845383356658875,True,True,False,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1087,img_1087,YES,Yes,YES,0.904580414163282,True,"Ya, ginjal",YES,0.7617137632461033,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1094,img_1094,NO,Yes,YES,0.5310625424429893,False,"Ya, struktur",YES,0.9319616812697675,False,False,False,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1101,img_1101,NO,Yes,YES,0.7980410715325083,False,"Ya, lesi",YES,0.9922174672814444,False,False,False,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1105,img_1105,NO,Yes,YES,0.5311177492594145,False,"Tidak, tidak",NO,0.8963169246384363,True,True,False,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1113,img_1113,NO,Yes,YES,0.6512279382767576,False,"Ya, ventri",YES,0.9590250605128502,False,False,False,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1142,img_1142,NO,Yes,YES,0.7054923415291399,False,Tidak.,NO,0.9088263187161276,True,True,False,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1172,img_1172,YES,Yes,YES,0.9147947728310414,True,"Ya, ini adalah",YES,0.9257160954621559,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1246,img_1246,YES,Yes,YES,0.9398810274801862,True,"Ya, dinding",YES,0.9795838392510924,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1247,img_1247,YES,Yes,YES,0.9241148555995674,True,"Ya, terli",YES,0.9800789802927892,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1251,img_1251,YES,Yes,YES,0.9626227490387299,True,"Ya, ini adalah",YES,0.9967072250521994,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1280,img_1280,NO,No,NO,0.5624341579132092,True,"Ya, ini adalah",YES,0.9748945415771567,False,True,False,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1288,img_1288,YES,Yes,YES,0.9770066007646359,True,"Ya, sistem per",YES,0.978341347989287,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1305,img_1305,NO,No,NO,0.5313998297384466,True,"Ya, densitas",YES,0.9319966204071015,False,True,False,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1316,img_1316,NO,No,NO,0.7059392323266396,True,"Tidak, dens",NO,0.7530433367041109,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1332,img_1332,YES,No,NO,0.5927311769308262,False,"Tidak, foto",NO,0.6700824955700492,False,False,False,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1333,img_1333,YES,No,NO,0.7982249013992779,False,"Tidak, gam",NO,0.599966784448292,False,False,False,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1345,img_1345,YES,No,NO,0.5312487213071164,False,"Tidak, tidak",NO,0.9215519762498108,False,False,False,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1366,img_1366,NO,Yes,YES,0.5925545142262748,False,"Ya, radiogra",YES,0.9892611772415889,False,False,False,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1382,img_1382,NO,No,NO,0.5927078190249848,True,"Tidak, hasil",NO,0.8974190151873508,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1409,img_1409,NO,No,NO,0.5315992412077846,True,Tidak.,NO,0.8252404750244322,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1415,img_1415,YES,Yes,YES,0.5924692478011966,True,"Ya, appendix ter",YES,0.9643288112124655,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1417,img_1417,YES,Yes,YES,0.9914135319289136,True,"Ya, gambar",YES,0.9636605780903345,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1428,img_1428,NO,No,NO,0.9953900609768865,True,"Tidak, ini",NO,0.9725212055231793,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1430,img_1430,NO,No,NO,0.932450521981601,True,"Tidak, tidak",NO,0.7018137353617232,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1431,img_1431,NO,No,NO,0.9324552881031843,True,"Tidak, tidak",NO,0.7274907759187619,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1443,img_1443,NO,No,NO,0.96266957594111,True,"Tidak, tem",NO,0.8938367035882724,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1444,img_1444,NO,No,NO,0.9706880305260063,True,"Tidak, gam",NO,0.9245601135611475,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1451,img_1451,NO,No,NO,0.5622025383146407,True,Tidak ada bu,NO,0.8878135665277685,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1452,img_1452,NO,No,NO,0.651432408010108,True,"Tidak, massa",NO,0.8403021857951906,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1462,img_1462,YES,Yes,YES,0.7056319852859101,True,"Tidak, saya",YES,0.8909033337881903,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1463,img_1463,YES,Yes,YES,0.7056157200680315,True,"Tidak, tidak",NO,0.9163101553132164,False,True,False,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1491,img_1491,NO,No,NO,0.531337751792444,True,"Ya, gambar",YES,0.7593670286507468,False,True,False,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1501,img_1501,YES,Yes,YES,0.5310384254300663,True,"Ya, saya mel",YES,0.9773946823234555,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1502,img_1502,YES,Yes,YES,0.5925064529042373,True,"Tidak, tidak",NO,0.9632628764385547,False,True,False,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1512,img_1512,NO,No,NO,0.9875639217378287,True,Tidak ada bu,NO,0.6885358583400584,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1513,img_1513,NO,No,NO,0.9579297902080486,True,"Tidak, tidak",NO,0.6394731844950582,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1514,img_1514,NO,No,NO,0.8175679098982978,True,Tidak ada bu,NO,0.9282620176006431,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1515,img_1515,NO,No,NO,0.7058421804691087,True,Tidak ada per,NO,0.7385333097040575,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1541,img_1541,YES,Yes,YES,0.9578879344424431,True,"Ya, gambar",YES,0.9921650323944771,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1542,img_1542,YES,Yes,YES,0.962653910185917,True,"Ya, terd",YES,0.9942435641000253,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1578,img_1578,YES,Yes,YES,0.7772621704080077,True,Tidak,NO,0.9111099137723768,False,True,False,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1579,img_1579,YES,Yes,YES,0.7772759429558042,True,Tidak ada per,NO,0.9065331719265803,False,True,False,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1602,img_1602,YES,Yes,YES,0.9578775889013013,True,"Ya, ini adalah",YES,0.9879531755139423,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1626,img_1626,NO,Yes,YES,0.6512315474184348,False,"Tidak, massa",NO,0.8782717778979108,True,True,False,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1628,img_1628,NO,Yes,YES,0.754751130958825,False,"Ya, massa di",YES,0.9382850173054939,False,False,False,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1644,img_1644,NO,No,NO,0.8355347381844971,True,"Tidak, tul",NO,0.8393678161864683,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1645,img_1645,NO,No,NO,0.6514592510736943,True,"Tidak, tidak",NO,0.832401877477738,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1654,img_1654,NO,Yes,YES,0.8354099970560089,False,"Ya, pelvis",YES,0.9834421147126183,False,False,False,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1655,img_1655,NO,Yes,YES,0.6512321456946353,False,"Ya, pelvis",YES,0.9834421147126183,False,False,False,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1660,img_1660,NO,No,NO,0.9579150193006603,True,"Tidak, tidak",NO,0.88467934776584,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1671,img_1671,NO,No,NO,0.9579161917237704,True,"Tidak, tidak",NO,0.8039782172423787,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1679,img_1679,NO,Yes,YES,0.7771997857156971,False,"Ya, massa tersebut",YES,0.9750807392058013,False,False,False,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1680,img_1680,NO,No,NO,0.6225523559519742,True,"Tidak, a",NO,0.8220079370744225,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1702,img_1702,NO,No,NO,0.7311572202643082,True,"Tidak, us",NO,0.9675599897540937,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1703,img_1703,NO,No,NO,0.5312719091523233,True,"Tidak, tidak",NO,0.9542248577506053,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1777,img_1777,YES,Yes,YES,0.7308563200719879,True,"Ya, dinding",YES,0.9533100196862003,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1778,img_1778,YES,Yes,YES,0.6790600783330878,True,"Ya, terd",YES,0.9758665389516842,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1782,img_1782,YES,Yes,YES,0.6511367776304664,True,"Ya, ini adalah",YES,0.9200439053673883,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1787,img_1787,YES,No,NO,0.6514096038020374,False,"Ya, terd",YES,0.9861835606971188,True,True,False,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1788,img_1788,YES,No,NO,0.5927328247374088,False,"Tidak, tidak",NO,0.9260563899813158,False,False,False,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1789,img_1789,YES,No,NO,0.5622407492459952,False,"Tidak, tidak",NO,0.9304844384012838,False,False,False,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1790,img_1790,YES,Yes,YES,0.5926189189576625,True,"Ya, terd",YES,0.9870434719725804,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+1,img_1,NO,Yes,YES,0.7308411308909644,False,"Ya, paru",YES,0.9298800765367033,False,False,False,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+9,img_9,YES,Yes,YES,0.9914135707124951,True,"Ya, gambar",YES,0.9974473069802053,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+27,img_27,NO,No,NO,0.9988302897707397,True,"Tidak, ini",NO,0.9944505648005282,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+28,img_28,YES,Yes,YES,0.9525219959204244,True,"Ya, massa tersebut",YES,0.9871876062139963,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+29,img_29,YES,Yes,YES,0.9323917549873574,True,"Ya, massa tersebut",YES,0.9864285400145673,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+44,img_44,YES,Yes,YES,0.9706623287567938,True,"Ya, udara",YES,0.9853507981696576,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+45,img_45,YES,Yes,YES,0.9706631055545559,True,"Ya, terli",YES,0.9905259194045496,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+65,img_65,YES,No,NO,0.5622459491129749,False,"Ya, trake",YES,0.9677488591744458,True,True,False,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+66,img_66,YES,No,NO,0.5000711795175784,False,"Tidak, tidak",NO,0.969650807874927,False,False,False,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+124,img_124,YES,Yes,YES,0.9465452170181072,True,"Ya, ini adalah",YES,0.9844868283381708,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+163,img_163,YES,Yes,YES,0.904632615394686,True,"Ya, trake",YES,0.9606800619817446,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+170,img_170,YES,Yes,YES,0.9626300213272199,True,"Ya, proses",YES,0.9958657103083097,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+174,img_174,YES,Yes,YES,0.5620864761415899,True,Tidak ada pen,NO,0.9474984677322537,False,True,False,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+185,img_185,YES,Yes,YES,0.7981258334675683,True,Tidak ada.,NO,0.9580160088148647,False,True,False,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+192,img_192,YES,Yes,YES,0.67907833402543,True,"Ya, terd",YES,0.9368635877356755,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+197,img_197,YES,No,NO,0.5313203661937851,False,"Tidak, corpus",NO,0.9071529013890788,False,False,False,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+199,img_199,NO,No,NO,0.9046572822927439,True,"Tidak, tidak",NO,0.7730514184128386,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+211,img_211,NO,No,NO,0.8519793332906795,True,"Tidak, tidak",NO,0.804671648530949,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+226,img_226,NO,No,NO,0.6792197112943562,True,"Tidak, tidak",NO,0.804344898639865,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+254,img_254,NO,No,NO,0.893372305418824,True,"Tidak, tul",NO,0.83989504764071,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
+262,img_262,YES,Yes,YES,0.6513073022535639,True,"Ya, gambar",YES,0.9836894283196207,True,False,True,FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL
