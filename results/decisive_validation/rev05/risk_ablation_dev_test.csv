@@ -1,7 +1,0 @@
-model,ablation_model,features,dev_aurc_cv,test_aurc,coefs,intercept
-Qwen2.5-VL-7B,LR_conf,score_m1_seq,0.19875297076936443,0.24218690696154357,[-0.5678],-0.9213
-Qwen2.5-VL-7B,LR_visual,"score_m1_seq, delta_p_dir_seq",0.20149699600366283,0.24338123408107448,"[-0.5511, -0.0646]",-0.9226
-Qwen2.5-VL-7B,LR_full,"score_m1_seq, delta_p_dir_seq, d_lang",0.19180953803437267,0.20527925227874103,"[-0.1258, 0.1128, 1.096]",-1.0233
-HuatuoGPT-Vision-7B,LR_conf,score_m1_seq,0.2401582167706785,0.28839277270358826,[-0.7477],-0.4484
-HuatuoGPT-Vision-7B,LR_visual,"score_m1_seq, delta_p_dir_seq",0.21641230272941403,0.251329524054886,"[-0.6343, -0.7419]",-0.481
-HuatuoGPT-Vision-7B,LR_full,"score_m1_seq, delta_p_dir_seq, d_lang",0.2068302900182924,0.21786432043726786,"[-0.3693, -0.3055, 0.9941]",-0.5889
