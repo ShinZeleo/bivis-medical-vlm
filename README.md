@@ -21,6 +21,7 @@
 
 ## 📌 Daftar Isi
 - [🗺️ Navigasi Cepat: Mau Cari Apa?](#-navigasi-cepat-mau-cari-apa)
+- [🛡️ Audit Suite & Verifikasi Ilmiah (Supervisor Ready)](#-audit-suite--verifikasi-ilmiah-supervisor-ready)
 - [Ringkasan Eksekutif](#-ringkasan-eksekutif)
 - [Arsitektur & Pipeline Evaluasi](#-arsitektur--pipeline-evaluasi)
 - [Pertanyaan Penelitian (Research Questions)](#-pertanyaan-penelitian-research-questions)
@@ -38,15 +39,37 @@ Gunakan tabel kompas ini untuk langsung menuju file atau folder yang Anda butuhk
 
 | Kebutuhan Anda | File / Folder Sasaran | Deskripsi Singkat |
 | :--- | :--- | :--- |
+| 🛡️ **Laporan Audit Dosen Pembimbing** | [`SUPERVISOR_VERIFICATION_REPORT.md`](SUPERVISOR_VERIFICATION_REPORT.md) | **Master Synthesis Report**: Ringkasan kesiapan sidang, status validasi RQ1–RQ5, dan tabel verifikasi klaim riset. |
+| ❓ **Bank 35 Soal Sidang & Jawaban Ilmiah** | [`docs/audit/SUPERVISOR_QUESTION_BANK.md`](docs/audit/SUPERVISOR_QUESTION_BANK.md) | 35 pertanyaan kritis penguji dari 11 dimensi metodologi beserta jawaban dan sitasi bukti. |
+| 🗂️ **Suite Dokumen Audit Lengkap (9 Laporan)** | [`docs/audit/`](docs/audit/) | Dokumentasi audit formal: formula, kode, integritas data, eksperimen, literatur, dan reproduksibilitas. |
 | 📖 **Membaca Teori & Latar Belakang Skripsi** | [`docs/RESEARCH_MASTER.md`](docs/RESEARCH_MASTER.md) | **Single Source of Truth (Versi 10.0)** lengkap berisi rumusan matematika, latar belakang klinis, dan batasan klaim. |
 | 📽️ **Melihat Slide Ujian Proposal / Bimbingan** | [`presentations/Medical_VLM_Proposal.pptx`](presentations/Medical_VLM_Proposal.pptx) | Naskah slide resmi seminar proposal skripsi. |
 | 🚀 **Menjalankan Eksperimen Utama di Kaggle** | [`main/notebooks/decisive_validation_primary_rev05.ipynb`](main/notebooks/decisive_validation_primary_rev05.ipynb) | Notebook utama siap eksekusi di GPU Dual Tesla T4 (Internet ON). |
 | 📊 **Melihat Angka Hasil & Metrik Final** | [`main/results/decisive_validation/rev05/`](main/results/decisive_validation/rev05/) | Tabel metrik resmi RQ1 (Akurasi/Flip), RQ2 (Visual), RQ3 (AURC), dan kurva PNG. |
 | ⚙️ **Melihat Kode Inferensi Inti** | [`main/scripts/decisive_validation_experiment_v5.py`](main/scripts/decisive_validation_experiment_v5.py) | Engine kalkulasi sequence log-likelihood & intervensi kanvas hitam. |
 | 🧪 **Menjalankan Unit Test (9/9 Pass)** | [`main/scripts/test_decisive_validation_v5.py`](main/scripts/test_decisive_validation_v5.py) | Suite pengujian lokal deterministik verifikasi logit kausal dan metrik. |
-| 🔍 **Audit Data Bebas Kebocoran (Zero Leakage)** | [`main/notebooks/01_indorad_vqa_dataset_audit_eda.ipynb`](main/notebooks/01_indorad_vqa_dataset_audit_eda.ipynb) | Notebook pembuktian 314 citra fisik unik via hashing SHA-256. |
+| 🔍 **Audit Data Bebas Kebocoran (Zero Leakage)** | [`docs/audit/DATASET_INTEGRITY_REPORT.md`](docs/audit/DATASET_INTEGRITY_REPORT.md) | Pembuktian bebas kebocoran citra (0.00% overlap antara 88 cluster dev & 204 test). |
 | 📑 **Membaca Paper Literatur Acuan** | [`paper/`](paper/) | PDF artikel rujukan: Yudhistira et al. (2026) & Sadanandan (2026). |
 | 📦 **Melihat Arsip Iterasi Lama (v1–v4)** | [`archive/`](archive/) & [`main/reports/`](main/reports/) | Riwayat proses eksplorasi sebelum mencapai protokol rev05. |
+
+---
+
+## 🛡️ Audit Suite & Verifikasi Ilmiah (Supervisor Ready)
+
+Untuk memastikan bahwa seluruh penelitian dapat dipertanggungjawabkan secara ilmiah dan teknis saat diuji oleh dosen pembimbing, repositori ini telah diaudit secara formal mencakup seluruh rantai riset:
+$$\text{Literature} \longrightarrow \text{Research Gap} \longrightarrow \text{Research Questions} \longrightarrow \text{Formulation} \longrightarrow \text{Code} \longrightarrow \text{Outputs} \longrightarrow \text{Statistical Tests} \longrightarrow \text{Conclusion}$$
+
+Seluruh laporan audit formal tersedia di folder [`docs/audit/`](docs/audit/):
+
+1. **[SUPERVISOR_VERIFICATION_REPORT.md](SUPERVISOR_VERIFICATION_REPORT.md)**: Dokumen rujukan utama pembimbing memetakan status validasi seluruh pertanyaan penelitian (RQ1–RQ5) dan tabel verifikasi klaim ilmiah.
+2. **[SUPERVISOR_QUESTION_BANK.md](docs/audit/SUPERVISOR_QUESTION_BANK.md)**: Bank 35 pertanyaan kritis ujian skripsi dari 11 dimensi metodologi beserta jawaban ilmiah berbasis bukti.
+3. **[RESEARCH_ACTION_PLAN.md](docs/audit/RESEARCH_ACTION_PLAN.md)**: Rencana aksi berprioritas (P0–P3) mencakup pembingkaian temuan negatif heuristik dan roadmap publikasi konferensi (CHIL / MedNeurIPS).
+4. **[LITERATURE_VERIFICATION_REPORT.md](docs/audit/LITERATURE_VERIFICATION_REPORT.md)**: Audit 11 paper primer (DOI & arXiv resmi), taksonomi 7 klaster, dan verifikasi research gap.
+5. **[DATASET_INTEGRITY_REPORT.md](docs/audit/DATASET_INTEGRITY_REPORT.md)**: Rekonsiliasi lengkap 2.244 baris data mentah ke 1.122 pasangan bersih, serta pembuktian zero cluster leakage.
+6. **[FORMULA_VERIFICATION_REPORT.md](docs/audit/FORMULA_VERIFICATION_REPORT.md)**: Verifikasi matematis token sequence log-likelihood, normalisasi panjang, orientasi skor, dan manual calculation.
+7. **[CODE_AUDIT_REPORT.md](docs/audit/CODE_AUDIT_REPORT.md)**: Audit implementasi PyTorch/Transformers, slicing logit kausal $[L_p-1:L_p-1+L_t]$, penanganan OOM, dan unit test.
+8. **[EXPERIMENT_OUTPUT_AUDIT.md](docs/audit/EXPERIMENT_OUTPUT_AUDIT.md)**: Silsilah artefak checkpoint Kaggle GPU Dual T4, rekalkulasi metrik 100% bit-identical, dan signifikansi statistik.
+9. **[REPRODUCIBILITY_CHECKLIST.md](docs/audit/REPRODUCIBILITY_CHECKLIST.md)**: Protokol reproduksi 3-tier (7 detik CPU unit test, 1 menit CPU metric recompute, 45 menit GPU re-inference).
 
 ---
 

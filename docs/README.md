@@ -14,3 +14,4 @@ Direktori ini memuat seluruh naskah dokumentasi formal, landasan teori, audit li
 | [**`REVISION_CHANGELOG.md`**](REVISION_CHANGELOG.md) | Historis | Catatan lengkap evolusi metodologi riset dari eksperimen awal LoRA fine-tuning hingga transisi ke *inference-time selective prediction* (`rev05`). |
 | [**`REVISION_NOTES.md`**](REVISION_NOTES.md) | Evaluasi | Rangkuman tanggapan atas arahan dosen pembimbing (penghapusan manipulasi blur, penegasan sifat OOD kanvas hitam, dan disiplin split data). |
 | [**`EXPERIMENT_UPDATE_CHECKLIST.md`**](EXPERIMENT_UPDATE_CHECKLIST.md) | Checklist | Daftar periksa metodologis pra-eksekusi untuk memastikan zero data leakage dan keabsahan indexing token. |
+| [**`audit/`**](audit/) | **Audit Suite** | **Koleksi 9 Laporan Verifikasi Ilmiah & Reproduksibilitas Lengkap**: Master supervisor report, question bank 35 soal, audit formula, kode, dataset integrity, eksperimen output, literatur, checklist reproduksi, dan action plan. |
