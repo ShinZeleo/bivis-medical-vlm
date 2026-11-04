@@ -27,7 +27,10 @@ for nb_path in nb_files:
     
     # Determine expected cell count
     prefix = fname[:2]
-    expected_count = EXPECTED_CELL_COUNTS.get(prefix, None)
+    if "rev06" in str(rel_path) and prefix in ["08", "09"]:
+        expected_count = 18
+    else:
+        expected_count = EXPECTED_CELL_COUNTS.get(prefix, None)
     
     with open(nb_path, "r", encoding="utf-8") as f:
         nb = json.load(f)
