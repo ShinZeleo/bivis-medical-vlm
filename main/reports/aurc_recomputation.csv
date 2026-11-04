@@ -1,6 +1,0 @@
-model,estimator,evaluation_method,aurc,ci_95_lower,ci_95_upper,delta_aurc_abs,delta_aurc_rel_pct,risk_cov_100,risk_cov_90,risk_cov_80,risk_cov_70,risk_cov_50,retained_cov_100,retained_cov_90,retained_cov_80,retained_cov_70,retained_cov_50
-HuatuoGPT-Vision-7B,M1_Confidence_Only,Grid_50_Thresholds,0.2786,0.1856,0.3732,0.0,0.0,0.3,0.3037,0.3417,0.3524,0.2933,150,135,120,105,75
-HuatuoGPT-Vision-7B,M1_Confidence_Only,Discrete_Sample_Level,0.2716,0.1864,0.3675,0.0,0.0,0.3,0.3037,0.3417,0.3524,0.2933,150,135,120,105,75
-HuatuoGPT-Vision-7B,M3_Combined_Visual_Confidence,Grid_50_Thresholds,0.2173,0.142,0.298,-0.0613,-22.0,0.3012,0.3036,0.3083,0.3008,0.2752,150,135,120,105,75
-Qwen2.5-VL-7B-Instruct,M1_Confidence_Only,Grid_50_Thresholds,0.1118,0.062,0.174,0.0,0.0,0.2667,0.237,0.2083,0.1524,0.0933,150,135,120,105,75
-Qwen2.5-VL-7B-Instruct,M1_Confidence_Only,Discrete_Sample_Level,0.111,0.0615,0.1732,0.0,0.0,0.2667,0.237,0.2083,0.1524,0.0933,150,135,120,105,75

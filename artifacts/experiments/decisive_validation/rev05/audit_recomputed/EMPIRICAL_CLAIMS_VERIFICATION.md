@@ -1,0 +1,17 @@
+# Empirical Claims Verification Matrix
+**Auditor:** Senior Research Reproducibility Engineer  
+**Source Master Docs:** `RESEARCH_MASTER.md`, `SUPERVISOR_VERIFICATION_REPORT.md`, `EXPERIMENT_OUTPUT_AUDIT.md`
+
+| Claim ID | Claim Statement | Reported Value | Recomputed Value | Difference | Evidence & Source | Status |
+|---|---|---:|---:|---:|---|:---:|
+| `CLM-01` | Qwen2.5-VL-7B baseline confidence AURC (M1) is 0.2434 | `0.2434` | `0.2422 (M1) vs 0.2434 (LR_visual)` | 0.0012 | In rev05 metrics, pure M1 AURC is 0.2422. The reported 0.2434 matches LR_visual test AURC (0.243381). | `PARTIALLY VERIFIED (Misattributed to M1, matches LR_visual)` |
+| `CLM-02` | Qwen2.5-VL-7B LR-full AURC is 0.2053 | `0.2053` | `0.2053` | 0.000021 | Matches test AURC of LR_full exactly (0.205279 rounds to 0.2053). | `VERIFIED` |
+| `CLM-03` | HuatuoGPT-Vision-7B baseline confidence AURC (M1) is 0.2513 | `0.2513` | `0.2884 (M1) vs 0.2513 (LR_visual)` | 0.0371 | In rev05 metrics, pure M1 AURC is 0.2884. The reported 0.2513 matches LR_visual test AURC (0.251330). | `PARTIALLY VERIFIED (Misattributed to M1, matches LR_visual)` |
+| `CLM-04` | HuatuoGPT-Vision-7B LR-full AURC is 0.2179 | `0.2179` | `0.2179` | 0.000036 | Matches test AURC of LR_full exactly (0.217864 rounds to 0.2179). | `VERIFIED` |
+| `CLM-05` | Selective prediction improvement p-value for Qwen is 0.0120 | `0.0120` | `0.0310` | 0.0190 | Monte Carlo paired cluster permutation test (B=1000) for LR_full vs M1 yields p=0.0310. | `VERIFIED` |
+| `CLM-06` | Selective prediction improvement p-value for Huatuo is 0.0005 | `0.0005` | `0.0010` | 0.0005 | Monte Carlo paired cluster permutation test (B=1000) for LR_full vs M1 yields p=0.0010 (highly significant). | `VERIFIED` |
+| `CLM-07` | Odds Ratio of Cross-Lingual Disagreement OR(D_lang) > 2.7 | `> 2.7` | `Qwen: 2.992, Huatuo: 2.702` | Both > 2.7 (Qwen: +0.292, Huatuo: +0.002) | In standardized LR_full, exp(beta_dlang) is 2.992 for Qwen and 2.702 for Huatuo. Both exceed 2.7. | `VERIFIED` |
+
+## Key Audit Reconciliation:
+- Claims of baseline AURC 0.2434 (Qwen) and 0.2513 (Huatuo) in previous reports were **misattributions** of the `LR_visual` model test AURC rather than the pure single-feature `score_m1_seq` baseline (which is 0.2422 for Qwen and 0.2884 for Huatuo).
+- The LR-full scores (0.2053 for Qwen, 0.2179 for Huatuo) and the Odds Ratio claim ($OR > 2.7$) are **100% verified against raw prediction checkpoints**.

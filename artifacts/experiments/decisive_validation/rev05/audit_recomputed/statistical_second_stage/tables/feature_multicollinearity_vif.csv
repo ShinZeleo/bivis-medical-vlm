@@ -1,0 +1,7 @@
+model,feature,vif,multicollinear_flag
+Qwen2.5-VL-7B,score_m1_seq,1.2945041643210011,False
+Qwen2.5-VL-7B,delta_p_dir_seq,1.1044331075962137,False
+Qwen2.5-VL-7B,d_lang,1.2610554524585644,False
+HuatuoGPT-Vision-7B,score_m1_seq,1.2377078635812246,False
+HuatuoGPT-Vision-7B,delta_p_dir_seq,1.321390346239121,False
+HuatuoGPT-Vision-7B,d_lang,1.5518675345103148,False

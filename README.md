@@ -39,18 +39,19 @@ Gunakan tabel kompas ini untuk langsung menuju file atau folder yang Anda butuhk
 
 | Kebutuhan Anda | File / Folder Sasaran | Deskripsi Singkat |
 | :--- | :--- | :--- |
-| 🛡️ **Laporan Audit Dosen Pembimbing** | [`SUPERVISOR_VERIFICATION_REPORT.md`](SUPERVISOR_VERIFICATION_REPORT.md) | **Master Synthesis Report**: Ringkasan kesiapan sidang, status validasi RQ1–RQ5, dan tabel verifikasi klaim riset. |
+| 🛡️ **Laporan Audit Dosen Pembimbing** | [`docs/audit/SUPERVISOR_VERIFICATION_REPORT.md`](docs/audit/SUPERVISOR_VERIFICATION_REPORT.md) | **Master Synthesis Report**: Ringkasan kesiapan sidang, status validasi RQ1–RQ5, dan tabel verifikasi klaim riset. |
 | ❓ **Bank 35 Soal Sidang & Jawaban Ilmiah** | [`docs/audit/SUPERVISOR_QUESTION_BANK.md`](docs/audit/SUPERVISOR_QUESTION_BANK.md) | 35 pertanyaan kritis penguji dari 11 dimensi metodologi beserta jawaban dan sitasi bukti. |
-| 🗂️ **Suite Dokumen Audit Lengkap (9 Laporan)** | [`docs/audit/`](docs/audit/) | Dokumentasi audit formal: formula, kode, integritas data, eksperimen, literatur, dan reproduksibilitas. |
-| 📖 **Membaca Teori & Latar Belakang Skripsi** | [`docs/RESEARCH_MASTER.md`](docs/RESEARCH_MASTER.md) | **Single Source of Truth (Versi 10.0)** lengkap berisi rumusan matematika, latar belakang klinis, dan batasan klaim. |
-| 📽️ **Melihat Slide Ujian Proposal / Bimbingan** | [`presentations/Medical_VLM_Proposal.pptx`](presentations/Medical_VLM_Proposal.pptx) | Naskah slide resmi seminar proposal skripsi. |
-| 🚀 **Menjalankan Eksperimen Utama di Kaggle** | [`main/notebooks/decisive_validation_primary_rev05.ipynb`](main/notebooks/decisive_validation_primary_rev05.ipynb) | Notebook utama siap eksekusi di GPU Dual Tesla T4 (Internet ON). |
-| 📊 **Melihat Angka Hasil & Metrik Final** | [`main/results/decisive_validation/rev05/`](main/results/decisive_validation/rev05/) | Tabel metrik resmi RQ1 (Akurasi/Flip), RQ2 (Visual), RQ3 (AURC), dan kurva PNG. |
-| ⚙️ **Melihat Kode Inferensi Inti** | [`main/scripts/decisive_validation_experiment_v5.py`](main/scripts/decisive_validation_experiment_v5.py) | Engine kalkulasi sequence log-likelihood & intervensi kanvas hitam. |
-| 🧪 **Menjalankan Unit Test (9/9 Pass)** | [`main/scripts/test_decisive_validation_v5.py`](main/scripts/test_decisive_validation_v5.py) | Suite pengujian lokal deterministik verifikasi logit kausal dan metrik. |
+| 🗂️ **Suite Dokumen Audit Lengkap (17 Laporan)** | [`docs/audit/`](docs/audit/) | Dokumentasi audit formal: formula, kode, integritas data, eksperimen, literatur, dan reproduksibilitas. |
+| 📖 **Membaca Teori & Latar Belakang Skripsi** | [`docs/research/RESEARCH_MASTER.md`](docs/research/RESEARCH_MASTER.md) | **Single Source of Truth (Versi 10.0)** lengkap berisi rumusan matematika, latar belakang klinis, dan batasan klaim. |
+| 📽️ **Melihat Slide Ujian Proposal / Bimbingan** | [`presentations/proposal/Medical_VLM_Proposal.pptx`](presentations/proposal/Medical_VLM_Proposal.pptx) | Naskah slide resmi seminar proposal skripsi. |
+| 🚀 **Menjalankan Eksperimen Utama di Kaggle** | [`notebooks/kaggle/08_qwen_decisive_validation.ipynb`](notebooks/kaggle/08_qwen_decisive_validation.ipynb) | Notebook utama siap eksekusi di GPU Dual Tesla T4 (Internet ON). |
+| 📊 **Melihat Angka Hasil & Metrik Final** | [`artifacts/experiments/decisive_validation/rev05/`](artifacts/experiments/decisive_validation/rev05/) | Tabel metrik resmi RQ1 (Akurasi/Flip), RQ2 (Visual), RQ3 (AURC), dan kurva PNG. |
+| ⚙️ **Melihat Kode Inferensi Inti** | [`scripts/run_experiment.py`](scripts/run_experiment.py) | Engine kalkulasi sequence log-likelihood & intervensi kanvas hitam. |
+| 🧪 **Menjalankan Unit Test (46/46 Pass)** | [`tests/`](tests/) | Suite pengujian lokal deterministik verifikasi logit kausal, data, stats, dan metrik. |
 | 🔍 **Audit Data Bebas Kebocoran (Zero Leakage)** | [`docs/audit/DATASET_INTEGRITY_REPORT.md`](docs/audit/DATASET_INTEGRITY_REPORT.md) | Pembuktian bebas kebocoran citra (0.00% overlap antara 88 cluster dev & 204 test). |
-| 📑 **Membaca Paper Literatur Acuan** | [`paper/`](paper/) | PDF artikel rujukan: Yudhistira et al. (2026) & Sadanandan (2026). |
-| 📦 **Melihat Arsip Iterasi Lama (v1–v4)** | [`archive/`](archive/) & [`main/reports/`](main/reports/) | Riwayat proses eksplorasi sebelum mencapai protokol rev05. |
+| 📄 **Draf Naskah Publikasi LaTeX** | [`docs/manuscript/draft/`](docs/manuscript/draft/) | Berkas draf naskah publikasi ilmiah (Overleaf ready, `main.tex`, `references.bib`, template ITB/JICT). |
+| 📑 **Membaca Paper Literatur Acuan** | [`references/papers/`](references/papers/) | PDF artikel rujukan: Yudhistira et al. (2026) & Sadanandan (2026). |
+| 📦 **Melihat Arsip Draf Historis (v9–v10)** | [`docs/archive/`](docs/archive/) | Riwayat proses eksplorasi sebelum mencapai protokol rev05 dan Bi-ViS. |
 
 ---
 
@@ -61,7 +62,7 @@ $$\text{Literature} \longrightarrow \text{Research Gap} \longrightarrow \text{Re
 
 Seluruh laporan audit formal tersedia di folder [`docs/audit/`](docs/audit/):
 
-1. **[SUPERVISOR_VERIFICATION_REPORT.md](SUPERVISOR_VERIFICATION_REPORT.md)**: Dokumen rujukan utama pembimbing memetakan status validasi seluruh pertanyaan penelitian (RQ1–RQ5) dan tabel verifikasi klaim ilmiah.
+1. **[SUPERVISOR_VERIFICATION_REPORT.md](docs/audit/SUPERVISOR_VERIFICATION_REPORT.md)**: Dokumen rujukan utama pembimbing memetakan status validasi seluruh pertanyaan penelitian (RQ1–RQ5) dan tabel verifikasi klaim ilmiah.
 2. **[SUPERVISOR_QUESTION_BANK.md](docs/audit/SUPERVISOR_QUESTION_BANK.md)**: Bank 35 pertanyaan kritis ujian skripsi dari 11 dimensi metodologi beserta jawaban ilmiah berbasis bukti.
 3. **[RESEARCH_ACTION_PLAN.md](docs/audit/RESEARCH_ACTION_PLAN.md)**: Rencana aksi berprioritas (P0–P3) mencakup pembingkaian temuan negatif heuristik dan roadmap publikasi konferensi (CHIL / MedNeurIPS).
 4. **[LITERATURE_VERIFICATION_REPORT.md](docs/audit/LITERATURE_VERIFICATION_REPORT.md)**: Audit 11 paper primer (DOI & arXiv resmi), taksonomi 7 klaster, dan verifikasi research gap.
@@ -157,67 +158,105 @@ Evaluasi dieksekusi secara ketat pada **Primary Test Set** ($N = 799$ pasangan Q
 | :--- | :--- | :--- | :---: | :---: | :---: |
 | **Qwen2.5-VL-7B** | `LR_conf` (Baseline) | $M_1$ (Confidence) | 0.2422 | 33.65% | 24.56% |
 | | `LR_visual` | $M_1$ + $\Delta P_{\text{dir}}$ | 0.2434 | 36.15% | 31.83% |
-| | **`LR_full` (Ours)** | **$M_1$ + $\Delta P_{\text{dir}}$ + $D_{\text{lang}}$** | **0.2053** | **—** | **—** |
+| | **`LR_full` (Bi-ViS)** | **$M_1$ + $\Delta P_{\text{dir}}$ + $D_{\text{lang}}$** | **0.2053** | **28.48%** | **18.00%** |
 | **HuatuoGPT-Vision-7B** | `LR_conf` (Baseline) | $M_1$ (Confidence) | 0.2884 | 40.38% | 31.08% |
 | | `M_norm` (Heuristic) | $p_{\text{orig}} \cdot \frac{1 + \Delta_{\text{dir}}}{2}$ | 0.2552 | 37.40% | 25.81% |
-| | **`LR_full` (Ours)** | **$M_1$ + $\Delta P_{\text{dir}}$ + $D_{\text{lang}}$** | **0.2179** | **—** | **—** |
+| | **`LR_full` (Bi-ViS)** | **$M_1$ + $\Delta P_{\text{dir}}$ + $D_{\text{lang}}$** | **0.2179** | **35.68%** | **26.32%** |
 
-> *Temuan Kunci:* Penggabungan sinyal ketidaksepakatan lintas-bahasa ($D_{\text{lang}}$) bersama sensitivitas visual menghasilkan penurunan AURC paling dramatis:  
-> - **Qwen2.5-VL-7B:** AURC terpangkas dari **0.2422 $\to$ 0.2053** (penurunan risiko relatif signifikan).  
-> - **HuatuoGPT-Vision-7B:** AURC terpangkas dari **0.2884 $\to$ 0.2179**.
+> *Temuan Kunci:* Penggabungan sinyal ketidaksepakatan lintas-bahasa ($D_{\text{lang}}$) bersama sensitivitas visual melalui metode **Bi-ViS** menghasilkan penurunan AURC paling dramatis:  
+> - **Qwen2.5-VL-7B:** AURC terpangkas dari **0.2422 $\to$ 0.2053** ($p = 0.0310$, penurunan risiko selektif @ 80% coverage dari 33.65% ke 28.48%).  
+> - **HuatuoGPT-Vision-7B:** AURC terpangkas dari **0.2884 $\to$ 0.2179** ($p = 0.0010$, penurunan risiko selektif @ 80% coverage dari 40.38% ke 35.68%).
 
 ---
 
 ## 🗂 Peta Struktur Direktori Repositori
 
-```
+```text
 VLM/
-├── README.md                               # Dokumentasi utama repositori (SSoT Ringkas)
-├── LICENSE                                 # Lisensi lisensi terbuka (MIT)
+├── README.md                               # Kompas utama & panduan repositori
+├── LICENSE                                 # Lisensi terbuka (MIT)
 ├── requirements.txt                        # Dependensi pustaka Python global
-├── .gitignore                              # Aturan eksklusi Git (cache, zip > 100MB)
+├── pyproject.toml                          # Konfigurasi standar paket vlm-research
+├── .gitignore                              # Aturan eksklusi Git (cache, weights, zip > 100MB)
 │
-├── docs/                                   # Dokumentasi Akademik & Master Blueprint Skripsi
-│   ├── RESEARCH_MASTER.md                  # Blueprint Otoritatif Versi 10.0 (Single Source of Truth)
-│   ├── LITERATURE_AUDIT.md                 # Matriks audit literatur komprehensif & preseden riset
-│   ├── REVISION_CHANGELOG.md               # Log perubahan teknis & metodologis lintas revisi
-│   ├── REVISION_NOTES.md                   # Catatan arahan dosen pembimbing & resolusi metodologis
-│   └── EXPERIMENT_UPDATE_CHECKLIST.md      # Lembar verifikasi kepatuhan pra-eksekusi
+├── docs/                                   # DOKUMENTASI AKADEMIK & METODOLOGI
+│   ├── README.md                           # Indeks dokumentasi master
+│   ├── manuscript/                         # Fondasi artikel ilmiah, formalisasi Bi-ViS, dan blueprint
+│   │   └── draft/                          # Naskah publikasi LaTeX lengkap (Overleaf Ready, main.tex, references.bib)
+│   ├── audit/                              # SUITE LAPORAN AUDIT ILMIAH & REPRODUKSIBILITAS
+│   ├── protocols/                          # Protokol eksperimen, tata kelola data, dan checklist
+│   ├── research/                           # Blueprint SSoT, tinjauan pustaka, dan log perubahan
+│   └── archive/                            # Draf historis naskah versi terdahulu (v9, v10)
 │
-├── presentations/                          # Slide Presentasi Ujian & Bimbingan
-│   ├── Medical_VLM_Proposal.pptx           # Naskah slide seminar proposal skripsi resmi
-│   └── Bimbingan_Progres.pptx              # Slide bimbingan progres berkala dengan dosen
+├── configs/                                # KONFIGURASI PARAMETER & MODEL
+│   ├── README.md
+│   └── evaluation_config.yaml              # Hyperparameter inferensi & decoding (YAML)
 │
-├── paper/                                  # Literatur Inti Rujukan Penelitian (PDF)
-│   ├── 2606.03693v1.pdf                    # Yudhistira et al. (2026) - Baseline IndoRad-VQA
-│   └── sadanandan26a.pdf                   # Sadanandan & Behzadan (2026, CHIL) - Visual Grounding
+├── notebooks/                              # ALUR JUPYTER NOTEBOOKS
+│   ├── README.md
+│   ├── 01_dataset_audit_eda.ipynb          # Audit integritas data & SHA-256 citra fisik
+│   └── kaggle/                             # Notebook eksekusi GPU Dual-T4 Kaggle
+│       ├── 08_qwen_decisive_validation.ipynb
+│       ├── 09_huatuo_decisive_validation.ipynb
+│       └── 10_standalone_aggregation_evaluation.ipynb
 │
-├── archive/                                # Artefak Historis & Eksperimen Terdahulu
-│   ├── kaggle_legacy/                      # Notebook dan visualisasi pilot iterasi lama (Run 01–03)
-│   └── scratch_logs/                       # Log inspeksi teks dan tokenisasi sementara
+├── src/                                    # MODUL PUSTAKA UTAMA (PACKAGE)
+│   ├── stats_engine.py                     # Sentralisasi fungsi statistik (permutasi, bootstrap, CI)
+│   ├── metrics.py                          # Metrik keandalan lanjutan (ECE, Brier, Confidently-Wrong)
+│   └── vlm_research/
+│       ├── config.py                       # Resolusi path absolut & konstanta global
+│       ├── data/                           # Parser jawaban, data loader, dan audit kebocoran
+│       ├── inference/                      # Engine evaluasi inferensi logit kausal
+│       ├── evaluation/                     # Scoring normalisasi log-likelihood & estimasi AURC
+│       ├── models/                         # Loader arsitektur multimodal
+│       └── visualization/                  # Pustaka pembuatan grafik Risk-Coverage
 │
-└── main/                                   # Kode Sumber & Pipeline Eksperimen Utama
-    ├── configs/                            # Konfigurasi hyperparameter & evaluasi YAML
-    ├── data/                               # Data manifest dan subset citra benchmark
-    │   ├── images/                         # 314 citra radiologi fisik terverifikasi (PNG)
-    │   └── manifests/                      # Manifest klaster identitas & split zero-leakage
-    ├── notebooks/                          # Notebook Jupyter Reproduksi Eksperimen
-    │   ├── 01_indorad_vqa_dataset_audit_eda.ipynb # Audit kebocoran & eksplorasi data
-    │   ├── 02_model_pilot_experiments.ipynb       # Uji coba inferensi pilot lokal
-    │   └── decisive_validation_primary_rev05.ipynb# Master notebook validasi rev05 (Kaggle/Colab)
-    ├── scripts/                            # Skrip otomatisasi pengujian, inferensi & evaluasi
-    │   ├── decisive_validation_experiment_v5.py   # Mesin inferensi utama rev05
-    │   ├── test_decisive_validation_v5.py        # Suite unit-test otomatis lokal (9/9 PASS)
-    │   └── resilient_validation_engine.py         # Engine toleransi gangguan jaringan/OOM
-    ├── src/                                # Modul fungsional Python (data, models, metrics)
-    │   ├── data/                           # Loader citra, manifest, dan parser jawaban biner
-    │   ├── models/                         # Wrapper Qwen2.5-VL & HuatuoGPT-Vision
-    │   ├── image_audit.py                  # Hashing piksel SHA-256 & canonical grouping
-    │   ├── leakage_audit.py                # Pemeriksaan kebocoran antar split
-    │   └── statistical_analysis.py         # Kalkulasi AURC, bootstrap CI 95%, dan uji permutasi
-    ├── reports/                            # Laporan teknis lengkap & audit per revisi (rev02–rev05)
-    └── results/                            # Luaran artefak eksperimen (CSV metrik, grafik AURC)
-        └── decisive_validation/rev05/      # Hasil final tervalidasi rev05
+├── scripts/                                # SKRIP EKSEKUSI & CLI ENGINE
+│   ├── README.md
+│   ├── run_experiment.py                   # CLI runner terpadu (--model, --dry-run)
+│   ├── run_decisive_validation.py          # Engine inferensi kausal rev05 lengkap
+│   ├── adaptive_abstention_engine.py       # Engine penentuan threshold operasional
+│   └── visual_perturbation.py              # Generator citra kontrol kanvas hitam (P1)
+│
+├── tests/                                  # SUITE PENGUJIAN OTOMATIS (46/46 PASSING)
+│   ├── README.md
+│   ├── test_decisive_validation.py         # Master Preflight Suite (9 assertions lolos)
+│   ├── test_scoring.py                     # Uji sequence log-likelihood & sensitivitas visual
+│   ├── test_data_quality.py                # Invarian kohort 1.122 pasangan & label kanonikal
+│   ├── test_bilingual_pairing.py           # Validasi pasangan pertanyaan ID-EN
+│   ├── test_leakage_audit.py               # Pembuktian bebas kebocoran (0.00% cluster leakage)
+│   ├── test_statistical_analysis.py        # Verifikasi hand-calculation AURC & permutasi
+│   ├── test_stats_engine.py                # Pengujian fungsi sentral stats_engine
+│   ├── test_metrics.py                     # Pengujian kalkulasi ECE, Brier, dan Confidently-Wrong
+│   └── test_pilot_gate.py                  # Validasi gate evaluasi pilot
+│
+├── data/                                   # DATASET RADIOLOGI & MANIFEST RESMI
+│   ├── README.md
+│   ├── raw/indorad_vqa/images/             # 314 citra radiologi fisik asli (.png)
+│   ├── manifests/                          # Manifest resmi split (1.122 pasangan bersih)
+│   └── processed/                          # Data ringkasan dan kamus skema data
+│
+├── artifacts/                              # ARTEFAK HASIL EMPIRIS RESMI
+│   ├── README.md
+│   └── experiments/
+│       ├── decisive_validation/rev05/      # HASIL RESMI PROTOKOL BEKU REV05
+│       │   ├── metrics/                    # CSV metrik resmi RQ1, RQ2, RQ3, dan risk ablation
+│       │   ├── predictions/                # Checkpoint prediksi per-sampel (Huatuo & Qwen)
+│       │   ├── figures/                    # Kurva Risk-Coverage resolusi tinggi (.png)
+│       │   ├── logs/                       # Log SHA-256 artefak dan dekompresi
+│       │   ├── perturbed_images/           # 314 citra kontrol kanvas hitam (P1)
+│       │   └── audit_recomputed/           # Rekalkulasi statistik independen & matriks bukti
+│       └── decisive_validation/historical/ # Arsip hasil iterasi eksperimen rev02-rev04
+│
+├── references/                             # ARTIKEL ILMIAH & PAPER RUJUKAN (PDF)
+│   ├── README.md
+│   ├── papers/                             # PDF IndoRad-VQA (2026) & Sadanandan (CHIL 2026)
+│   └── bibliography/references.bib         # Sitasi BibTeX lengkap 11 paper fondasional
+│
+└── presentations/                          # SLIDE PRESENTASI UJIAN
+    ├── README.md
+    ├── proposal/Medical_VLM_Proposal.pptx   # Slide seminar proposal skripsi
+    └── progress/Bimbingan_Progres.pptx     # Slide bahan bimbingan progres berkala
 ```
 
 ---
@@ -235,17 +274,22 @@ source .venv/bin/activate       # Linux / macOS
 
 pip install --upgrade pip
 pip install -r requirements.txt
+pip install -e .                # Pasang paket vlm-research dalam mode editable
 ```
 
 ### 2. Menjalankan Unit Test Mandiri (Preflight Audit)
-Sebelum inferensi GPU, verifikasi kalkulasi logit kausal, invariansi prefix tokenisasi, dan integritas metrik:
+Sebelum inferensi GPU, verifikasi kalkulasi logit kausal, invariansi prefix tokenisasi, dan integritas metrik dalam 7 detik di CPU:
 ```bash
-python main/scripts/test_decisive_validation_v5.py
+python scripts/run_experiment.py --dry-run
 ```
-*Ekspektasi: 9/9 unit tests lolos dengan status `ALL TESTS PASSED`.*
+*Atau jalankan seluruh pengujian unit modular (46/46 Tests):*
+```bash
+pytest tests/ -q
+```
+*Ekspektasi: Seluruh 46 unit test lolos (`46 passed in ~14s`).*
 
 ### 3. Eksekusi Inferensi Skala Penuh (Kaggle Dual-T4 GPU)
-1. Unggah direktori `main/` atau notebook `main/notebooks/decisive_validation_primary_rev05.ipynb` ke Kaggle.
+1. Unggah notebook dari `notebooks/kaggle/08_qwen_decisive_validation.ipynb` (atau `09_huatuo_decisive_validation.ipynb`) ke Kaggle.
 2. Pilih Accelerator: **GPU T4 x 2** dan aktifkan **Internet ON**.
 3. Eksekusi seluruh sel untuk memproduksi kembali tabel metrik `rq1_bilingual_metrics.csv`, `rq3_selective_prediction_primary_test.csv`, dan grafik kurva risk-coverage.
 

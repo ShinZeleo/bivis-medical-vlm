@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vlm-research"
+version = "0.5.0"
+description = "Visual Sensitivity-Aware Selective Prediction for Bilingual Medical Vision-Language Models under Language Shift"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+    {name = "Imam", email = "researcher@example.edu"}
+]
+keywords = [
+    "medical-vlm",
+    "vision-language-models",
+    "selective-prediction",
+    "visual-grounding",
+    "cross-lingual-evaluation",
+    "indorad-vqa"
+]
+dependencies = [
+    "torch>=2.1.0",
+    "transformers>=4.45.0",
+    "accelerate>=0.26.0",
+    "qwen-vl-utils>=0.0.8",
+    "pandas>=2.0.0",
+    "numpy>=1.24.0",
+    "scipy>=1.10.0",
+    "scikit-learn>=1.3.0",
+    "pillow>=10.0.0",
+    "pyyaml>=6.0",
+    "matplotlib>=3.7.0",
+    "seaborn>=0.12.0",
+    "huggingface-hub>=0.20.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "black>=23.0.0",
+    "ruff>=0.1.0"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]

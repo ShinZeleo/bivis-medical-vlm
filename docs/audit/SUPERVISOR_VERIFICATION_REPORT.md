@@ -6,8 +6,8 @@
 **Auditor Roles:** Senior Research Auditor, Machine Learning Engineer, and Academic Research Methodologist  
 **Project Title:** Selective Prediction in Bilingual Medical Vision-Language Models via Visual Deletion Sensitivity and Cross-Lingual Disagreement  
 **Candidate Repository:** `https://github.com/ShinZeleo/Skripshit.git`  
-**Primary Execution Notebook:** [`main/notebooks/08_decisive_validation_rev05.ipynb`](file:///c:/.PUSAT/Project/Kuliah/VLM/main/notebooks/08_decisive_validation_rev05.ipynb)  
-**Primary Experiment Script:** [`main/scripts/decisive_validation_experiment_v5.py`](file:///c:/.PUSAT/Project/Kuliah/VLM/main/scripts/decisive_validation_experiment_v5.py)
+**Primary Execution Notebook:** [`notebooks/kaggle/08_qwen_decisive_validation.ipynb`](file:///c:/.PUSAT/Project/Kuliah/VLM/notebooks/kaggle/08_qwen_decisive_validation.ipynb)  
+**Primary Experiment Script:** [`scripts/run_decisive_validation.py`](file:///c:/.PUSAT/Project/Kuliah/VLM/scripts/run_decisive_validation.py)
 
 ---
 
@@ -58,7 +58,7 @@ Every explicit scientific claim made in `RESEARCH_MASTER(10).md` was audited aga
 | **C3** | Visual sensitivity can be measured by comparing likelihood against a black-blank image. | Dancette et al. (2023); Sadanandan et al. (CVPR 2026) | $\Delta P_{\text{dir}} = p_{\text{orig}}(\hat{y}_{\text{ID}}) - p_{\text{blank}}(\hat{y}_{\text{ID}})$ | Causal logit slicing on both original and black images (lines 80–120) | Successfully computed for 100% of samples without runtime error | `VERIFIED` |
 | **C4** | Heuristic formula $M_{\text{norm}}$ consistently improves AURC over raw confidence $M_1$. | Geifman & El-Yaniv (2017) | $M_{\text{norm}} = p_{\text{orig}} \cdot \frac{1 + \Delta P_{\text{dir}}}{2}$ | Lines 163–175 in `decisive_validation_experiment_v5.py` | Qwen: $\text{AURC}$ worsens by $+0.0331$. Huatuo: improves by $-0.0332$ but $p_{\text{adj}}=0.7812 > 0.05$ | `FAILED`<br>(Scientifically falsified; heuristic lacks scaling) |
 | **C5** | Learned risk estimation ($LR_{\text{full}}$) integrating visual sensitivity and disagreement outperforms raw confidence. | Kamath et al. (2020); Geifman (2017) | $S_{\text{LR}} = 1 - \sigma(\mathbf{w}^T\mathbf{x} + b)$; feature vector $[p_{\text{orig}}, \Delta P_{\text{dir}}, D_{\text{lang}}]$ | Regularized logistic regression fit on Dev, evaluated out-of-sample on Test | Qwen: $\text{AURC } 0.2053$ ($p=0.0120$). Huatuo: $\text{AURC } 0.2179$ ($p=0.0005$) | `VERIFIED` |
-| **C6** | The dataset splitting guarantees zero patient/image leakage between dev and test. | Academic ML evaluation standards; IndoRad-VQA specification | $\mathcal{C}_{\text{dev}} \cap \mathcal{C}_{\text{test}} = \emptyset$ where cluster represents medical image | Group-aware train/test partition by `image_id` prefix | $0$ leaked images across 292 total clusters (88 dev, 204 test) | `VERIFIED` |
+| **C6** | The dataset splitting protocol enforces strict cluster isolation (empirically confirmed with 0.00% image cluster overlap between dev and test). | Academic ML evaluation standards; IndoRad-VQA specification | $\mathcal{C}_{\text{dev}} \cap \mathcal{C}_{\text{test}} = \emptyset$ where cluster represents medical image | Group-aware train/test partition by `image_id` prefix | $0$ leaked images across 292 total clusters (88 dev, 204 test) | `VERIFIED` |
 | **C7** | Medical domain-specific instruction tuning increases model resilience to language shift. | Yudhistira et al. (2026); HuatuoGPT-Vision (2024) | Domain alignment prior prevents semantic drift | Evaluated HuatuoGPT-Vision-7B vs Qwen2.5-VL-7B | Huatuo achieves higher bilingual consistency and accuracy on Indonesian radiology questions | `VERIFIED` |
 
 ---
@@ -83,7 +83,7 @@ Detailed standalone reports for each audit dimension are stored in [`docs/audit/
 
 4. **Code Implementation Audit ([`CODE_AUDIT_REPORT.md`](file:///c:/.PUSAT/Project/Kuliah/VLM/docs/audit/CODE_AUDIT_REPORT.md)):**
    - Verified that token slicing $[L_p-1 : L_p-1+L_t]$ correctly aligns causal autoregressive logits with target candidate tokens.
-   - Automated test suite ([`test_decisive_validation_v5.py`](file:///c:/.PUSAT/Project/Kuliah/VLM/main/scripts/test_decisive_validation_v5.py)) verified 9/9 preflight assertions in 7.4 seconds.
+   - Automated test suite ([`test_decisive_validation.py`](file:///c:/.PUSAT/Project/Kuliah/VLM/tests/test_decisive_validation.py)) verified 9/9 preflight assertions in 7.4 seconds.
 
 5. **Experimental Output & Traceability ([`EXPERIMENT_OUTPUT_AUDIT.md`](file:///c:/.PUSAT/Project/Kuliah/VLM/docs/audit/EXPERIMENT_OUTPUT_AUDIT.md)):**
    - Traced all final CSV tables to execution on Kaggle Dual Tesla T4 GPUs (`2026-10-25T02:48:53 UTC`).
@@ -157,8 +157,8 @@ When presenting to thesis supervisors and academic examiners, the candidate shou
 
 ### Core Defense Talking Points:
 1. **Embrace the Negative Finding with Scientific Pride:** Do not hide the failure of $M_{\text{norm}}$. Examiners respect research that reports negative findings honestly. Frame it as: *"Our ablation study proved that direct heuristic score weighting is fundamentally insufficient, establishing the scientific necessity of parametric risk learning."*
-2. **Defend Dataset Hygiene First:** If an examiner questions the small sample size ($N=799$ test pairs), explain that data hygiene was prioritized over volume: 1,053 ambiguous open-ended and 69 translation-corrupted pairs were eliminated, and cluster-based image separation guaranteed $0.00\%$ patient leakage.
-3. **Point to the 9-Report Audit Suite:** Present `docs/audit/` as proof of reproducibility. Offer examiners the 7-second preflight unit test command: `python main/scripts/test_decisive_validation_v5.py`.
+2. **Defend Dataset Hygiene First:** If an examiner questions the small sample size ($N=799$ test pairs), explain that data hygiene was prioritized over volume: 1,053 ambiguous open-ended and 69 translation-corrupted pairs were eliminated, and cluster-based image separation empirically confirmed $0.00\%$ patient/cluster leakage.
+3. **Point to the 9-Report Audit Suite:** Present `docs/audit/` as proof of reproducibility. Offer examiners the 7-second preflight unit test command: `python scripts/run_experiment.py --dry-run` or `python tests/test_decisive_validation.py`.
 
 ---
 
@@ -187,9 +187,9 @@ When presenting to thesis supervisors and academic examiners, the candidate shou
 ## 8. Final Auditor Certification
 
 > **FINAL VERDICT:**  
-> The research pipeline and scientific artifacts presented in this project satisfy the highest academic standards of machine learning research and experimental reproducibility. The mathematical derivations are sound, the data partitions are completely leak-free, the causal inference implementation is verified, and the empirical findings are fully reproducible from raw checkpoints.  
+> The research pipeline and technical artifacts presented in this project satisfy the required standards of machine learning engineering and experimental verification. The mathematical derivations are consistent, the data partitions are confirmed leak-free, the causal inference implementation is verified via unit tests, and empirical metrics are reproducible from raw checkpoints via deterministic scripts.  
 >  
-> The candidate is **fully certified to submit the thesis and proceed to defense**, subject only to adopting the strategic presentation of heuristic vs. parametric findings detailed in Section 6.
+> The candidate is **certified to submit the thesis and proceed to defense**, subject to adopting the strategic presentation of heuristic vs. parametric findings detailed in Section 6 and acknowledging the retrospective clinical scope.
 
 **Audit Completed:** October 31, 2026  
 **Auditor Signature:** *Senior Research Auditor & Academic Research Methodologist*  

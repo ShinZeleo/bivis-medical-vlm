@@ -1,0 +1,182 @@
+# ==============================================================================
+# EVALUATION PROTOCOL CONFIGURATION
+# Project: Medical VLM Reliability Under Language Shift (IndoRad-VQA)
+# Frozen Authoritative Protocol for rev05 and Multi-Model Screening
+# ==============================================================================
+
+project:
+  name: "Medical VLM IndoRad-VQA Reliability"
+  random_seed: 42
+  device: "cuda"
+
+# Default Authoritative Dataset Manifest (rev05 Production Protocol)
+dataset:
+  name: "Lab-IS/IndoRad-VQA"
+  hf_repo: "Lab-IS/IndoRad-VQA"
+  frozen_manifest: "data/manifests/manifest_rev05.csv"
+  manifest_sha256: "fb55fd75378b1c03abcbeb9772fa27d6ab81dd9abdfca4735c03438507c19ee9"
+  total_raw_rows: 2244
+  clean_cohort_rows: 1122
+  clean_image_level_rows: 1793
+  canonical_images: 314
+  test_rows: 799
+  dev_rows: 323
+  test_clusters: 204
+  dev_clusters: 88
+  answer_type: "YES_NO"
+
+# Historical Screening Configuration Track (Preserved for Historical Comparison & Replication)
+historical_screening:
+  frozen_manifest: "artifacts/experiments/legacy_screening/bilingual_pair_manifest.csv"
+  legacy_path: "results/bilingual_pair_manifest.csv"
+  frozen_sample_size: 150
+  split: "92 test / 58 dev"
+  prompts:
+    en:
+      instruction: "Answer the radiology visual question based on the image. Provide only the answer."
+      template: "Answer the radiology visual question based on the image. Provide only the answer.\nQuestion: {question}"
+    id:
+      instruction: "Jawab pertanyaan radiologi berdasarkan gambar. Berikan hanya jawabannya."
+      template: "Jawab pertanyaan radiologi berdasarkan gambar. Berikan hanya jawabannya.\nPertanyaan: {question}"
+  inference:
+    max_new_tokens: 4
+    do_sample: false
+    temperature: 0.0
+  confidence_method:
+    type: "normalized_binary_posterior"
+
+# Authoritative Decisive Validation (rev05) Protocol
+decisive_validation_rev05:
+  scoring_method: "exact_sequence_candidate_normalized_v5"
+  secondary_scoring_method: "length_normalized_surprisal"
+  manifest_sha256: "fb55fd75378b1c03abcbeb9772fa27d6ab81dd9abdfca4735c03438507c19ee9"
+  models:
+    generalist_7b: "Qwen/Qwen2.5-VL-7B-Instruct"
+    specialist_7b: "FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL"
+  prompts:
+    en: "Answer only YES or NO.\nQuestion: {q}"
+    id: "Jawab hanya dengan YA atau TIDAK.\nPertanyaan: {q}"
+  candidates:
+    en: ["YES<|im_end|>", "NO<|im_end|>"]
+    id: ["YA<|im_end|>", "TIDAK<|im_end|>"]
+  blank_control:
+    method: "PIL.Image.new('RGB', size, (0,0,0))"
+    total_images: 292
+  statistical_protocol:
+    resampling_seed: 42
+    n_bootstrap: 1000
+    n_permutation: 1000
+    cluster_column: "canonical_image_id"
+    correction: "Holm-Bonferroni"
+
+# Authoritative Decisive Validation (rev06) Protocol
+decisive_validation_rev06:
+  status: "implemented"
+  scoring_method: "multi_token_set_logsumexp_v6"
+  secondary_scoring_method: "length_normalized_surprisal"
+  manifest_sha256: "fb55fd75378b1c03abcbeb9772fa27d6ab81dd9abdfca4735c03438507c19ee9"
+  models:
+    generalist_7b: "Qwen/Qwen2.5-VL-7B-Instruct"
+    specialist_7b: "FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL"
+  prompts:
+    en: "Answer only YES or NO.\nQuestion: {q}"
+    id: "Jawab hanya dengan YA atau TIDAK.\nPertanyaan: {q}"
+  token_sets:
+    en:
+      yes: ["YES", " YES", "Yes", " Yes"]
+      no: ["NO", " NO", "No", " No"]
+    id:
+      ya: ["YA", " YA", "Ya", " Ya", "ya", " ya"]
+      tidak: ["TIDAK", " TIDAK", "Tidak", " Tidak", "tidak", " tidak"]
+  kv_cache_prefix: true
+  blank_control:
+    method: "PIL.Image.new('RGB', size, (0,0,0))"
+    total_images: 292
+  statistical_protocol:
+    resampling_seed: 42
+    n_bootstrap: 1000
+    n_permutation: 10000
+    tie_handling: "random_expectation"
+    cluster_column: "canonical_image_id"
+    correction: "Holm-Bonferroni"
+  tier_2_metrics:
+    expected_calibration_error_bins: 15
+    brier_score: true
+    confidently_wrong_threshold: 0.90
+    visual_flip_rate_p0_p1: true
+    odds_ratio_cluster_robust: true
+  tier_3_selective_prediction:
+    target_coverages: [0.50, 0.60, 0.70, 0.80, 0.90]
+    discrete_aurc_tie_aware: true
+    oof_threshold_calibration_splits: 5
+
+models:
+  baseline_7b:
+    id: "Qwen/Qwen2.5-VL-7B-Instruct"
+    quantization: "4bit-nf4"
+    compute_dtype: "bfloat16"
+  candidate_screening_med_7b:
+    id: "FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL"
+    quantization: "4bit-nf4"
+    compute_dtype: "bfloat16"
+  candidate_32b:
+    id: "Qwen/Qwen2.5-VL-32B-Instruct"
+    quantization: "4bit-nf4"
+    compute_dtype: "bfloat16"
+  candidate_screening_3b:
+    id: "Qwen/Qwen2.5-VL-3B-Instruct"
+    quantization: "4bit-nf4"
+    compute_dtype: "bfloat16"
+
+prompts:
+  en:
+    instruction: "Answer the radiology visual question based on the image. Provide only the answer."
+    template: "Answer the radiology visual question based on the image. Provide only the answer.\nQuestion: {question}"
+  id:
+    instruction: "Jawab pertanyaan radiologi berdasarkan gambar. Berikan hanya jawabannya."
+    template: "Jawab pertanyaan radiologi berdasarkan gambar. Berikan hanya jawabannya.\nPertanyaan: {question}"
+
+inference:
+  max_new_tokens: 16
+  do_sample: false
+  temperature: 0.0
+  return_dict_in_generate: true
+  output_scores: true
+  vision:
+    min_pixels: 200704    # 256 * 28 * 28
+    max_pixels: 262144    # 512 * 512 (Kaggle/Colab OOM guard)
+
+normalization:
+  rules:
+    - match: ["YES", "YA"]
+      target: "YES"
+    - match: ["NO", "TIDAK"]
+      target: "NO"
+    - fallback: "FIRST_10_CHARS_UPPERCASE"
+
+confidence_method:
+  type: "exact_sequence_candidate_normalized_v5"
+  token_sets:
+    yes: ["YES", " YES", "Yes", " Yes"]
+    no: ["NO", " NO", "No", " No"]
+  threshold_unparseable: 0.50
+
+metrics:
+  tier_1_deterministic:
+    - accuracy_en
+    - accuracy_id
+    - language_gap
+    - flip_rate
+    - joint_correctness
+    - wilson_confidence_interval_95
+  tier_2_exploratory:
+    - expected_calibration_error_ece
+    - brier_score
+    - confidently_wrong_rate_90
+    - visual_flip_rate_p0_p1
+    - mean_delta_p
+  tier_3_selective_prediction:
+    - discrete_aurc
+    - paired_cluster_permutation_test
+    - paired_cluster_bootstrap_ci
+    - holm_bonferroni_adjusted_p

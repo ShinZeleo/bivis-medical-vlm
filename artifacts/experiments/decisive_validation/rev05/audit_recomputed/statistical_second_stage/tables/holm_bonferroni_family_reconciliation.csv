@@ -1,0 +1,21 @@
+model,hypothesis_family,comparison,m_family,rank,raw_p,multiplier,holm_adj_p,significant_at_05
+Qwen2.5-VL-7B,Family A: Incremental Stepwise Ablation,LR_full vs LR_visual,3,1,0.012987012987012988,3,0.03896103896103896,True
+Qwen2.5-VL-7B,Family A: Incremental Stepwise Ablation,LR_full vs LR_conf,3,2,0.02197802197802198,2,0.04395604395604396,True
+Qwen2.5-VL-7B,Family A: Incremental Stepwise Ablation,LR_visual vs LR_conf,3,3,0.6693306693306693,1,0.6693306693306693,False
+Qwen2.5-VL-7B,Family B: Primary Research Target (LR_full vs M1),LR_full vs M1,1,1,0.030969030969030968,1,0.030969030969030968,True
+Qwen2.5-VL-7B,Family C: Heuristic Combination (M_norm vs M1),M_norm vs M1,1,1,0.22977022977022976,1,0.22977022977022976,False
+Qwen2.5-VL-7B,Family D: Omnibus Per-Model Family (m=5),LR_full vs LR_visual,5,1,0.012987012987012988,5,0.06493506493506494,False
+Qwen2.5-VL-7B,Family D: Omnibus Per-Model Family (m=5),LR_full vs LR_conf,5,2,0.02197802197802198,4,0.08791208791208792,False
+Qwen2.5-VL-7B,Family D: Omnibus Per-Model Family (m=5),LR_full vs M1,5,3,0.030969030969030968,3,0.0929070929070929,False
+Qwen2.5-VL-7B,Family D: Omnibus Per-Model Family (m=5),M_norm vs M1,5,4,0.22977022977022976,2,0.4595404595404595,False
+Qwen2.5-VL-7B,Family D: Omnibus Per-Model Family (m=5),LR_visual vs LR_conf,5,5,0.6693306693306693,1,0.6693306693306693,False
+HuatuoGPT-Vision-7B,Family A: Incremental Stepwise Ablation,LR_full vs LR_visual,3,1,0.000999000999000999,3,0.002997002997002997,True
+HuatuoGPT-Vision-7B,Family A: Incremental Stepwise Ablation,LR_full vs LR_conf,3,2,0.000999000999000999,2,0.002997002997002997,True
+HuatuoGPT-Vision-7B,Family A: Incremental Stepwise Ablation,LR_visual vs LR_conf,3,3,0.017982017982017984,1,0.017982017982017984,True
+HuatuoGPT-Vision-7B,Family B: Primary Research Target (LR_full vs M1),LR_full vs M1,1,1,0.000999000999000999,1,0.000999000999000999,True
+HuatuoGPT-Vision-7B,Family C: Heuristic Combination (M_norm vs M1),M_norm vs M1,1,1,0.38461538461538464,1,0.38461538461538464,False
+HuatuoGPT-Vision-7B,Family D: Omnibus Per-Model Family (m=5),LR_full vs LR_visual,5,1,0.000999000999000999,5,0.004995004995004995,True
+HuatuoGPT-Vision-7B,Family D: Omnibus Per-Model Family (m=5),LR_full vs LR_conf,5,2,0.000999000999000999,4,0.004995004995004995,True
+HuatuoGPT-Vision-7B,Family D: Omnibus Per-Model Family (m=5),LR_full vs M1,5,3,0.000999000999000999,3,0.004995004995004995,True
+HuatuoGPT-Vision-7B,Family D: Omnibus Per-Model Family (m=5),LR_visual vs LR_conf,5,4,0.017982017982017984,2,0.03596403596403597,True
+HuatuoGPT-Vision-7B,Family D: Omnibus Per-Model Family (m=5),M_norm vs M1,5,5,0.38461538461538464,1,0.38461538461538464,False

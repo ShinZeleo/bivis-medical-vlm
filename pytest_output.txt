@@ -1,0 +1,51 @@
+============================= test session starts =============================
+platform win32 -- Python 3.9.23, pytest-8.3.3, pluggy-1.5.0
+rootdir: C:\.PUSAT\Project\Kuliah\VLM
+configfile: pyproject.toml
+testpaths: tests
+plugins: anyio-4.12.1, cov-5.0.0, html-4.2.0, metadata-3.1.1, xdist-3.8.0
+collected 48 items
+
+tests\test_adaptive_abstention.py ..                                     [  4%]
+tests\test_bilingual_pairing.py ..                                       [  8%]
+tests\test_data_quality.py ..                                            [ 12%]
+tests\test_decisive_validation.py .........                              [ 31%]
+tests\test_leakage_audit.py .                                            [ 33%]
+tests\test_metrics.py .....                                              [ 43%]
+tests\test_pilot_gate.py ......                                          [ 56%]
+tests\test_resilient_pipeline.py .......                                 [ 70%]
+tests\test_scoring.py ..                                                 [ 75%]
+tests\test_statistical_analysis.py ..                                    [ 79%]
+tests\test_stats_engine.py .....                                         [ 89%]
+tests\test_visual_intervention.py .....                                  [100%]
+
+============================== warnings summary ===============================
+..\..\..\..\Users\Zeleo\miniconda3\lib\site-packages\matplotlib\_fontconfig_pattern.py:64
+  C:\Users\Zeleo\miniconda3\lib\site-packages\matplotlib\_fontconfig_pattern.py:64: PyparsingDeprecationWarning: 'oneOf' deprecated - use 'one_of'
+    prop = Group((name + Suppress("=") + comma_separated(value)) | oneOf(_CONSTANTS))
+
+..\..\..\..\Users\Zeleo\miniconda3\lib\site-packages\matplotlib\_fontconfig_pattern.py:85
+..\..\..\..\Users\Zeleo\miniconda3\lib\site-packages\matplotlib\_fontconfig_pattern.py:85
+..\..\..\..\Users\Zeleo\miniconda3\lib\site-packages\matplotlib\_fontconfig_pattern.py:85
+..\..\..\..\Users\Zeleo\miniconda3\lib\site-packages\matplotlib\_fontconfig_pattern.py:85
+..\..\..\..\Users\Zeleo\miniconda3\lib\site-packages\matplotlib\_fontconfig_pattern.py:85
+..\..\..\..\Users\Zeleo\miniconda3\lib\site-packages\matplotlib\_fontconfig_pattern.py:85
+  C:\Users\Zeleo\miniconda3\lib\site-packages\matplotlib\_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+    parse = parser.parseString(pattern)
+
+..\..\..\..\Users\Zeleo\miniconda3\lib\site-packages\matplotlib\_fontconfig_pattern.py:89
+..\..\..\..\Users\Zeleo\miniconda3\lib\site-packages\matplotlib\_fontconfig_pattern.py:89
+..\..\..\..\Users\Zeleo\miniconda3\lib\site-packages\matplotlib\_fontconfig_pattern.py:89
+..\..\..\..\Users\Zeleo\miniconda3\lib\site-packages\matplotlib\_fontconfig_pattern.py:89
+..\..\..\..\Users\Zeleo\miniconda3\lib\site-packages\matplotlib\_fontconfig_pattern.py:89
+..\..\..\..\Users\Zeleo\miniconda3\lib\site-packages\matplotlib\_fontconfig_pattern.py:89
+  C:\Users\Zeleo\miniconda3\lib\site-packages\matplotlib\_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+    parser.resetCache()
+
+..\..\..\..\Users\Zeleo\miniconda3\lib\site-packages\matplotlib\_mathtext.py:45
+  C:\Users\Zeleo\miniconda3\lib\site-packages\matplotlib\_mathtext.py:45: PyparsingDeprecationWarning: 'enablePackrat' deprecated - use 'enable_packrat'
+    ParserElement.enablePackrat()
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+----- generated xml file: C:\.PUSAT\Project\Kuliah\VLM\pytest_report.xml ------
+======================= 48 passed, 14 warnings in 5.90s =======================

@@ -1,0 +1,27 @@
+# Locked Dependencies for Exact Reproducibility
+# Environment: Python 3.9.23 on Windows 10
+accelerate==1.10.1
+bitsandbytes==0.45.2
+datasets==4.5.0
+huggingface-hub==0.36.2
+ipykernel==6.29.5
+jupyter==1.1.1
+jupyter-client==8.6.3
+jupyter-core==5.7.2
+matplotlib==3.9.4
+nbclient==0.10.2
+nbconvert==7.17.0
+nbformat==5.10.4
+numpy==2.0.2
+pandas==2.3.3
+pillow==10.4.0
+pyarrow==21.0.0
+pytest==8.3.3
+qwen-vl-utils==0.0.14
+scikit-learn==1.6.1
+scipy==1.13.1
+statsmodels==0.14.6
+torch==2.8.0
+torchvision==0.23.0
+tqdm==4.67.1
+transformers==4.57.6

@@ -1,4 +1,4 @@
-# Python artifacts
+# Python bytecode and build artifacts
 __pycache__/
 *.py[cod]
 *$py.class
@@ -24,6 +24,7 @@ MANIFEST
 
 # Virtual environments
 .env
+.env.*
 .venv
 env/
 venv/
@@ -35,11 +36,35 @@ venv.bak/
 .ipynb_checkpoints/
 */.ipynb_checkpoints/*
 
-# Large dataset archives & raw dumps (>100MB GitHub limit)
-main/data/archive/
-main/data/manifests/recommended_image_split.csv
-data/raw/
-
 # IDE and OS files
 .DS_Store
 Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+
+# Testing & Linting cache
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Model checkpoints & large binary weights (>100MB)
+*.safetensors
+*.ckpt
+*.pth
+*.pt
+artifacts/checkpoints/
+*.bin
+
+# Large dataset archives & raw binary dumps (>100MB GitHub limit)
+data/archive/
+archive/data/
+data/raw/
+data/manifests/recommended_image_split.csv
+*.zip
+
+# Temporary experiment files
+*.tmp
+*.log

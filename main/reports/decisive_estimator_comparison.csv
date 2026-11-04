@@ -1,6 +1,0 @@
-estimator,description,aurc_discrete,aurc_trapezoidal,risk_cov_100,risk_cov_90,risk_cov_80,risk_cov_70,risk_cov_50,boot_aurc_mean,boot_ci_95_lower,boot_ci_95_upper,delta_aurc_vs_m1,delta_ci_lower,delta_ci_upper,p_value_vs_m1,significance
-score_m1,M1: Confidence-Only (p_orig),0.1142,0.1134,0.2667,0.237,0.175,0.1524,0.12,0.1161,0.0602,0.18,0.0,0.0,0.0,1.0,Baseline
-score_m2,"M2: Visual-Only max(0, Delta_dir)",0.0621,0.0612,0.2667,0.2074,0.1333,0.0571,0.0133,0.0628,0.0335,0.1041,-0.0533,-0.1015,-0.0146,0.002,Significant (p < 0.05)
-score_m_dir,"M_dir: Directed Multiplicative p_orig * max(0, Delta_dir)",0.059,0.0581,0.2667,0.2074,0.1333,0.0571,0.0133,0.0597,0.0316,0.0979,-0.0564,-0.1029,-0.0188,0.001,Significant (p < 0.05)
-score_m_norm,M_norm: Normalized Directed p_orig * (1 + Delta_dir) / 2,0.0714,0.0705,0.2667,0.2,0.15,0.1048,0.04,0.0733,0.0387,0.119,-0.0429,-0.0766,-0.0187,0.001,Significant (p < 0.05)
-score_m3_old,M3_old: Historical Unsigned p_orig * (1 + |Delta_dir|) / 2,0.0939,0.093,0.2667,0.2148,0.175,0.1333,0.0533,0.096,0.051,0.1521,-0.0201,-0.0402,-0.0047,0.01,Significant (p < 0.05)

@@ -1,0 +1,46 @@
+{
+  "manifest_sha256_actual": "fb55fd75378b1c03abcbeb9772fa27d6ab81dd9abdfca4735c03438507c19ee9",
+  "manifest_sha256_expected": "fb55fd75378b1c03abcbeb9772fa27d6ab81dd9abdfca4735c03438507c19ee9",
+  "manifest_hash_match": true,
+  "manifest_total_rows": 2244,
+  "manifest_unique_qids": 2244,
+  "manifest_canonical_images": 314,
+  "primary_total_samples": 1122,
+  "primary_test_samples": 799,
+  "primary_dev_samples": 323,
+  "primary_test_clusters": 204,
+  "primary_dev_clusters": 88,
+  "qwen_checkpoint_rows": 1133,
+  "huatuo_checkpoint_rows": 1133,
+  "qwen_unique_qids": 1133,
+  "huatuo_unique_qids": 1133,
+  "qwen_subset_of_manifest": true,
+  "huatuo_subset_of_manifest": true,
+  "qids_identical_between_models": true,
+  "primary_test_in_qwen": true,
+  "primary_dev_in_qwen": true,
+  "primary_test_in_huatuo": true,
+  "primary_dev_in_huatuo": true,
+  "checkpoint_cluster_leakage_count": 0,
+  "qwen_revision_id": [
+    "rev05"
+  ],
+  "huatuo_revision_id": [
+    "rev05"
+  ],
+  "qwen_scoring_method": [
+    "exact_sequence_candidate_normalized_v5"
+  ],
+  "huatuo_scoring_method": [
+    "exact_sequence_candidate_normalized_v5"
+  ],
+  "qwen_manifest_sha256": [
+    "fb55fd75378b1c03abcbeb9772fa27d6ab81dd9abdfca4735c03438507c19ee9"
+  ],
+  "huatuo_manifest_sha256": [
+    "fb55fd75378b1c03abcbeb9772fa27d6ab81dd9abdfca4735c03438507c19ee9"
+  ],
+  "qwen_timestamp": "2026-10-21T03:21:45.435934+00:00",
+  "huatuo_timestamp": "2026-10-21T10:10:18.645977+00:00",
+  "pairing_mismatches_with_manifest": 0
+}

@@ -1,4 +1,0 @@
-Condition,Acc_EN,Acc_ID,Language_Gap,Flip_Rate
-B0_Baseline,0.76,0.7,0.06,0.2133
-B1_Standard_QLoRA,0.82,0.62,0.2,0.2
-B2_Semantic_Consistency,0.78,0.58,0.2,0.24

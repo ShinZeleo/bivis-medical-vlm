@@ -1,8 +1,16 @@
-# 📽️ Slide Presentasi Skripsi (`presentations/`)
+# Academic Presentations & Defense Slide Decks (`presentations/`)
 
-Direktori ini memuat dokumen slide presentasi PowerPoint resmi yang digunakan dalam tahapan evaluasi akademik:
+This directory houses official presentation slide decks for supervisory meetings, seminar proposals, and thesis defense examinations.
 
-| File Presentasi | Target Acara / Sidang | Keterangan |
-| :--- | :--- | :--- |
-| **`Medical_VLM_Proposal.pptx`** | **Seminar Proposal Skripsi** | Slide resmi untuk ujian seminar proposal memuat latar belakang, perumusan masalah, landasan teori, metodologi intervensi citra $P_0$ vs $P_1$, dan rencana eksperimen. |
-| **`Bimbingan_Progres.pptx`** | **Bimbingan Dosen Berkala** | Slide progres eksperimen berkala yang menyajikan temuan empiris awal, audit data leakage, dan evolusi protokol hingga `rev05`. |
+---
+
+## Directory Organization
+
+```text
+presentations/
+├── README.md
+├── proposal/
+│   └── Medical_VLM_Proposal.pptx   # Official seminar proposal slide deck (verified & approved)
+└── progress/
+    └── Bimbingan_Progres.pptx      # Periodic supervisory meeting progress updates
+```

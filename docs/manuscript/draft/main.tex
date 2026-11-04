@@ -1,0 +1,320 @@
+\documentclass[a4paper,10pt,twoside]{article}
+
+% --- Essential Packages ---
+\usepackage[a4paper,top=3cm,bottom=3cm,left=2.5cm,right=2.5cm,headheight=14pt,headsep=18pt]{geometry}
+\usepackage{times} % Times New Roman font typical for ITB journals
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{lineno} % Line numbering for manuscript review
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{microtype}
+\usepackage{hyperref}
+
+% --- Hyperref Setup ---
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    citecolor=black,
+    urlcolor=blue
+}
+
+% --- Line Numbering Setup (Review / Submission Mode) ---
+% Aktifkan penomoran baris seperti pada draf naskah telaah
+\linenumbers
+
+% --- Page Header & Footer Styling (ITB Journal Style) ---
+\pagestyle{fancy}
+\fancyhf{}
+% Even page: Page number on left, Author on right
+\fancyhead[LE]{\small\thepage}
+\fancyhead[RE]{\small Imam Dzaqhoir}
+% Odd page: Running title on left, Page number on right
+\fancyhead[LO]{\parbox[t]{0.82\textwidth}{\centering\scriptsize\itshape Prediksi Selektif Berbasis Sensitivitas Visual pada Model Vision--Language Medis Bilingual dalam Pergeseran Bahasa Inggris--Indonesia}}
+\fancyhead[RO]{\small\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Style for First Page
+\fancypagestyle{firstpage}{
+    \fancyhf{}
+    \fancyhead[L]{%
+        \if\relax\detokenize{itb_logo}\relax\else
+            \raisebox{-0.3\height}{\includegraphics[height=1.2cm]{itb_logo.png}}\hspace{8pt}%
+        \fi
+    }
+    \fancyhead[R]{%
+        \raggedleft\footnotesize\itshape
+        J. \dots\dots\dots\dots\dots\ Vol. XX \dots, No. X, 20XX, XX-XX \quad \upshape 1
+    }
+    \fancyfoot[L]{%
+        \footnotesize
+        \rule{\textwidth}{0.5pt}\vspace{2pt}\\
+        Received \rule{2cm}{0.4pt}, Revised \rule{2cm}{0.4pt}, Accepted for publication \rule{2cm}{0.4pt}\\
+        Copyright \copyright\ xxxx Published by ITB Journal Publisher, ISSN: xxxx-xxxx, DOI: 10.5614/xxxx
+    }
+    \renewcommand{\headrulewidth}{0pt}
+    \renewcommand{\footrulewidth}{0pt}
+}
+
+% --- Section Heading Formatting ---
+\titleformat{\section}
+  {\normalfont\normalsize\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}
+  {\normalfont\normalsize\bfseries}{\thesubsection}{1em}{}
+\titlespacing*{\section}{0pt}{14pt plus 2pt minus 2pt}{6pt plus 1pt minus 1pt}
+\titlespacing*{\subsection}{0pt}{10pt plus 2pt minus 2pt}{4pt plus 1pt minus 1pt}
+
+% --- Paragraph Styling ---
+\setlength{\parindent}{1.5em}
+\setlength{\parskip}{0pt}
+\renewcommand{\baselinestretch}{1.15}
+
+\begin{document}
+
+\thispagestyle{firstpage}
+
+\vspace*{0.5cm}
+
+% --- Document Title ---
+\begin{center}
+    {\large\bfseries Prediksi Selektif Berbasis Sensitivitas Visual pada Model Vision-Language Medis Bilingual dalam Pergeseran Bahasa Inggris--Indonesia\par}
+    \vspace{1.2em}
+    {\normalsize\bfseries Imam Dzaqhoir$^1$\par}
+    \vspace{0.8em}
+    {\footnotesize $^1$Program Studi Sistem Informasi, Fakultas Matematika dan Ilmu Pengetahuan Alam,\\ Universitas Hasanuddin, Makassar, Indonesia\par}
+    {\footnotesize Email: \texttt{dzaqhoiri24h@student.unhas.ac.id}\par}
+\end{center}
+
+\vspace{1em}
+
+% --- English Abstract ---
+\noindent\textbf{Abstract.} Digital transformation in healthcare has accelerated the adoption of Medical Vision-Language Models (Medical VLMs) as clinical decision support systems. However, under English-to-Indonesian language shift, Medical VLMs suffer from severe diagnostic inconsistency, accuracy degradation, and overconfidence due to reliance on linguistic priors rather than radiographic evidence. Adopting a positivist quantitative paradigm combining experimental and artifact evaluation methods, this study examines the effect of directional visual deletion sensitivity ($\Delta P_{\mathrm{dir}}$) and cross-lingual prediction disagreement ($D_{\mathrm{lang}}$) on selective error risk ranking without model retraining. The study population comprises 2,244 clinical question-answer pairs from the IndoRad-VQA dataset, filtered via purposive cluster sampling into a clean binary cohort ($N = 1{,}122$ across 292 canonical radiology images) and partitioned with zero leakage into a Calibration Development Split ($N = 323$) and a frozen Primary Test Split ($N = 799$). Using length-normalized candidate scoring on Qwen2.5-VL-7B-Instruct and HuatuoGPT-Vision-7B-Qwen2.5VL under original ($P_0$) and black blank ($P_1$) image treatments, we test hypotheses comparing the primary visual estimator ($M_{\mathrm{norm}}$) and L2-regularized logistic regression risk models against baseline confidence ($M_1$) via Discrete Riemann Area Under the Risk--Coverage Curve (AURC) and paired cluster permutation tests with Holm--Bonferroni correction.
+
+\vspace{0.5em}
+\noindent\textbf{Keywords:} bilingual medical vqa; cross-lingual disagreement; language shift; quantitative evaluation; selective prediction; vision-language models; visual grounding.
+
+\vspace{1em}
+
+% --- Indonesian Abstract ---
+\noindent\textbf{Abstrak.} \textit{Transformasi digital di sektor kesehatan telah mendorong adopsi Medical Vision-Language Models (Medical VLM) sebagai sistem pendukung keputusan klinis. Namun, dalam kondisi pergeseran bahasa (language shift) Inggris ke Indonesia, Medical VLM mengalami inkonsistensi diagnostik, penurunan akurasi, serta overconfidence akibat ketergantungan pada prior teks dibandingkan bukti radiografis. Mengadopsi paradigma kuantitatif positivistik yang memadukan metode eksperimen dan evaluasi kuantitatif artefak, penelitian ini menguji pengaruh sensitivitas penghilangan visual berarah ($\Delta P_{\mathrm{dir}}$) dan ketidaksepakatan prediksi lintas bahasa ($D_{\mathrm{lang}}$) terhadap penurunan risiko kesalahan prediksi selektif tanpa pelatihan ulang model. Populasi penelitian mencakup 2.244 pasangan tanya-jawab klinis pada dataset IndoRad-VQA yang dipilih melalui purposive cluster sampling menjadi sampel kohort biner bersih ($N = 1.122$ dari 292 citra radiologi kanonis), terbagi secara bebas kebocoran ke dalam Development Split ($N = 323$) dan Primary Test Split beku ($N = 799$). Melalui penyekoran sekuens kandidat ternormalisasi panjang pada model Qwen2.5-VL-7B-Instruct dan HuatuoGPT-Vision-7B-Qwen2.5VL dengan perlakuan citra asli ($P_0$) dan citra hitam ($P_1$), pengujian hipotesis dilakukan untuk membandingkan estimator visual primer ($M_{\mathrm{norm}}$) dan model regresi logistik terhadap baseline keyakinan internal ($M_1$) menggunakan metrik Discrete Riemann AURC serta uji permutasi klaster berpasangan dengan koreksi Holm--Bonferroni.}
+
+\vspace{0.5em}
+\noindent\textbf{Kata Kunci:} \textit{evaluasi kuantitatif; ketidaksepakatan lintas bahasa; medical vqa bilingual; penambatan visual; pergeseran bahasa; prediksi selektif; vision-language models.}
+
+\vspace{1.5em}
+
+% =========================================================================
+% 1. PENDAHULUAN
+% =========================================================================
+\section{Pendahuluan}
+
+Transformasi digital di sektor kesehatan telah mempercepat adopsi sistem informasi cerdas berbasis \textit{Medical Vision-Language Model} (Medical VLM) sebagai sistem pendukung keputusan klinis untuk membantu dokter menginterpretasikan citra radiologi melalui interaksi tanya-jawab medis (\textit{Visual Question Answering} / VQA). Perkembangan arsitektur multimodal biomedis ini memungkinkan integrasi pemrosesan citra medis dan bahasa alami secara simultan dalam alur kerja rumah sakit modern sebagaimana dipetakan oleh Hartsock dan Rasool \cite{hartsock2024review}. Dalam konteks penerapan sistem informasi kesehatan di negara berkembang seperti Indonesia, model fondasi multimodal tersebut dituntut untuk mampu memproses instruksi klinis secara akurat dalam Bahasa Indonesia.
+
+Berdasarkan data empiris terkini yang dilaporkan oleh Yudhistira, et al. \cite{yudhistira2026does} pada dataset radiologi klinis IndoRad-VQA (2.244 pasangan pertanyaan-jawaban dari 314 citra X-ray, CT, dan MRI), mayoritas model VLM mengalami degradasi keandalan yang parah ketika dihadapkan pada fenomena pergeseran bahasa (\textit{language shift}) dari Bahasa Inggris ke Bahasa Indonesia. Data pengujian tersebut membuktikan terjadinya penurunan akurasi diagnostik sebesar 8\% hingga 25\% serta tingkat pembalikan jawaban lintas bahasa (\textit{cross-lingual flip rate}) yang tinggi ketika pertanyaan radiologi diterjemahkan ke dalam Bahasa Indonesia. Kondisi ini mengonfirmasi bahwa kesenjangan distribusi bahasa pelatihan yang didominasi korpus berbahasa Inggris menjadi ancaman nyata terhadap keselamatan pasien di Indonesia.
+
+Namun, masalah yang lebih krusial dalam evaluasi sistem tersebut adalah kegagalan mekanisme penolakan (\textit{abstention}) berbasis skor keyakinan (\textit{confidence}) internal model akibat ketergantungan berlebih pada pola frekuensi teks (\textit{language prior}) dibandingkan bukti visual radiografis (\textit{visual ungroundedness}). Sadanandan dan Behzadan \cite{sadanandan2026mechanistically,sadanandan2026attention} menunjukkan bahwa konsistensi jawaban teks semata sering kali merupakan jebakan reliabilitas palsu (\textit{false reliability trap}), sementara data eksperimen Zafar, et al. \cite{zafar2026do} membuktikan bahwa menghapus citra medis menjadi citra kosong hanya menurunkan akurasi model sebesar $\le 6{,}5$ poin persentase. Di sisi lain, studi kalibrasi oleh Guo, et al. \cite{guo2017calibration} dan Byun, et al. \cite{byun2026overconfidence} mengungkap bahwa model cenderung mengalami \textit{overconfidence} ekstrem saat menghasilkan jawaban salah, sementara eksperimen awal pelatihan ulang (\textit{fine-tuning}) menggunakan LoRA oleh Hu, et al. \cite{hu2021lora} dan QLoRA oleh Dettmers, et al. \cite{dettmers2023qlora} pada studi ini justru terbukti menurunkan akurasi Bahasa Indonesia sebesar $-12{,}00\%$ dan meningkatkan \textit{flip rate} sebesar $+4{,}00\%$.
+
+Penelitian terdahulu di bidang prediksi selektif (\textit{selective prediction}) seperti Dancette, et al. \cite{dancette2023improving} umumnya berfokus pada pelatihan fungsi seleksi berbasis ketidaksepakatan \textit{ensemble} pada satu bahasa dominan, sedangkan Song, et al. \cite{song2026detecting} mengeksplorasi ketidakpastian visual kontrafaktual untuk deteksi halusinasi tanpa mempertimbangkan efek pergeseran bahasa lintas negara. Di sisi lain, evaluasi IndoRad-VQA oleh Yudhistira, et al. \cite{yudhistira2026does} masih bersifat evaluasi statis \textit{unselective} yang belum menyediakan mekanisme penyaringan kesalahan pada waktu inferensi (\textit{inference-time}). Dengan demikian, terdapat kesenjangan penelitian (\textit{research gap}) karena belum ada studi kuantitatif yang menguji apakah sensitivitas skor kandidat terhadap penghilangan informasi visual berarah ($\Delta P_{\mathrm{dir}}$) serta ketidaksepakatan prediksi lintas bahasa ($D_{\mathrm{lang}}$) mampu meningkatkan efektivitas pengurutan risiko kesalahan (menurunkan nilai \textit{Area Under the Risk--Coverage Curve} / AURC) dibandingkan skor keyakinan internal tunggal ($M_1$) pada Medical VLM berbahasa Indonesia.
+
+Menguji pengaruh sinyal sensitivitas visual dan ketidaksepakatan lintas bahasa secara kuantitatif sangat mendesak untuk mencegah kegagalan diagnosis diam-diam (\textit{silent diagnostic failure}) dalam pengembangan sistem informasi medis yang tepercaya (\textit{trustworthy AI}). Penelitian ini bertujuan untuk menguji pengaruh pergeseran bahasa, sensitivitas penghilangan visual ($\Delta P_{\mathrm{dir}}$), dan ketidaksepakatan lintas bahasa ($D_{\mathrm{lang}}$) terhadap risiko kesalahan prediksi selektif melalui pendekatan kuantitatif. Secara spesifik, pertanyaan penelitian (\textit{Research Questions} / RQ) yang diajukan adalah:
+\begin{enumerate}[label=(RQ\arabic*),leftmargin=*]
+    \item Apakah pergeseran bahasa Inggris ke Indonesia menurunkan akurasi dan konsistensi prediksi model VLM?
+    \item Apakah sensitivitas penghilangan visual berarah ($\Delta P_{\mathrm{dir}}$) berasosiasi signifikan dengan kesalahan prediksi Bahasa Indonesia?
+    \item Apakah estimator selektif berbasis sensitivitas visual ($M_{\mathrm{norm}}$) menghasilkan nilai AURC yang lebih rendah secara signifikan dibandingkan \textit{baseline confidence} ($M_1$)?
+    \item Apakah variabel ketidaksepakatan lintas bahasa ($D_{\mathrm{lang}}$) memberikan pengaruh inkremental yang signifikan dalam memprediksi risiko kesalahan pada model regresi logistik?
+\end{enumerate}
+
+% =========================================================================
+% 2. METODE PENELITIAN
+% =========================================================================
+\section{Metode Penelitian}
+
+\subsection{Pendekatan dan Desain Penelitian Kuantitatif}
+Penelitian ini mengadopsi paradigma kuantitatif berbasis positivisme dan deduktif, yang mengasumsikan bahwa keandalan serta risiko kesalahan sistem kecerdasan buatan dapat diukur secara objektif melalui indikator numerik dan diuji menggunakan hipotesis statistik. Mengacu pada taksonomi metode kuantitatif dalam Sistem Informasi, penelitian ini mengintegrasikan dua pendekatan utama:
+\begin{enumerate}[label=(\arabic*),leftmargin=*]
+    \item \textbf{Evaluasi Kuantitatif Sistem/Artefak}, yaitu mengukur kinerja akurasi, kalibrasi, dan risiko selektif (AURC) pada dua artefak model fondasi multimodal berkapasitas 7 miliar parameter yang berbagi arsitektur dasar \texttt{Qwen2\_5\_VLForConditionalGeneration}, yakni model umum \texttt{Qwen/Qwen2.5-VL-7B-Instruct} yang dikembangkan oleh Bai, et al. \cite{bai2025qwen2} dan model spesialis medis \texttt{FreedomIntelligence/HuatuoGPT-Vision-7B-Qwen2.5VL}; serta
+    \item \textbf{Desain Eksperimen Komputasional Terkontrol} (\textit{Within-Subject / Paired Counterfactual Experiment}), di mana setiap unit sampel diberikan perlakuan (\textit{treatment}) manipulasi modalitas visual (citra radiologi asli $P_0$ vs citra kanvas hitam $P_1$) dan perlakuan bahasa prompt (Bahasa Inggris vs Bahasa Indonesia) dengan kontrol ketat terhadap arsitektur \textit{vision encoder}, kuantisasi 4-bit NF4, dan tokenizer BPE.
+\end{enumerate}
+
+\subsection{Populasi, Sampel, dan Instrumen Pengumpulan Data}
+Populasi dalam penelitian ini adalah seluruh pasangan pertanyaan-jawaban klinis radiologi bilingual pada dataset publik Lab-IS/IndoRad-VQA yang dikembangkan oleh Yudhistira, et al. \cite{yudhistira2026does}, yang berjumlah 2.244 pasangan tanya-jawab dari 314 citra radiologi unik (X-ray, CT, dan MRI). Teknik pengambilan sampel menggunakan \textit{purposive cluster sampling} dengan kriteria inklusi dan eksklusi yang ketat: mengeluarkan 1.053 pertanyaan terbuka (\textit{open-ended}) yang tidak memenuhi ruang probabilitas biner tertutup, serta mengeksklusi 69 pasangan pertanyaan yang terbukti memiliki cacat translasi kritis (pembalikan negasi, kesalahan organ, atau lateralitas).
+
+Sampel akhir yang memenuhi syarat membentuk Kohort Primer Bersih (\textit{Primary Cohort CLEAN T0/T1}) sebanyak $N = 1.122$ pasangan tanya-jawab dari 292 klaster citra fisik kanonis (\texttt{canonical\_image\_id}) yang terverifikasi utuh melalui hash SHA-256. Untuk menjamin validitas internal dan mencegah kebocoran data lintas-\textit{split} (\textit{zero data leakage}), klaster citra fisik dibagi secara saling lepas menjadi \textit{Calibration Development Split} ($N_{\mathrm{dev}} = 323$ sampel dari 88 klaster citra) untuk pelatihan model regresi logistik, dan \textit{Primary Test Split} beku ($N_{\mathrm{test}} = 799$ sampel dari 204 klaster citra) untuk pengujian hipotesis akhir, sebagaimana dirinci pada Tabel~\ref{tab:kohort}.
+
+\begin{table}[htbp]
+\centering
+\caption{Rekonsiliasi kohort evaluasi dan pemisahan klaster citra bebas kebocoran.}
+\label{tab:kohort}
+\vspace{0.3em}
+\footnotesize
+\begin{tabular}{lcccccc}
+\toprule
+\textbf{Kohort Evaluasi} & \textbf{Total} & \textbf{Test Split} & \textbf{Dev Split} & \textbf{Klaster} & \textbf{Klaster} & \textbf{Overlap} \\
+ & \textbf{Sampel} & \textbf{($N_{\mathrm{test}}$)} & \textbf{($N_{\mathrm{dev}}$)} & \textbf{Citra Test} & \textbf{Citra Dev} & \textbf{Antar-Split} \\
+\midrule
+Track 1: Primary Cohort (T1) & 1.122 & 799 & 323 & 204 & 88 & 0 (0,0\%) \\
+Track 2: Historical Benchmark (T2) & 150 & 92 & 58 & 35 & 23 & 0 (0,0\%) \\
+Active Union Evaluated & 1.133 & 806 & 327 & 204 & 88 & 0 (0,0\%) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Instrumen pengumpulan data dalam penelitian kuantitatif ini berupa skrip pencatat log inferensi otomatis (\textit{automated system log \& candidate scoring pipeline}) dengan instrumen prompt terstandar yang simetris 1-ke-1 menggunakan token penutup \verb|<|im\_end\verb|>|, dengan templat perintah \textit{Answer only YES or NO. Question: \{question\_text\}} untuk Bahasa Inggris dan \textit{Jawab hanya dengan YA atau TIDAK. Pertanyaan: \{question\_text\}} untuk Bahasa Indonesia.
+
+\subsection{Definisi Operasional Variabel dan Pengukuran Matematis}
+Seluruh variabel penelitian didefinisikan secara operasional ke dalam skala numerik terukur pada dataset evaluasi $\mathcal{D} = \{(I_i, Q_{i,\mathrm{EN}}, Q_{i,\mathrm{ID}}, y_i^*)\}$ untuk $i = 1, \dots, N$ dengan ruang kandidat biner tertutup $\mathcal{Y} = \{c_{\mathrm{aff}}, c_{\mathrm{neg}}\}$ (YES/NO atau YA/TIDAK). Untuk menghilangkan bias panjang token (\textit{length penalty}) antara kata ``TIDAK'' (multi-token) dan ``YA'' (single-token), diterapkan pemotongan logit kausal pada indeks $[L_{\mathrm{prompt}} - 1 : L_{\mathrm{prompt}} - 1 + L_{\mathrm{target}}]$ guna mengukur kejutan ternormalisasi panjang (\textit{length-normalized surprisal}) rata-rata per token $\bar{s}(y \mid X)$ sesuai Persamaan~(1):
+\begin{equation}
+\bar{s}(y \mid X) = \frac{1}{L} \sum_{t=1}^L \log P(y_t \mid y_{<t}, X)
+\end{equation}
+
+Skor preferensi kandidat biner tertutup $P_{\mathrm{cand}}(y \mid X)$ kemudian diukur menggunakan fungsi softmax terstabilkan (\textit{logsumexp}) sebagaimana dirumuskan pada Persamaan~(2):
+\begin{equation}
+P_{\mathrm{cand}}(y \mid X) = \frac{\exp(\bar{s}(y \mid X))}{\sum_{y' \in \mathcal{Y}} \exp(\bar{s}(y' \mid X))}
+\end{equation}
+
+Berdasarkan Persamaan~(1) dan Persamaan~(2), variabel bebas (independen/prediktor), variabel perlakuan, dan variabel terikat (dependen) didefinisikan sebagai berikut:
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Variabel Perlakuan Bahasa ($X_{\mathrm{lang}}$) dan Perlakuan Visual ($I$):} \\
+    Perlakuan bahasa terdiri atas Bahasa Inggris (EN) dan Bahasa Indonesia (ID), sedangkan perlakuan visual terdiri atas kondisi citra radiologi asli ($P_0 = I_i$) dan kondisi citra kanvas hitam deterministik ($P_1 = \mathbf{0}_{(W_i, H_i, 3)}$) yang berdimensi identik namun bersifat \textit{Out-of-Distribution} (OOD) bagi enkoder visual.
+    
+    \item \textbf{Variabel Bebas 1 --- Skor Keyakinan Internal ($X_1 = p_{\mathrm{orig,ID}}$):} \\
+    Nilai probabilitas kandidat tertinggi pada citra asli berbahasa Indonesia, yaitu $p_{\mathrm{orig,ID}} = P_{\mathrm{cand}}(\hat{y}_{\mathrm{ID}} \mid P_0, Q_{\mathrm{ID}}) \in [0.5, 1.0]$, dengan prediksi diskrit $\hat{y}_{\mathrm{ID}} = \operatorname{argmax}_{y \in \mathcal{Y}} P_{\mathrm{cand}}(y \mid P_0, Q_{\mathrm{ID}})$.
+    
+    \item \textbf{Variabel Bebas 2 --- Sensitivitas Penghilangan Visual Berarah ($X_2 = \Delta P_{\mathrm{dir}}$):} \\
+    Selisih penurunan skor kandidat terpilih ketika citra asli diganti dengan citra hitam ($p_{\mathrm{blank,ID}} = P_{\mathrm{cand}}(\hat{y}_{\mathrm{ID}} \mid P_1, Q_{\mathrm{ID}})$) sebagaimana dirumuskan pada Persamaan~(3):
+    \begin{equation}
+    \Delta P_{\mathrm{dir}} = p_{\mathrm{orig,ID}} - p_{\mathrm{blank,ID}} \in [-1.0, 1.0]
+    \end{equation}
+    
+    \item \textbf{Variabel Bebas 3 --- Ketidaksepakatan Prediksi Lintas Bahasa ($X_3 = D_{\mathrm{lang}}$):} \\
+    Variabel indikator biner yang mengukur apakah prediksi diskrit Bahasa Inggris ($\hat{y}_{\mathrm{EN}}$) berbeda dengan Bahasa Indonesia ($\hat{y}_{\mathrm{ID}}$) pada citra asli yang sama sesuai Persamaan~(4):
+    \begin{equation}
+    D_{\mathrm{lang}} = \mathbb{I}(\hat{y}_{\mathrm{EN}} \ne \hat{y}_{\mathrm{ID}}) \in \{0, 1\}
+    \end{equation}
+    
+    \item \textbf{Variabel Terikat --- Kesalahan Prediksi ($Y = e_{\mathrm{ID}}$) dan Risiko Selektif (AURC):} \\
+    Variabel biner kesalahan diagnostik terhadap acuan klinis $e_{\mathrm{ID}} = \mathbb{I}(\hat{y}_{\mathrm{ID}} \ne y_{\mathrm{ID}}^*) \in \{0, 1\}$, yang pada tingkat evaluasi sistem diagregasi menjadi nilai \textit{Discrete Riemann AURC} dan risiko selektif pada cakupan 80\% ($r_{0{,}80}$).
+\end{enumerate}
+
+\subsection{Model Penelitian, Estimator Selektif, dan Perumusan Hipotesis}
+Untuk menguji pengaruh variabel bebas terhadap pengurutan risiko kesalahan tanpa pelatihan ulang bobot jaringan saraf VLM, penelitian ini membandingkan aturan keputusan langsung (\textit{Primary Track}) dengan model regresi logistik terpelajar (\textit{Secondary Ablation Track}). Pada jalur primer, lima estimator langsung diukur pada data uji beku: (1) Keyakinan Dasar $S_{\mathrm{M1}} = p_{\mathrm{orig,ID}}$; (2) Sensitivitas Visual Murni $S_{\mathrm{M2}} = \max(0, \Delta P_{\mathrm{dir,ID}})$; (3) Estimator Multiplikatif $S_{\mathrm{dir}} = p_{\mathrm{orig,ID}} \times \max(0, \Delta P_{\mathrm{dir,ID}})$; (4) Kontrol Historis $S_{\mathrm{M3}} = p_{\mathrm{orig,ID}} \times ((1 + |\Delta P_{\mathrm{dir,ID}}|) / 2)$; serta (5) Estimator Visual Primer ($M_{\mathrm{norm}}$) yang mengombinasikan keyakinan internal dan sensitivitas visual secara linear halus tanpa keruntuhan nilai nol sesuai Persamaan~(5):
+\begin{equation}
+S_{\mathrm{norm}} = p_{\mathrm{orig,ID}} \times \left(\frac{1 + \Delta P_{\mathrm{dir,ID}}}{2}\right)
+\end{equation}
+
+Pada jalur sekunder, diestimasi model regresi logistik dengan regularisasi L2 ($C = 1.0$) pada himpunan pengembangan ($N = 323$) menggunakan validasi silang GroupKFold ($K = 5$) berbasis klaster citra untuk memodelkan pengaruh variabel prediktor terhadap peluang logaritma (\textit{log-odds}) kesalahan prediksi ($Y = e_{\mathrm{ID}}$). Tiga spesifikasi model regresi yang diuji secara berjenjang adalah LR-conf (hanya $X_1$), LR-visual ($X_1$ dan $X_2$), serta model penuh LR-full ($X_1$, $X_2$, dan $X_3$) sebagaimana dinyatakan pada Persamaan~(6):
+\begin{equation}
+\operatorname{Logit}(\hat{P}(e_{\mathrm{ID}} = 1 \mid \mathbf{x})) = \beta_0 + \beta_1 \cdot z(p_{\mathrm{orig,ID}}) + \beta_2 \cdot z(\Delta P_{\mathrm{dir,ID}}) + \beta_3 \cdot D_{\mathrm{lang}}
+\end{equation}
+dengan $\beta_0$ sebagai intersep, $\beta_1, \beta_2, \beta_3$ sebagai koefisien regresi masing-masing variabel bebas, dan $z(\cdot)$ sebagai transformasi skor standar $z$ dari himpunan pengembangan. Skor reliabilitas retensi untuk seluruh model regresi logistik diselaraskan melalui Persamaan~(7):
+\begin{equation}
+S_{\mathrm{LR}} = 1 - \hat{P}(e_{\mathrm{ID}} = 1 \mid \mathbf{x}) \in [0, 1]
+\end{equation}
+
+Berdasarkan kerangka konseptual dan rumusan masalah kuantitatif di atas, dirumuskan empat hipotesis penelitian (H1–H4) yang akan diuji secara empiris:
+\begin{itemize}[leftmargin=*]
+    \item \textbf{H1 (Hipotesis Pergeseran Bahasa):} Pergeseran bahasa dari Bahasa Inggris ke Bahasa Indonesia berpengaruh negatif dan signifikan terhadap akurasi prediksi ($\Delta \mathrm{acc} \ge 5\%$, $p < 0{,}05$) serta memicu ketidaksepakatan prediksi lintas-bahasa yang non-trivial ($\mathrm{Flip\ Rate} \ge 15\%$).
+    \item \textbf{H2 (Hipotesis Asosiasi Sensitivitas Visual):} Prediksi Bahasa Indonesia yang salah ($e_{\mathrm{ID}} = 1$) memiliki rata-rata sensitivitas penghilangan visual ($\Delta P_{\mathrm{dir}}$) yang lebih rendah secara signifikan dibandingkan prediksi yang benar ($e_{\mathrm{ID}} = 0$, $p < 0{,}05$).
+    \item \textbf{H3 (Hipotesis Primer Prediksi Selektif Visual):} Estimator visual primer ($M_{\mathrm{norm}}$) menghasilkan nilai risiko kesalahan selektif (AURC) yang lebih rendah secara signifikan dibandingkan keyakinan dasar tunggal ($M_1$) pada data uji beku ($\Delta \mathrm{AURC}(M_{\mathrm{norm}} - M_1) < 0$, $p_{\mathrm{adj}} < 0{,}05$).
+    \item \textbf{H4 (Hipotesis Nilai Tambah Inkremental Lintas Bahasa):} Penambahan variabel ketidaksepakatan lintas bahasa ($D_{\mathrm{lang}}$) pada model regresi LR-full memberikan penurunan nilai AURC yang signifikan secara statistik dibandingkan model LR-visual yang hanya menggunakan variabel keyakinan dan sensitivitas visual ($\Delta \mathrm{AURC}(\mathrm{LR\text{-}full} - \mathrm{LR\text{-}visual}) < 0$, $p_{\mathrm{adj}} < 0{,}05$).
+\end{itemize}
+
+\subsection{Teknik Analisis Data Statistik Deskriptif dan Inferensial}
+Teknik analisis data kuantitatif dilakukan dalam dua tahap. Pertama, analisis statistik deskriptif digunakan untuk memetakan profil kinerja masing-masing model pada setiap kondisi eksperimen melalui ukuran pemusatan dan penyebaran (rata-rata, simpangan baku, median, rentang interkuartil), proporsi akurasi, tingkat pembalikan jawaban (\textit{flip rate}), galat kalibrasi terharap (ECE), serta skor Brier. Untuk mengevaluasi kurva \textit{Risk--Coverage} pada data uji beku ($N = 799$), sampel diurutkan menurun berdasarkan skor reliabilitas $S_{(1)} \ge S_{(2)} \ge \dots \ge S_{(N)}$, lalu dihitung risiko selektif empiris $r_k$ pada cakupan $\phi_k = k/N$ dan metrik \textit{Discrete Riemann AURC} sesuai Persamaan~(8) dan Persamaan~(9):
+\begin{equation}
+r_k = 1 - \frac{1}{k} \sum_{j=1}^k \mathbb{I}(\hat{y}_{(j)} == y_{(j)}^*)
+\end{equation}
+\begin{equation}
+\mathrm{AURC} = \frac{1}{N} \sum_{k=1}^N r_k
+\end{equation}
+
+Kedua, analisis statistik inferensial diterapkan untuk menguji hipotesis H1 hingga H4. Mengingat beberapa sampel pertanyaan berasal dari citra radiologi yang sama, unit analisis independen dalam seluruh pengujian inferensial ditetapkan pada tingkat klaster citra fisik kanonis ($K = 204$ klaster pada data uji) guna menghindari bias korelasi intra-klaster. Uji beda asosiasi $\Delta P_{\mathrm{dir}}$ antara kelompok jawaban benar dan salah (H2) dianalisis menggunakan uji non-parametrik Mann--Whitney U dan korelasi poin-biserial. Estimasi interval kepercayaan 95\% (95\% CI) untuk AURC dan $\Delta \mathrm{AURC}$ dihitung menggunakan metode \textit{Paired Image-Cluster Bootstrap} ($B = 1000$ replikasi). Sementara itu, pengujian signifikansi hipotesis komparatif berpasangan (H1, H3, dan H4) menggunakan uji permutasi klaster berpasangan tepat ($B = 1000$) dengan pembalikan tanda Rademacher $\varepsilon_c \in \{-1, +1\}$ serta uji rasio kemungkinan (\textit{Likelihood Ratio Test}) untuk koefisien regresi $\beta_3$. Untuk mengendalikan tingkat kesalahan keluarga (\textit{Family-Wise Error Rate}) pada taraf signifikansi $\alpha = 0{,}05$, diterapkan koreksi multiplisitas Holm--Bonferroni pada empat komparasi terencana: (1) $M_{\mathrm{norm}}$ vs $M_1$; (2) LR-conf vs $M_1$; (3) LR-visual vs LR-conf; dan (4) LR-full vs LR-visual.
+
+% =========================================================================
+% 3. HASIL DAN PEMBAHASAN
+% =========================================================================
+\section{Hasil dan Pembahasan}
+\textit{(Bagian ini akan diisi setelah tahap eksekusi konfirmatori GPU dan pengujian hipotesis regresi logistik selesai dilakukan, mengikuti format Tabel dan Gambar JICT ITB).}
+
+% =========================================================================
+% 4. KESIMPULAN
+% =========================================================================
+\section{Kesimpulan}
+\textit{(Bagian ini akan diisi pada tahap akhir sesuai hasil pengujian hipotesis statistik H1–H4).}
+
+% =========================================================================
+% UCAPAN TERIMA KASIH (ACKNOWLEDGEMENTS)
+% =========================================================================
+\section*{Acknowledgements}
+Penulis mengucapkan terima kasih kepada dosen pengampu mata kuliah Metodologi Penelitian dan Penulisan Ilmiah serta dosen pembimbing di Program Studi Sistem Informasi Universitas Hasanuddin atas arahan metodologis dalam penelitian ini.
+
+% =========================================================================
+% NOMENCLATURE
+% =========================================================================
+\section*{Nomenclature}
+\noindent
+\begin{tabular}{@{}p{2.2cm}p{13cm}@{}}
+\textbf{AURC} & Area Under the Risk--Coverage Curve \\
+$D_{\mathrm{lang}}$ & Variabel independen ketidaksepakatan prediksi lintas bahasa ($X_3$) \\
+\textbf{ECE} & Expected Calibration Error \\
+$P_0$ & Perlakuan kondisi citra radiologi asli (\texttt{P0\_ORIGINAL}) \\
+$P_1$ & Perlakuan kondisi citra kanvas hitam deterministik (\texttt{P1\_BLACK\_BLANK}) \\
+$p_{\mathrm{orig,ID}}$ & Variabel independen skor preferensi kandidat terpilih pada citra asli ($X_1$) \\
+$p_{\mathrm{blank,ID}}$ & Skor preferensi kandidat terpilih pada citra hitam berbahasa Indonesia \\
+$r_k$ & Risiko selektif empiris pada cakupan langkah ke-$k$ \\
+$\bar{s}(y \mid X)$ & Surprisal rata-rata sekuens kandidat ternormalisasi panjang \\
+$\beta_0, \beta_1, \beta_2, \beta_3$ & Konstanta (intersep) dan koefisien regresi logistik \\
+$\Delta P_{\mathrm{dir}}$ & Variabel independen sensitivitas penghilangan informasi visual berarah ($X_2$) \\
+$\phi_k$ & Cakupan empiris (\textit{coverage}) pada langkah ke-$k$
+\end{tabular}
+
+\vspace{1.5em}
+
+% =========================================================================
+% REFERENCES
+% =========================================================================
+\begin{thebibliography}{12}
+
+\bibitem{hartsock2024review}
+I.~Hartsock and G.~Rasool, ``A Review of Medical Vision-Language Models,'' \textit{Artificial Intelligence in Medicine}, vol.~116, no.~1, pp.~1--22, Dec. 2024.
+
+\bibitem{yudhistira2026does}
+P.~C.~Y. Yudhistira, D.~R. Malik, and N.~Yudistira, ``Does Language Shift Break Medical Vision-Language Models? Indonesian Radiology Visual Question Answering Case Study,'' in \textit{Proc. of CVPR Workshop on Multimodal Foundation Models for Biomedicine (MMFM-BIOMED)}, pp.~1--10, Jun. 2026.
+
+\bibitem{sadanandan2026mechanistically}
+A.~Sadanandan and V.~Behzadan, ``Mechanistically Guided LoRA Improves Paraphrase Consistency in Medical Vision-Language Models,'' in \textit{Proceedings of Machine Learning Research (PMLR)}, vol.~333, pp.~1--15, 2026.
+
+\bibitem{sadanandan2026attention}
+A.~Sadanandan and V.~Behzadan, ``Attention Without Grounding,'' in \textit{Proc. of MICCAI Satellite Workshop (iMIMIC)}, pp.~1--10, 2026.
+
+\bibitem{zafar2026do}
+A.~Zafar, L.~K. Murali, S.~Bharadwaj, A.~Vashist, and J.~Wu, ``Do Medical Vision Language Models Actually See? A Counterfactual Grounding Framework and Hard-Negative Contrastive Training for Visually-Reliant Medical VLMs,'' \textit{arXiv preprint}, arXiv:2607.03647, Jul. 2026.
+
+\bibitem{guo2017calibration}
+C.~Guo, G.~Pleiss, Y.~Sun, and K.~Q. Weinberger, ``On Calibration of Modern Neural Networks,'' in \textit{Proceedings of the 34th International Conference on Machine Learning (ICML)}, vol.~70, pp.~1321--1330, Aug. 2017.
+
+\bibitem{byun2026overconfidence}
+J.~Byun et~al., ``Overconfidence and Calibration in Medical VQA,'' \textit{arXiv preprint}, arXiv:2604.02543, Apr. 2026.
+
+\bibitem{dancette2023improving}
+C.~Dancette, S.~Wen, Y.~Zhang, et~al., ``Improving Selective Visual Question Answering by Learning From Your Peers,'' in \textit{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, pp.~24049--24059, Jun. 2023.
+
+\bibitem{song2026detecting}
+Y.~Song et~al., ``Detecting Clinical Hallucinations via Counterfactual Visual Grounding Uncertainty,'' in \textit{Proceedings of the International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI)}, pp.~1--11, 2026.
+
+\bibitem{hu2021lora}
+E.~J. Hu, Y.~Shen, P.~Wallis, Z.~Allen-Zhu, Y.~Li, S.~Wang, L.~Wang, and W.~Chen, ``LoRA: Low-Rank Adaptation of Large Language Models,'' \textit{arXiv preprint}, arXiv:2106.09685, Jun. 2021.
+
+\bibitem{dettmers2023qlora}
+T.~Dettmers, A.~Pagnoni, A.~Holtzman, and L.~Zettlemoyer, ``QLoRA: Efficient Finetuning of Quantized LLMs,'' in \textit{Advances in Neural Information Processing Systems (NeurIPS)}, pp.~1--18, May 2023.
+
+\bibitem{bai2025qwen2}
+S.~Bai et~al., ``Qwen2.5-VL Technical Report,'' \textit{arXiv preprint}, arXiv:2502.13923, Feb. 2025.
+
+\end{thebibliography}
+
+\end{document}
