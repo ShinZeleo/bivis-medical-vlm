@@ -114,3 +114,61 @@ Perubahan ini membentuk **jalur evaluasi baru (`rev06`)** yang terisolasi dari `
 * **Demarkasi Integritas Ilmiah Data rev06:**
   * Menegaskan bahwa evaluasi rev06 pada Notebook 10 saat ini berstatus **data tiruan (mock preflight)** untuk memvalidasi alur agregasi sebelum GPU dijalankan.
   * Dipastikan bahwa `RESEARCH_MASTER.md` v12.0 **tidak memuat angka sintetis rev06** sama sekali; seluruh isi dokumen v12 tetap 100% berakar pada data empiris beku rev05.
+
+
+---
+
+## 5. Tata Kelola Revisi, Atribusi Checkpoint & Penguatan Gate (a) rev06
+
+* **Audit Asal-Usul Checkpoint rev05 (Atribusi Checkpoint & Komparasi Skema):**
+  * *Pemeriksaan Kolom:* Sebanyak 62 kolom pada `live_validation_checkpoint_Qwen_Qwen2.5_VL_7B_Instruct.csv` dan `live_validation_checkpoint_FreedomIntelligence_HuatuoGPT_Vision_7B_Qwen2.5VL.csv` dibandingkan secara kanonikal terhadap kamus `new_records.append` pada seluruh kandidat notebook:
+    1. `08_decisive_validation_rev05.ipynb` (monolitik dual-model di tag `v11.0-rev05-frozen`, memiliki "STAGE 21 & 22"): **Cocok sempurna 62/62 kolom dalam urutan yang identik**.
+    2. `09_infer_huatuo_resume.ipynb` (dedicated Huatuo resume di tag `v11.0-rev05-frozen`): **Cocok sempurna 62/62 kolom dalam urutan yang identik**.
+    3. `08_qwen_decisive_validation.ipynb` (modular rev05b): Menggunakan skema yang sama (62 kolom) sebelum penambahan track `_v6`.
+  * *Nilai Metadata Checkpoint:* Nilai tersimpan pada baris CSV adalah `revision_id = "rev05"` dan `scoring_method = "exact_sequence_candidate_normalized_v5"`.
+  * *Kesimpulan Atribusi:* Checkpoint rev05 dibangkitkan oleh pipeline `08_decisive_validation_rev05.ipynb` monolitik (dual-model) untuk inferensi awal Qwen, dan diselesaikan/diresume menggunakan `09_infer_huatuo_resume.ipynb` untuk Huatuo akibat keterbatasan batas waktu (timeout) Kaggle Dual-T4.
+
+* **Restorasi Berkas Asli rev05 (Byte-Identik) di `notebooks/kaggle/rev05/`:**
+  * File `09_huatuo_decisive_validation_rev05.ipynb` (10 sel kode) yang sebelumnya keliru diekspor dari resume notebook telah **DIHAPUS**.
+  * Direktori `notebooks/kaggle/rev05/` kini memuat 3 file asli murni yang disediakan pengguna tanpa modifikasi apa pun (byte-identik):
+    * `notebooks/kaggle/rev05/08_qwen_decisive_validation.ipynb` (16 sel kode):
+      `SHA-256: 415b90549eb33e7be514e67cf9053b7a25b2fd54b4199a379a25213156624066`
+    * `notebooks/kaggle/rev05/09_huatuo_decisive_validation.ipynb` (16 sel kode):
+      `SHA-256: f58634568080746a622adda2b8814bd47c0c79979ea0559dd2f89b5df1913316`
+    * `notebooks/kaggle/rev05/10_standalone_aggregation_evaluation.ipynb` (11 sel kode):
+      `SHA-256: 1f6c0d62ea4dfbb18149ac12200df7910e7c22fb90777ca503a36e4ac1b4de24`
+
+* **Penyimpanan Salinan Patch Bug Non-Pengubah-Hasil di `notebooks/kaggle/rev05_patched/`:**
+  * File asli pada `rev05/` dipertahankan byte-identik. Seluruh perbaikan bug sintaks/library non-pengubah-hasil diisolasi ke dalam direktori `notebooks/kaggle/rev05_patched/`:
+    * `08_qwen_decisive_validation.ipynb`:
+      `SHA-256: 92f0d1ef0ca8820a7f84ab39f61a1f4c334d5b90e8d94db5094d46a833111806`
+      *Diff:* Koreksi label progress bar `desc="HuatuoGPT Inference"` -> `desc="Qwen2.5-VL Inference"` (Sel 8); penambahan `import matplotlib.pyplot as plt` (Sel 14); penghapusan baris variabel tak terpakai `df_qwen_test = df_qwen[...]` (Sel 14); pembersihan `penalty="l2"` pada `LogisticRegression` (Sel 15).
+    * `09_huatuo_decisive_validation.ipynb`:
+      `SHA-256: d1bb31ecea0c085e7540003bf91c8afdc3b6e49c29edc59a5a81d38047516cce`
+      *Diff:* Penambahan `import matplotlib.pyplot as plt` (Sel 14); penghapusan variabel tak terpakai `df_huatuo_test = df_huatuo[...]` (Sel 14); pembersihan `penalty="l2"` pada `LogisticRegression` (Sel 15).
+    * `10_standalone_aggregation_evaluation.ipynb`:
+      `SHA-256: 65ea047ed5a533b6c57a148aebc3a47747fd169c7426604357b7ad81a067c945`
+      *Diff:* Penambahan `import matplotlib.pyplot as plt` di awal sel RQ3 (Sel 7); pembersihan `penalty="l2"` pada `LogisticRegression` (Sel 8).
+
+* **Pembersihan Root Kaggle & Penempatan Notebook `rev06/`:**
+  * Seluruh notebook inferensi dan evaluasi berprotokol `rev06` dipindahkan dari root `notebooks/kaggle/` ke `notebooks/kaggle/rev06/`:
+    * `notebooks/kaggle/rev06/08_qwen_decisive_validation.ipynb` (16 sel kode)
+    * `notebooks/kaggle/rev06/09_huatuo_decisive_validation.ipynb` (16 sel kode)
+    * `notebooks/kaggle/rev06/10_standalone_aggregation_evaluation.ipynb` (11 sel kode)
+  * Berkas notebook di root `notebooks/kaggle/` dihapus sehingga tidak ada ambiguitas berkas.
+  * Total notebook pada repositori: 9 notebook (3 di `rev05/`, 3 di `rev05_patched/`, 3 di `rev06/`), memuat 129 sel kode yang 100% lolos verifikasi `verify_ast.py`.
+
+* **Pengetatan Kriteria Gate (a) di Sel 8B rev06:**
+  * Lolos Gate (a) mensyaratkan konjungsi 4 kriteria ketat:
+    1. `pred_match_rate_3cond >= 98.0%` dihitung per-prediksi ($N_{	ext{pred}} = 120$ untuk 3 kondisi: EN-$P_0$, ID-$P_0$, ID-$P_1$).
+    2. **Marginalitas Mismatch:** Setiap ketidakcocokan label WAJIB memiliki margin $|p - 0.5| < 0.02$ pada **KEDUA** nilai (tersimpan dan pilot). Jika ada satu sampel saja dengan margin $|p - 0.5| \ge 0.02$ yang labelnya berbeda, Gate (a) otomatis **GAGAL**.
+    3. `mean_dp_orig < 0.02` pada probabilitas ID-$P_0$, serta 0 kemunculan NaN atau Inf.
+    4. **Integritas Sumber Data:** Jika berkas checkpoint rev05 tidak ditemukan di `/kaggle/input`, eksekusi segera dihentikan dengan melempar `RuntimeError("Stored rev05 checkpoint not found in /kaggle/input! Cannot verify Gate (a) equivalence.")` (bukan sekadar peringatan cetak).
+  * *Klaim Status:* Seluruh pengujian pipeline berstatus **lolos ast.parse dan pytest pada data tiruan; belum diverifikasi di GPU nyata**.
+
+* **Pembersihan Checkpoint Tiruan rev06 & Penegakan Guardrail `is_mock`:**
+  * Direktori output checkpoint tiruan `artifacts/experiments/decisive_validation/rev06/` telah dihapus secara permanen.
+  * `scripts/generate_mock_rev06_checkpoints.py` diperbarui untuk secara eksplisit menyertakan kolom `is_mock = True`.
+  * Loader checkpoint di `notebooks/kaggle/rev06/10_standalone_aggregation_evaluation.ipynb` (Cell 4) diperketat: secara aktif menolak berkas/jalur dengan nama mock atau dataframe dengan kolom `is_mock == True` dengan melempar `RuntimeError("Mock checkpoint detected! Standalone aggregation refuses mock data.")`.
+  * Verifikasi manifest SHA-256 (Cell 3) diperketat dengan melempar `RuntimeError` jika manifest tidak ditemukan dan fallback embedded tidak tersedia atau corrupt.
+  * Seluruh output tersimpan (`outputs: []`, `execution_count: None`) pada ketiga notebook `notebooks/kaggle/rev06/*.ipynb` telah dibersihkan hingga bersih (0 cell dengan output).

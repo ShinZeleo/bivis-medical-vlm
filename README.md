@@ -44,12 +44,13 @@ Gunakan tabel kompas ini untuk langsung menuju file atau folder yang Anda butuhk
 | 🗂️ **Suite Dokumen Audit Lengkap (17 Laporan)** | [`docs/audit/`](docs/audit/) | Dokumentasi audit formal: formula, kode, integritas data, eksperimen, literatur, dan reproduksibilitas. |
 | 📖 **Membaca Teori & Latar Belakang Skripsi** | [`docs/research/RESEARCH_MASTER.md`](docs/research/RESEARCH_MASTER.md) | **Single Source of Truth (Versi 10.0)** lengkap berisi rumusan matematika, latar belakang klinis, dan batasan klaim. |
 | 📽️ **Melihat Slide Ujian Proposal / Bimbingan** | [`presentations/proposal/Medical_VLM_Proposal.pptx`](presentations/proposal/Medical_VLM_Proposal.pptx) | Naskah slide resmi seminar proposal skripsi. |
-| 🚀 **Menjalankan Eksperimen Utama di Kaggle** | [`notebooks/kaggle/08_qwen_decisive_validation.ipynb`](notebooks/kaggle/08_qwen_decisive_validation.ipynb) | Notebook utama siap eksekusi di GPU Dual Tesla T4 (Internet ON). |
+| 🚀 **Menjalankan Eksperimen Utama di Kaggle** | [`notebooks/kaggle/rev06/08_qwen_decisive_validation.ipynb`](notebooks/kaggle/rev06/08_qwen_decisive_validation.ipynb) | Notebook utama siap eksekusi di GPU Dual Tesla T4 (Internet ON). |
 | 📊 **Melihat Angka Hasil & Metrik Final** | [`artifacts/experiments/decisive_validation/rev05/`](artifacts/experiments/decisive_validation/rev05/) | Tabel metrik resmi RQ1 (Akurasi/Flip), RQ2 (Visual), RQ3 (AURC), dan kurva PNG. |
 | ⚙️ **Melihat Kode Inferensi Inti** | [`scripts/run_experiment.py`](scripts/run_experiment.py) | Engine kalkulasi sequence log-likelihood & intervensi kanvas hitam. |
 | 🧪 **Menjalankan Unit Test (46/46 Pass)** | [`tests/`](tests/) | Suite pengujian lokal deterministik verifikasi logit kausal, data, stats, dan metrik. |
 | 🔍 **Audit Data Bebas Kebocoran (Zero Leakage)** | [`docs/audit/DATASET_INTEGRITY_REPORT.md`](docs/audit/DATASET_INTEGRITY_REPORT.md) | Pembuktian bebas kebocoran citra (0.00% overlap antara 88 cluster dev & 204 test). |
 | 📄 **Draf Naskah Publikasi LaTeX** | [`docs/manuscript/draft/`](docs/manuscript/draft/) | Berkas draf naskah publikasi ilmiah (Overleaf ready, `main.tex`, `references.bib`, template ITB/JICT). |
+| 📝 **Template Jurnal JIKI UI (SINTA 2)** | [`docs/manuscript/templates/AuthorGuideline_JIKI/`](docs/manuscript/templates/AuthorGuideline_JIKI/) | Pedoman penulis & template LaTeX (`IEEEtran`) / Word untuk target publikasi jurnal JIKI Fasilkom UI. |
 | 📑 **Membaca Paper Literatur Acuan** | [`references/papers/`](references/papers/) | PDF artikel rujukan: Yudhistira et al. (2026) & Sadanandan (2026). |
 | 📦 **Melihat Arsip Draf Historis (v9–v10)** | [`docs/archive/`](docs/archive/) | Riwayat proses eksplorasi sebelum mencapai protokol rev05 dan Bi-ViS. |
 
@@ -182,7 +183,8 @@ VLM/
 ├── docs/                                   # DOKUMENTASI AKADEMIK & METODOLOGI
 │   ├── README.md                           # Indeks dokumentasi master
 │   ├── manuscript/                         # Fondasi artikel ilmiah, formalisasi Bi-ViS, dan blueprint
-│   │   └── draft/                          # Naskah publikasi LaTeX lengkap (Overleaf Ready, main.tex, references.bib)
+│   │   ├── draft/                          # Naskah publikasi LaTeX lengkap (Overleaf Ready, main.tex, references.bib)
+│   │   └── templates/                      # Paket template jurnal target (AuthorGuideline_JIKI Fasilkom UI)
 │   ├── audit/                              # SUITE LAPORAN AUDIT ILMIAH & REPRODUKSIBILITAS
 │   ├── protocols/                          # Protokol eksperimen, tata kelola data, dan checklist
 │   ├── research/                           # Blueprint SSoT, tinjauan pustaka, dan log perubahan
@@ -196,9 +198,10 @@ VLM/
 │   ├── README.md
 │   ├── 01_dataset_audit_eda.ipynb          # Audit integritas data & SHA-256 citra fisik
 │   └── kaggle/                             # Notebook eksekusi GPU Dual-T4 Kaggle
-│       ├── 08_qwen_decisive_validation.ipynb
-│       ├── 09_huatuo_decisive_validation.ipynb
-│       └── 10_standalone_aggregation_evaluation.ipynb
+│       ├── README.md                       # Panduan eksekusi & spesifikasi Kaggle
+│       ├── rev06/                          # Notebook eksekusi aktif protokol rev06 (08, 09, 10)
+│       ├── rev05_patched/                  # Patch isolasi bug non-pengubah-hasil
+│       └── rev05/                          # Salinan beku awal rev05
 │
 ├── src/                                    # MODUL PUSTAKA UTAMA (PACKAGE)
 │   ├── stats_engine.py                     # Sentralisasi fungsi statistik (permutasi, bootstrap, CI)

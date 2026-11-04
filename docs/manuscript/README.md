@@ -35,8 +35,13 @@ Untuk memahami kerangka narasi dan formalisasi metode secara koheren, dokumen di
 
 ---
 
-## 📄 Naskah Publikasi LaTeX Siap Submit (`draft/`)
+## 📄 Naskah Publikasi LaTeX & Template Jurnal
 
-Untuk draf naskah publikasi lengkap format LaTeX (standar template ITB Journal Publisher / JICT), silakan buka direktori proyek Overleaf terdedikasi:
-- [**`draft/`**](draft/README.md): Memuat berkas sumber `main.tex`, `references.bib`, logo ITB, dan draf naskah PDF asli.
+1. **Draf Naskah Aktif (`draft/`):**
+   - [**`draft/`**](draft/README.md): Memuat berkas sumber `main.tex`, `references.bib`, logo ITB, dan draf naskah PDF asli (Overleaf ready).
+
+2. **Template Publikasi Jurnal (`templates/`):**
+   - [**`templates/`**](templates/README.md): Direktori induk template naskah publikasi ilmiah.
+   - [**`templates/AuthorGuideline_JIKI/`**](templates/AuthorGuideline_JIKI/README.md): Paket resmi pedoman penulis dan template LaTeX/Word untuk **Jurnal Ilmu Komputer dan Informasi (JIKI) Fasilkom UI** (Terakreditasi SINTA 2).
+
 

@@ -31,6 +31,7 @@ Dokumentasi inti persiapan artikel ilmiah dan formalisasi metode yang diusulkan:
 - [**`FINAL_METHODOLOGICAL_ADJUDICATION.md`**](manuscript/FINAL_METHODOLOGICAL_ADJUDICATION.md): Putusan final metodologi atas 5 temuan kritis audit statistik.
 - [**`BIVIS_DEPLOYMENT_LIMITATIONS.md`**](manuscript/BIVIS_DEPLOYMENT_LIMITATIONS.md): Batasan implementasi klinis, overhead komputasi ($3\times$), dan cakupan OOD kanvas hitam.
 - [**Draf Naskah Publikasi LaTeX (`draft/`)**](manuscript/draft/README.md): Berkas draf naskah publikasi format LaTeX standar ITB/JICT Overleaf ready (`main.tex`, `references.bib`, `itb_logo.png`, PDF).
+- [**Template Jurnal Target JIKI UI (`templates/AuthorGuideline_JIKI/`)**](manuscript/templates/AuthorGuideline_JIKI/README.md): Paket resmi pedoman penulisan dan template LaTeX (`IEEEtran.cls`) / Word untuk Jurnal Ilmu Komputer dan Informasi (JIKI Fasilkom UI, SINTA 2).
 
 ### 2. Scientific Audit Suite ([`audit/`](audit/))
 Suite laporan audit saintifik independen untuk pertanggungjawaban di hadapan dosen pembimbing dan penguji:

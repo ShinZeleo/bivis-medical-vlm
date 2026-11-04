@@ -19,7 +19,6 @@ data/
 │   └── recommended_image_split.csv     # Patient-aware group partition mappings
 ├── processed/
 │   ├── schema_data_dictionary.csv      # Detailed schema dictionary
-│   ├── translation_audit_full.csv      # Audit of Indonesian translation quality
 │   └── question_answer_distribution.csv# Class balance and question type distributions
 └── archive/
     └── indorad-vqa-research.zip        # Cold storage backup of original dataset
