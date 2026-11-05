@@ -1,0 +1,294 @@
+TY  - JOUR
+TI  - Does Language Shift Break Medical Vision-Language Models? Indonesian Radiology Visual Question Answering Case Study
+AU  - Yudhistira, Pieter Christy Yan
+AU  - Malik, Dzaki Rafif
+AU  - Yudistira, Novanto
+PY  - 2026
+UR  - https://arxiv.org/abs/2606.03693
+ER  -
+
+TY  - JOUR
+TI  - Analyzing and Mitigating Cross-Lingual Degradation in Multilingual Medical VQA
+PY  - 2026
+UR  - https://arxiv.org/abs/2608.22363
+ER  -
+
+TY  - CONF
+TI  - Mechanistically Guided LoRA Improves Paraphrase Consistency in Medical Vision-Language Models
+AU  - Sadanandan, Anjana
+AU  - Behzadan, Vahid
+PY  - 2026
+T2  - Proceedings of Machine Learning Research
+UR  - https://proceedings.mlr.press/v333/sadanandan26a.html
+ER  -
+
+TY  - JOUR
+TI  - Do Medical Vision Language Models Actually See? A Counterfactual Grounding Framework and Hard-Negative Contrastive Training for Visually-Reliant Medical VLMs
+AU  - Zafar, Anas
+AU  - Murali, Leema Krishna
+AU  - Bharadwaj, Siddhant
+AU  - Vashist, Ashish
+AU  - Wu, Jia
+PY  - 2026
+UR  - https://arxiv.org/abs/2607.03647
+ER  -
+
+TY  - CONF
+TI  - Enhancing Medical Large Vision-Language Models via Alignment Distillation
+PY  - 2026
+T2  - AAAI
+UR  - https://ojs.aaai.org/index.php/AAAI/article/view/39079
+ER  -
+
+TY  - CONF
+TI  - How Do Medical MLLMs Fail? A Study on Visual Grounding in Medical Images
+PY  - 2026
+T2  - ICLR
+UR  - https://proceedings.iclr.cc/paper_files/paper/2026/hash/999a7fa10ed25ce8b836b14ff003ad50-Abstract-Conference.html
+ER  -
+
+TY  - CONF
+TI  - Act as You Think: Reinforcing Consistent Reasoning in Medical Visual Question Answering
+PY  - 2026
+T2  - ACL
+UR  - https://aclanthology.org/2026.acl-long.81/
+ER  -
+
+TY  - CONF
+TI  - Knowing or Guessing? Robust Medical Visual Question Answering via Joint Consistency and Contrastive Learning
+PY  - 2025
+T2  - MICCAI
+UR  - https://papers.miccai.org/miccai-2025/0471-Paper3893.html
+ER  -
+
+TY  - CONF
+TI  - Eliminating Language Bias for Medical Visual Question Answering with Counterfactual Contrastive Training
+PY  - 2025
+T2  - MICCAI
+UR  - https://papers.miccai.org/miccai-2025/0283-Paper2827.html
+ER  -
+
+TY  - CONF
+TI  - Med-CAP: Counterfactual Evidence and Adaptive Prior Suppression for Robust Medical Visual Question Answering
+PY  - 2026
+T2  - MICCAI
+UR  - https://papers.miccai.org/miccai-2026/0628-Paper3867.html
+ER  -
+
+TY  - JOUR
+TI  - Accuracy Overstates Evidence Grounding and Abstention Reliability
+PY  - 2026
+UR  - https://www.medrxiv.org/content/10.64898/2026.09.10.26361944v1.full
+ER  -
+
+TY  - CONF
+TI  - LLM-Guided Diagnostic Evidence Alignment
+PY  - 2026
+T2  - ICML
+UR  - https://proceedings.mlr.press/v306/yan26a.html
+ER  -
+
+TY  - CONF
+TI  - VividMed
+PY  - 2025
+T2  - NAACL
+UR  - https://aclanthology.org/2025.naacl-long.89/
+ER  -
+
+TY  - JOUR
+TI  - GEMeX-ThinkVG
+PY  - 2025
+UR  - https://huggingface.co/papers/2506.17939
+ER  -
+
+TY  - CONF
+TI  - Attention Without Grounding
+AU  - Sadanandan, Anjana
+AU  - Behzadan, Vahid
+PY  - 2026
+T2  - MICCAI Satellite
+UR  - https://papers.miccai.org/miccai-2026-sat/iMIMIC_021.html
+ER  -
+
+TY  - CONF
+TI  - Evaluating Reasoning Faithfulness in Medical VLMs Using Multimodal Perturbations
+PY  - 2026
+T2  - ML4H
+UR  - https://proceedings.mlr.press/v297/moll26a.html
+ER  -
+
+TY  - CONF
+TI  - Medical Image Spatial Grounding with Semantic Sampling
+PY  - 2026
+T2  - MICCAI
+UR  - https://papers.miccai.org/miccai-2026/0635-Paper2003.html
+ER  -
+
+TY  - JOUR
+TI  - Causal Intervention on Modality-Specific Biases for Medical Visual Question Answering
+PY  - 2025
+T2  - Medical Image Analysis
+UR  - https://www.sciencedirect.com/science/article/pii/S1361841525003962
+ER  -
+
+TY  - CONF
+TI  - Mind the (Language) Gap
+PY  - 2025
+UR  - https://aclanthology.org/2025.mrl-main.38/
+ER  -
+
+TY  - CONF
+TI  - Improving Cross-Lingual Generalisation in Visual Question Answering
+AU  - Nooralahzadeh, Farhad
+AU  - Sennrich, Rico
+PY  - 2023
+T2  - AAAI
+UR  - https://ojs.aaai.org/index.php/AAAI/article/view/26574
+ER  -
+
+TY  - CONF
+TI  - Improving Vision-Language Cross-Lingual Transfer with Scheduled Unfreezing
+PY  - 2024
+UR  - https://aclanthology.org/2024.alvr-1.13/
+ER  -
+
+TY  - CONF
+TI  - Towards Multilingual Spoken Visual Question Answering Using Cross-Attention
+PY  - 2025
+T2  - COLING
+UR  - https://aclanthology.org/2025.coling-main.615/
+ER  -
+
+TY  - JOUR
+TI  - Overconfidence and Calibration in Medical VQA
+PY  - 2026
+UR  - https://arxiv.org/abs/2604.02543
+ER  -
+
+TY  - CONF
+TI  - VL-Calibration
+PY  - 2026
+T2  - ACL
+UR  - https://aclanthology.org/2026.acl-long.2074/
+ER  -
+
+TY  - JOUR
+TI  - Calibrated Triage, Not Autonomy
+PY  - 2026
+UR  - https://arxiv.org/abs/2606.15910
+ER  -
+
+TY  - CONF
+TI  - CARE: Confidence-Aware Reward for Medical Visual Question Answering
+PY  - 2026
+T2  - MICCAI
+UR  - https://papers.miccai.org/miccai-2026/0154-Paper6558.html
+ER  -
+
+TY  - CONF
+TI  - Detecting Clinical Hallucinations via Counterfactual Visual Grounding Uncertainty
+PY  - 2026
+T2  - MICCAI
+UR  - https://papers.miccai.org/miccai-2026/0266-Paper4284.html
+ER  -
+
+TY  - CONF
+TI  - Counter-Evidence Verification
+PY  - 2026
+T2  - MICCAI
+UR  - https://papers.miccai.org/miccai-2026/0442-Paper0281.html
+ER  -
+
+TY  - JOUR
+TI  - MedVH: A Dataset for Medical Hallucination Evaluation
+PY  - 2025
+UR  - https://pmc.ncbi.nlm.nih.gov/articles/PMC12363988/
+ER  -
+
+TY  - CONF
+TI  - VASE: Vision-Amplified Semantic Entropy for Hallucination Detection
+PY  - 2025
+T2  - MICCAI
+UR  - https://papers.miccai.org/miccai-2025/1005-Paper0083.html
+ER  -
+
+TY  - JOUR
+TI  - VQA-RAD: Visual Question Answering in Radiology
+PY  - 2018
+UR  - https://pmc.ncbi.nlm.nih.gov/articles/PMC6244189/
+ER  -
+
+TY  - JOUR
+TI  - Medical Visual Question Answering: A Survey
+PY  - 2023
+UR  - https://pubmed.ncbi.nlm.nih.gov/37673579/
+ER  -
+
+TY  - JOUR
+TI  - A Review of Medical Vision-Language Models
+AU  - Hartsock, Isaac
+AU  - Rasool, Ghulam
+PY  - 2024
+UR  - https://pmc.ncbi.nlm.nih.gov/articles/PMC11611889/
+ER  -
+
+TY  - JOUR
+TI  - LLaVA-Med: Training a Large Language-and-Vision Assistant for Biomedicine in One Day
+PY  - 2023
+UR  - https://arxiv.org/abs/2306.00890
+ER  -
+
+TY  - CONF
+TI  - Med-Flamingo: a Multimodal Medical Few-Shot Learner
+PY  - 2023
+T2  - Proceedings of Machine Learning Research
+UR  - https://proceedings.mlr.press/v225/moor23a.html
+ER  -
+
+TY  - JOUR
+TI  - Qwen2.5-VL Technical Report
+PY  - 2025
+UR  - https://arxiv.org/abs/2502.13923
+ER  -
+
+TY  - JOUR
+TI  - LoRA: Low-Rank Adaptation of Large Language Models
+AU  - Hu, Edward J.
+PY  - 2021
+UR  - https://arxiv.org/abs/2106.09685
+ER  -
+
+TY  - JOUR
+TI  - QLoRA: Efficient Finetuning of Quantized LLMs
+PY  - 2023
+UR  - https://arxiv.org/abs/2305.14314
+ER  -
+
+TY  - CONF
+TI  - On Calibration of Modern Neural Networks
+AU  - Guo, Chuan
+PY  - 2017
+T2  - ICML
+UR  - https://proceedings.mlr.press/v70/guo17a.html
+ER  -
+
+TY  - CONF
+TI  - Improving Selective Visual Question Answering by Learning From Your Peers
+PY  - 2023
+T2  - CVPR
+UR  - https://openaccess.thecvf.com/content/CVPR2023/html/Dancette_Improving_Selective_Visual_Question_Answering_by_Learning_From_Your_Peers_CVPR_2023_paper.html
+ER  -
+
+TY  - CONF
+TI  - Trustworthy Medical Question Answering: A Survey
+PY  - 2025
+T2  - EMNLP
+UR  - https://aclanthology.org/2025.emnlp-main.1398/
+ER  -
+
+TY  - CONF
+TI  - To Agree or To Be Right? The Grounding-Sycophancy Tradeoff in Medical VLMs
+PY  - 2026
+T2  - CVPR Workshops
+UR  - https://openaccess.thecvf.com/content/CVPR2026W/Med-Reasoner/html/Aranya_To_Agree_or_To_Be_Right_The_Grounding-Sycophancy_Tradeoff_in_CVPRW_2026_paper.html
+ER  -

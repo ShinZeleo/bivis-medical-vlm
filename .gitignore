@@ -68,3 +68,6 @@ data/manifests/recommended_image_split.csv
 # Temporary experiment files
 *.tmp
 *.log
+pytest_report.xml
+pytest_output.txt
+*_complete_validation_results/
