@@ -5,7 +5,7 @@
 **Date of Audit:** October 31, 2026  
 **Auditor Roles:** Senior Research Auditor, Machine Learning Engineer, and Academic Research Methodologist  
 **Project Title:** Selective Prediction in Bilingual Medical Vision-Language Models via Visual Deletion Sensitivity and Cross-Lingual Disagreement  
-**Candidate Repository:** `https://github.com/ShinZeleo/Skripshit.git`  
+**Candidate Repository:** `https://github.com/ShinZeleo/bivis-medical-vlm.git`  
 **Primary Execution Notebook:** [`notebooks/kaggle/08_qwen_decisive_validation.ipynb`](file:///c:/.PUSAT/Project/Kuliah/VLM/notebooks/kaggle/08_qwen_decisive_validation.ipynb)  
 **Primary Experiment Script:** [`scripts/run_decisive_validation.py`](file:///c:/.PUSAT/Project/Kuliah/VLM/scripts/run_decisive_validation.py)
 

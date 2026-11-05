@@ -5,7 +5,7 @@
 **Audit Date:** October 31, 2026  
 **Auditor Role:** Senior Research Auditor, Machine Learning Engineer & Academic Methodologist  
 **Project:** Cross-Lingual & Visual Sensitivity Selective Prediction for Medical VLMs  
-**Repository:** `https://github.com/ShinZeleo/Skripshit.git`
+**Repository:** `https://github.com/ShinZeleo/bivis-medical-vlm.git`
 
 ---
 

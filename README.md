@@ -269,8 +269,8 @@ VLM/
 ### 1. Persiapan Lingkungan Lokal
 Clone repositori dan pasang dependensi virtual environment:
 ```bash
-git clone https://github.com/ShinZeleo/Skripshit.git
-cd Skripshit
+git clone https://github.com/ShinZeleo/bivis-medical-vlm.git
+cd bivis-medical-vlm
 python -m venv .venv
 source .venv/bin/activate       # Linux / macOS
 # atau: .venv\Scripts\activate   # Windows PowerShell
