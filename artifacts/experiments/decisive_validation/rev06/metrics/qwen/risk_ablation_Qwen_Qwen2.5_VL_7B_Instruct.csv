@@ -1,0 +1,4 @@
+model,ablation_model,features,dev_aurc_cv,test_aurc,coefs,intercept
+Qwen2.5-VL-7B,LR_conf,score_m1_seq,0.2105472747391738,0.24589577620846148,[-0.5925],-0.8145
+Qwen2.5-VL-7B,LR_visual,"score_m1_seq, delta_p_dir_seq",0.22008558082902951,0.2512484681567066,"[-0.563, -0.1534]",-0.8192
+Qwen2.5-VL-7B,LR_full,"score_m1_seq, delta_p_dir_seq, d_lang",0.19186877439527217,0.2044306519802248,"[-0.2095, 0.1105, 1.1789]",-0.907
